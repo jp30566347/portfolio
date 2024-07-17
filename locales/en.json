@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "About",
+    "description": "Software Developer and Bitcoiner"
+  },
+  "portfolio": {
+    "title": "Freelance",
+    "description": "Tailored software development services"
+  },
+  "resume": {
+    "title": "Resume",
+    "description": "Career overview"
+  }
+}

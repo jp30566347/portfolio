@@ -1,0 +1,14 @@
+{
+  "home": {
+    "title": "À mon sujet",
+    "description": "Développeur logiciel"
+  },
+  "portfolio": {
+    "title": "Consultation",
+    "description": "Services en consultation technologique sur mesure"
+  },
+  "resume": {
+    "title": "Carrière",
+    "description": "Carrière"
+  }
+} 
