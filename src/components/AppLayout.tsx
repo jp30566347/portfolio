@@ -1,6 +1,4 @@
 import { PropsWithChildren } from "react";
-import { getCurrentLocale, getI18n } from "../../locales/server";
-import { getServerPathname } from "./getServerPathname";
 import { NavBar } from "./NavBar";
 
 export default async function AppLayout({ children }: PropsWithChildren) {

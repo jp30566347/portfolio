@@ -42,6 +42,7 @@ export default async function Layout({ children, params: { locale } }: Props) {
           <AppLayout>{children}</AppLayout>
         </Providers>
       </body>
+      <script defer data-domain="jpmelanson.info" src="https://plausible.io/js/script.js"></script>
     </html>
   );
 }
