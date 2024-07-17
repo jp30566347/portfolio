@@ -3,6 +3,7 @@ import "../globals.css";
 import { getCurrentLocale, getI18n } from "../../../locales/server";
 import { Providers } from "@/components/providers";
 import AppLayout from "@/components/AppLayout";
+import Script from "next/script";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: "300", style: "normal" });
 
@@ -37,12 +38,20 @@ interface Props extends React.PropsWithChildren {
 export default async function Layout({ children, params: { locale } }: Props) {
   return (
     <html lang={locale}>
+      {process.env.NODE_ENV === "production" && (
+        <>
+          <Script
+            defer
+            data-domain="jpmelanson.info"
+            src="https://plausible.io/js/script.js"
+          ></Script>
+        </>
+      )}
       <body className={ubuntu.className}>
         <Providers locale={locale}>
           <AppLayout>{children}</AppLayout>
         </Providers>
       </body>
-      <script defer data-domain="jpmelanson.info" src="https://plausible.io/js/script.js"></script>
     </html>
   );
 }
