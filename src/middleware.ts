@@ -8,9 +8,7 @@ const I18nMiddleware = createI18nMiddleware({
 });
 
 export function middleware(request: NextRequest) {
-  const res = I18nMiddleware(request);
-  res.headers.set("x-current-path", request.nextUrl.pathname);
-  return res;
+  return I18nMiddleware(request);
 }
 
 export const config = {

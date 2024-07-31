@@ -1,84 +1,169 @@
-import { SectionTitle } from "@/components/SectionTitle";
+import { Button } from "@nextui-org/react";
+import { ExternalLinkIcon, EyeIcon } from "lucide-react";
+import Link from "next/link";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col gap-5">
-      <h1 className="text-center">Freelance</h1>
+    <div className="flex flex-col gap-5 mt-8 mx-4 sm:mx-0">
+      <h1>Contractual Work</h1>
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-5">
-          <SectionTitle>Services</SectionTitle>
-          <div className="flex flex-col items-center gap-8">
-            <div className="w-full flex flex-col">
-              These are things I can do for you
-              <ul className="mx-5 my-2 text-sm list-disc">
+          <h2>Service Offering</h2>
+          <hr />
+          <div className="flex flex-wrap gap-4">
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <h3>Mobile Application Development</h3>
+              <ul className="list-disc m-3">
                 <li>
-                  Mobile Application Development: Convert your nocode or UX
-                  designs to a fully-functional React Native/Expo application.
+                  Convert your nocode or UX designs into a fully-functional
+                  React Native/Expo application.
+                </li>
+                <li>Deploy your application to the Google/Apple store.</li>
+                <li>Manage compliancy and security updates</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <h3>Web Application Development</h3>
+              <ul className="list-disc m-3">
+                <li>
+                  Create a highly performant web application using React and
+                  Next.js latest app router
                 </li>
                 <li>
-                  Mobile Application Release Management: Deploy your application
-                  to the Google/Apple store and manage compliancy and security
-                  updates.
+                  Deploy on-prem or in an optimized, low-cost cloud environment
                 </li>
+                <li>Optimize existing application for performance</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <h3>API</h3>
+              <ul className="list-disc m-3">
+                <li>Expose a GraphQL or Rest API from Postgres</li>
+                <li>Create event-driven data pipelines</li>
+                <li>Create cloud functions</li>
+                <li>Document your endpoints through swagger or gitdocs</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <h3>Infrastructure</h3>
+              <ul className="list-disc m-3">
+                <li>Implement a CI/CD strategy</li>
                 <li>
-                  Web Application Development: Create a highly performant web
-                  application using React and NextJS latest app router. Deploy
-                  on your premise or in an optimized, low-cost and secure cloud
-                  environment.
+                  Create a robust and secure cloud architecture for front-facing
+                  applications
                 </li>
+                <li>Create repeatable infrastructure-as-code</li>
+              </ul>
+            </div>
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <h3>Bitcoin</h3>
+              <ul className="list-disc m-3">
                 <li>
-                  APIs: Build easy-to-use REST or GraphQL APIs to be consumed by
-                  your applications or third-parties. TypeScript, Go, Rails or
-                  Supabase.
+                  Implement a bitcoin savings strategy (individual or
+                  enterprise)
                 </li>
+                <li>Accept bitcoin payments online or in-store (retail)</li>
                 <li>
-                  CI/CD: Automate deployment and validation of your software and
-                  QA process. GitHub or GitLab.
+                  Mentoring: discover why Bitcoin is the best Store of Value,
+                  Unit of Account and{" "}
                 </li>
-                <li>Cloud: Create tailored cloud solutions on AWS/Heroku.</li>
               </ul>
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-5">
-          <SectionTitle>Featured Projects</SectionTitle>
-          <div className="flex flex-col items-center gap-8">
-            <div className="w-full flex flex-col">
-              <h3>CRIUCPQ</h3>
-              <h5 className="font-bold text-secondary">ventilo.ca</h5>
-              <span className="text-sm text-primary/50">June 2024</span>
-              <ul className="mx-5 my-2 text-sm list-disc">
+          <h2>Featured Work</h2>
+          <hr />
+          <div className="flex flex-wrap gap-4">
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <div>
+                <h4>ventilo.ca</h4>
+                <h5>client: CRIUCPQ</h5>
+              </div>
+              <ul className="list-disc m-3">
                 <li>
                   Created a web version of the mobile application with a
-                  complete redesigned user experience
+                  complete UX redesign
                 </li>
-                <li>Hosting, domain and analytics</li>
+                <li>Handled hosting, DNS, analytics and deployment</li>
               </ul>
+              <Button
+                size="sm"
+                variant="solid"
+                href="https://www.ventilo.ca"
+                target="_blank"
+                endContent={<ExternalLinkIcon size="12" />}
+              >
+                Check it out!
+              </Button>
             </div>
-
-            <div className="w-full flex flex-col">
-              <h3>CRIUCPQ</h3>
-              <h5 className="font-bold text-secondary">Oxyg'App Mobile App</h5>
-              <span className="text-sm text-primary/50">June 2023</span>
-              <ul className="mx-5 my-2 text-sm list-disc">
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <div>
+                <h4>Oxyg'App mobile app</h4>
+                <h5>client: CRIUCPQ</h5>
+              </div>
+              <ul className="list-disc m-3">
                 <li>
-                  A hybrid mobile application to allow clinicians to measure
-                  accurately Oxygen corrections based on skin pigmentation and
-                  oximeters
+                  Created an hybrid React Native/Expo mobile application to
+                  allow clinicians to measure accurately Oxygen corrections
+                  based on skin pigmentation and oximeters
                 </li>
-                <li>Store presence and deployments</li>
+                <li>Managed store presence, deployment and compliance</li>
               </ul>
+              <div className="flex gap-2">
+                <Button
+                  size="sm"
+                  variant="solid"
+                  href="https://play.google.com/store/apps/details?id=com.iucpq.oxygapp&hl=en_US"
+                  target="_blank"
+                  endContent={<ExternalLinkIcon size="12" />}
+                >
+                  Google Store
+                </Button>
+                <Button
+                  size="sm"
+                  variant="solid"
+                  href="https://apps.apple.com/us/app/oxygapp/id1668892646"
+                  target="_blank"
+                  endContent={<ExternalLinkIcon size="12" />}
+                >
+                  Apple Store
+                </Button>
+              </div>
             </div>
-
-            <div className="w-full flex flex-col">
-              <h3>CRIUCPQ</h3>
-              <h5 className="font-bold text-secondary">Ventilo Mobile App</h5>
-              <span className="text-sm text-primary/50">June 2022</span>
-              <ul className="mx-5 my-2 text-sm list-disc">
-                <li>Migrating existing native apps to a single hybrid app</li>
-                <li>Change the recommendations algorithm</li>
-                <li>Provided store presence and deployments</li>
+            <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
+              <div>
+                <h4>VentilO mobile app</h4>
+                <h5>client: CRIUCPQ</h5>
+              </div>
+              <ul className="list-disc m-3">
+                <li>
+                  Migrated existing native apps to single hybrid app and save on
+                  maintenance cost
+                </li>
+                <li>Changed the recommendations algorithm</li>
+                <li>Managed store presence, deployment and compliance</li>
               </ul>
+              <div className="flex gap-2">
+                <Button
+                  size="sm"
+                  variant="solid"
+                  href="https://play.google.com/store/apps/details?id=com.iucpq.ventillo&hl=en_US"
+                  target="_blank"
+                  endContent={<ExternalLinkIcon size="12" />}
+                >
+                  Google Store
+                </Button>
+                <Button
+                  size="sm"
+                  variant="solid"
+                  href="https://apps.apple.com/us/app/ventilo/id1478758927"
+                  target="_blank"
+                  endContent={<ExternalLinkIcon size="12" />}
+                >
+                  Apple Store
+                </Button>
+              </div>
             </div>
           </div>
         </div>

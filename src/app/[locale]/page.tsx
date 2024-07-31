@@ -1,48 +1,96 @@
-import { SectionTitle } from "@/components/SectionTitle";
+import { Chip } from "@nextui-org/react";
+import Head from "next/head";
+import Script from "next/script";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col sm:flex-row gap-12 items-center sm:items-start">
-      <img
-        src="jp.png"
-        className="rounded-xl shadow-xl border-primary object-fit w-[200px] h-[200px] sm:mt-8"
-      />
-      <section className="flex flex-col gap-5">
-        <h1 className="text-center">Jean-Philippe Melanson</h1>
-
-        <SectionTitle>Software Engineer</SectionTitle>
-
-        <div className="flex flex-col items-center gap-5">
-          <p>
-            Passionate developer with over{" "}
-            <b className="text-secondary">15 years</b> of professional
-            experience in various industries and project sizes. Technically
-            skilled in various areas of <u>full stack software development</u>,
-            including <u>mobile applications</u> development and <u>APIs</u>.
-          </p>
-          <p>
-            I prefer to work closer to customers at the intersection of Product,
-            UX and Engineering. My current interests are fintech, cryptography,
-            web3, bitcoin, nostr and other empowering technologies for the
-            plebs.
-          </p>
-          <p>
-            I have worked with multiple tech stacks and libraries over my career
-            and typically adapt quickly. My actual go-to front-end stack is{" "}
-            <b className="text-secondary">NextJS</b> /{" "}
-            <b className="text-secondary">React</b> /{" "}
-            <b className="text-secondary">React&nbsp;Native</b> /{" "}
-            <b className="text-secondary">TypeScript</b> and on the backend I
-            typically pick <b className="text-secondary">Postgres</b> as the
-            do-it-all workhorse. I also do like{" "}
-            <b className="text-secondary">Rails</b> for its incredible
-            resilience to time, <b className="text-secondary">Go</b> for its
-            simplicity and will eventually end up learning{" "}
-            <b className="text-secondary">Rust</b> because it's a prophecy for
-            any strongly type language advocate.
-          </p>
-        </div>
-      </section>
+    <div className="mt-8 flex flex-col sm:flex-row gap-12 items-center sm:items-start">
+      <div className="flex flex-col gap-5 px-4 sm:px-0">
+        <h1>About Me</h1>
+        <p>
+          With over <u>15 years</u> of hands-on experience in diverse industries
+          and project scales, I am a passionate software engineer dedicated to
+          crafting exceptional digital solutions. My expertise spans the full
+          stack of software development, with a particular focus on mobile
+          application development, API and Cloud solutions.
+        </p>
+        <p>
+          I'm a husband, dad of 3 with a love of hockey, fishing and biking.
+        </p>
+        <p>
+          I thrive at the crossroads of Product, UX, and Engineering, always
+          striving to work closely with customers to deliver impactful results.
+          I like to work in a collaborative and iterative mindset.
+        </p>
+        <p>
+          Throughout my career, I've embraced a variety of tech stacks and
+          libraries, adapting swiftly to new environments. My current go-to
+          front-end stack includes{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            Next.js
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            React
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            React Native
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            TypeScript
+          </Chip>
+          .
+        </p>
+        <p>
+          On the backend, I often rely on the robustness of{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            Postgres
+          </Chip>{" "}
+          through various languages like{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            TypeScript
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            Rails
+          </Chip>{" "}
+          or{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            Go
+          </Chip>
+          . I also have a strong interest in learning{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            Rust
+          </Chip>
+          .
+        </p>
+        <p>
+          My linux background also enable me to be efficient on
+          platform/infrastructure work (architecture, deployment, quality
+          assurance, security & production readiness)
+        </p>
+        <p>
+          My current passions lie in the realms of{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            real estate
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            finance
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            bitcoin
+          </Chip>
+          ,{" "}
+          <Chip size="sm" color="secondary" variant="flat">
+            nostr
+          </Chip>{" "}
+          and other technologies that empower everyday people.
+        </p>
+      </div>
     </div>
   );
 }

@@ -1,31 +1,24 @@
 import type { Config } from "tailwindcss";
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react";
+import { orange, slate, gray } from "tailwindcss/colors";
 
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",    
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     // make sure it's pointing to the ROOT node_module
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+  plugins: [nextui()],
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#4D4D4D"
-        },
-        secondary: {
-          DEFAULT: "#F7931A"
-        }
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        primary: slate,
+        secondary: "#F7931A",
+        neutral: gray,
       },
     },
   },
-  plugins: [nextui()],
 };
 export default config;

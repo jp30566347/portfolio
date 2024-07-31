@@ -1,11 +1,12 @@
-import { Ubuntu } from "next/font/google";
+// import { Ubuntu } from "next/font/google";
 import "../globals.css";
 import { getCurrentLocale, getI18n } from "../../../locales/server";
 import { Providers } from "@/components/providers";
 import AppLayout from "@/components/AppLayout";
 import Script from "next/script";
+import Head from "next/head";
 
-const ubuntu = Ubuntu({ subsets: ["latin"], weight: "300", style: "normal" });
+// const ubuntu = Ubuntu({ subsets: ["latin"], weight: "300", style: "normal" });
 
 export async function generateMetadata() {
   const t = await getI18n();
@@ -47,7 +48,10 @@ export default async function Layout({ children, params: { locale } }: Props) {
           ></Script>
         </>
       )}
-      <body className={ubuntu.className}>
+      <Head>
+        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+      </Head>
+      <body>
         <Providers locale={locale}>
           <AppLayout>{children}</AppLayout>
         </Providers>
