@@ -1,14 +1,14 @@
 {
   "home": {
     "title": "Bio",
-    "description": "Software Developer and Bitcoiner"
+    "description": "Software Engineer, Consultant & Bitcoiner"
   },
   "portfolio": {
-    "title": "Freelance",
+    "title": "Consulting",
     "description": "Tailored software development services"
   },
   "resume": {
     "title": "Resume",
-    "description": "Career overview"
+    "description": "Official career tracker"
   }
 }
