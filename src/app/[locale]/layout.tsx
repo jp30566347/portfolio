@@ -12,7 +12,7 @@ export async function generateMetadata() {
   return {
     title: {
       template: "JP Melanson - %s",
-      default: t("home.title"),
+      default: "JP Melanson - " + t("home.title"),
     },
     description: t("home.description"),
     icons: "favicon.ico",

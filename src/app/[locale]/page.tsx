@@ -3,8 +3,8 @@ export default async function Home() {
     <div className="mt-8 flex flex-col sm:flex-row gap-12 items-center sm:items-start">
       <div className="flex flex-col gap-5 px-4 sm:px-0">
         <p>
-          Hello there, I'm JP, a middle age husband, dad of 3 that loves tech,
-          sports and outdoors.
+          Hi there, I'm JP. I'm a middle-aged husband and dad of three who loves
+          tech, sports, and the outdoors.
         </p>
         <p>
           With over <mark>15 years</mark> of hands-on experience in diverse

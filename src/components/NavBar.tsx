@@ -14,6 +14,7 @@ import { useCurrentLocale, useI18n } from "../../locales/client";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
 import { useState } from "react";
+import { ExternalLinkIcon } from "lucide-react";
 
 const menuItems = ["home", "resume", "portfolio"] as const;
 
@@ -59,6 +60,16 @@ export function NavBar() {
             </NavbarItem>
           );
         })}
+        <NavbarItem key="book">
+          <Link
+            href="https://calendly.com/jp305"
+            target="_blank"
+            className="flex gap-1 items-center px-3 py-1"
+          >
+            <span>Schedule Me!</span>
+            <ExternalLinkIcon size={12} />
+          </Link>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end" className="sm:hidden flex">
         <NavbarMenuToggle />
