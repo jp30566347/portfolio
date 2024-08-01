@@ -9,7 +9,7 @@ export default async function Home() {
         <p>
           With over <mark>15 years</mark> of hands-on experience in diverse
           industries and project scales, I am a passionate{" "}
-          <mark>software engineer</mark>
+          <mark>software engineer</mark>{" "}
           dedicated to crafting exceptional digital solutions. My expertise
           spans the <mark>full stack of software development</mark>, with a
           particular focus on mobile application development, API and Cloud

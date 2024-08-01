@@ -66,14 +66,14 @@ export function NavBar() {
             target="_blank"
             className="flex gap-1 items-center px-3 py-1"
           >
-            <span>Schedule Me!</span>
+            <span>Book Me</span>
             <ExternalLinkIcon size={12} />
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end" className="sm:hidden flex">
         <NavbarMenuToggle />
-        <NavbarMenu>
+        <NavbarMenu className="gap-4 py-4 bg-bitcoin-gray">
           {menuItems.map((mi, index) => {
             const href = `/${mi.replace(menuItems[0], "")}`;
             const isActive =
@@ -86,19 +86,26 @@ export function NavBar() {
                 <Link
                   href={href}
                   locale={locale}
-                  className={classNames({
-                    underline: isActive,
-                    "no-underline": !isActive,
-                  })}
                   onClick={() => {
                     setIsMenuOpen(false);
                   }}
+                  className="bg-bitcoin-gray text-white border border-orange-200 text-xl px-8 py-4 flex"
                 >
                   {t(`${mi}.title`)}
                 </Link>
               </NavbarMenuItem>
             );
           })}
+          <NavbarItem key="book">
+            <Link
+              href="https://calendly.com/jp305"
+              target="_blank"
+              className="bg-orange-200 text-bitcoin-gray border border-orange-200 text-xl px-8 py-4 flex items-center gap-1"
+            >
+              <span>Book Me</span>
+              <ExternalLinkIcon size={12} />
+            </Link>
+          </NavbarItem>
         </NavbarMenu>
       </NavbarContent>
     </Navbar>
