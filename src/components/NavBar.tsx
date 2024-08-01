@@ -25,13 +25,17 @@ export function NavBar() {
 
   return (
     <Navbar
-      className="print:hidden bg-slate-700/10"
+      className="print:hidden bg-bitcoin-gray text-orange-200"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarBrand>
-        <img src="jp.png" className="w-[48px] h-[48px]" />
-        <span className="ml-4 font-bold text-sm">JP</span>
+        <Link href="/" className="hover:bg-bitcoin-gray">
+          <img
+            src="jp.png"
+            className="rounded-full w-[48px] h-[48px] border border-orange-200"
+          />
+        </Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((mi, index) => {
@@ -46,9 +50,8 @@ export function NavBar() {
               <Link
                 href={href}
                 locale={locale}
-                className={classNames({
-                  underline: isActive,
-                  "no-underline": !isActive,
+                className={classNames("text-lg px-3 py-1", {
+                  "bg-orange-200 text-bitcoin-gray": isActive,
                 })}
               >
                 {t(`${mi}.title`)}

@@ -17,6 +17,8 @@ const config: Config = {
         primary: slate,
         secondary: "#F7931A",
         neutral: gray,
+        "bitcoin-orange": "#f7931a",
+        "bitcoin-gray": "#4d4d4d",
       },
     },
   },

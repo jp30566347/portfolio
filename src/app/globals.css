@@ -3,16 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-mark: #fed7aa;
+  }
   html {
     font-family: century-gothic, sans-serif;
     font-weight: 300;
     font-style: normal;
   }
   body {
-    @apply leading-relaxed text-slate-700 border-slate-700 bg-white text-sm;
+    @apply leading-relaxed text-bitcoin-gray border-bitcoin-gray bg-white text-sm;
   }
   a {
-    @apply hover:underline text-sm;
+    @apply hover:bg-orange-200 hover:text-bitcoin-gray text-sm;
   }
   h1 {
     @apply text-4xl font-bold;
@@ -32,4 +35,26 @@
   h5 {
     @apply text-xs font-bold;
   }
+}
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+mark {
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+  animation: 1.5s highlight 1.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(
+    90deg,
+    var(--color-mark) 50%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
 }

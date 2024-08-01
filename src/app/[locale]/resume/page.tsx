@@ -2,12 +2,12 @@ import { Chip } from "@nextui-org/react";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col">
-      <div className="w-full px-4 py-6 bg-slate-700 text-slate-100 flex flex-col gap-4">
+    <div className="flex flex-col print:mt-0 mt-3 sm:border sm:border-bitcoin-gray">
+      <div className="w-full px-4 py-6 bg-bitcoin-gray text-white flex flex-col gap-4">
         <h1>Jean-Philippe Melanson</h1>
         <h2>Software Engineer</h2>
       </div>
-      <div className="flex flex-wrap-reverse md:px-0">
+      <div className="flex flex-wrap-reverse pl-1">
         <div className="flex flex-col flex-1 gap-4 sm:mr-4 mt-4 px-4 sm:px-0 print:pl-4">
           <div className="flex flex-col gap-4">
             <div>
