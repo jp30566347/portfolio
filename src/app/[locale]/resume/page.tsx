@@ -44,7 +44,8 @@ export default async function Home() {
                   <li>
                     Created the technical foundation of a customer-facing real
                     estate platform that provided instant home valuation and
-                    sector insights
+                    sector insights with Next.js/React/TypeScript and
+                    Supabase/Postgres
                   </li>
                   <li>
                     Collaborated with CEO on product vision definition and
