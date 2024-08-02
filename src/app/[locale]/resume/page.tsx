@@ -106,19 +106,20 @@ export default async function Home() {
                   <li>
                     Led end-to-end e-commerce features development such as cart,
                     checkout, loyalty, discounts, inventory and recommendations
+                    in Rails and React Native/TypeScript
                   </li>
                   <li>
                     Oversaw and implemented various web3 product initiatives
                     around accepting cryptocurrency payments, NFT discounts,
-                    on/off ramp and wallet integration on Solana blockchain
+                    on/off ramp and wallet integration on the Solana blockchain
                   </li>
                   <li>
                     Provided leadership on DevOps and QA processes in order to
                     optimize support requests
                   </li>
                   <li>
-                    Led software development initiative as subject matter expert
-                    and primary point-of-contact for project management staff
+                    Engineering subject matter expert and primary
+                    point-of-contact for product management and executives
                   </li>
                 </ul>
               </div>
