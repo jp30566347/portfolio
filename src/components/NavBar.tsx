@@ -98,7 +98,7 @@ export function NavBar() {
           })}
           <NavbarItem key="book">
             <Link
-              href="https://calendly.com/jp305"
+              href="https://calendly.com/jp305/30min"
               target="_blank"
               className="bg-orange-200 text-bitcoin-gray border border-orange-200 text-xl px-8 py-4 flex items-center gap-1"
             >
