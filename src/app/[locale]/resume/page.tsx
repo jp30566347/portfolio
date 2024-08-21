@@ -2,7 +2,7 @@ import { Chip } from "@nextui-org/react";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col print:mt-0 sm:mt-3 sm:border sm:border-bitcoin-gray">
+    <div className="flex flex-col print:mt-0 print:border-b-0 sm:mt-3 sm:border sm:border-bitcoin-gray">
       <div className="w-full px-4 py-6 bg-bitcoin-gray text-white flex flex-col gap-4">
         <h1>Jean-Philippe Melanson</h1>
         <h2>Software Engineer</h2>
@@ -28,7 +28,7 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             <div>
               <h3>Work Experience</h3>
               <hr />
@@ -68,36 +68,6 @@ export default async function Home() {
             </div>
             <div className="flex">
               <div className="w-24">
-                <h5>2021-02 - Current</h5>
-              </div>
-              <div className="flex flex-col flex-1">
-                <h4>Software Engineer - Consultant</h4>
-                <h5>CRIUCPQ (Remote)</h5>
-                <ul className="m-3 list-disc">
-                  <li>
-                    Migrated existing mobile application (VentilO) from native
-                    to hybrid with React Native and Expo in order to reduce
-                    associated maintenance costs
-                  </li>
-                  <li>
-                    Modified VentilO mobile application to incorporate new
-                    scientific research findings
-                  </li>
-                  <li>
-                    Designed and developed new Oxyg'App mobile application with
-                    React Native and Expo to help clinicians with oximeters
-                    operations
-                  </li>
-                  <li>
-                    Designed and developed new VentilO web application with
-                    Next.js, React and Typescript to help clinicians with
-                    mechanical ventilation operations
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="flex break-before-page">
-              <div className="w-24">
                 <h5>2020-05 - 2023-01</h5>
               </div>
               <div className="flex flex-col flex-1">
@@ -125,7 +95,7 @@ export default async function Home() {
                 </ul>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex break-before-page">
               <div className="w-24">
                 <h5>2018-04 - 2020-05</h5>
               </div>
@@ -201,7 +171,7 @@ export default async function Home() {
                 </ul>
               </div>
             </div>
-            <div className="flex break-before-page">
+            <div className="flex">
               <div className="w-24">
                 <h5>2014-07 - 2016-05</h5>
               </div>
@@ -226,7 +196,7 @@ export default async function Home() {
                 </ul>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex break-before-page">
               <div className="w-24">
                 <h5>2011-06 - 2014-06</h5>
               </div>
