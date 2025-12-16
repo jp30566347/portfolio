@@ -11,7 +11,7 @@ interface Props extends PropsWithChildren {
 
 export function Providers({ children, locale, messages }: Props) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider locale={locale} messages={messages} timeZone="UTC">
       <NextUIProvider>{children}</NextUIProvider>
     </NextIntlClientProvider>
   );
