@@ -3,7 +3,7 @@ export default async function Home() {
     <div className="mt-8 flex flex-col sm:flex-row gap-12 items-center sm:items-start">
       <div className="flex flex-col gap-5 px-4 sm:px-0">
         <p>
-          Hi there, I'm JP. I'm a middle-aged husband and dad of three who loves
+          Hi there, I&apos;m JP. I&apos;m a middle-aged husband and dad of three who loves
           tech, sports, and the outdoors.
         </p>
         <p>
@@ -23,7 +23,7 @@ export default async function Home() {
           I like to work in a collaborative and iterative mindset.
         </p>
         <p>
-          Throughout my career, I've embraced a variety of tech stacks and
+          Throughout my career, I&apos;ve embraced a variety of tech stacks and
           libraries, adapting swiftly to new environments. My current go-to
           front-end stack includes <mark>Next.js</mark>, <mark>React</mark>,{" "}
           <mark>React Native</mark>, <mark>TypeScript</mark>. On the backend, I
@@ -33,7 +33,7 @@ export default async function Home() {
           <mark>Rust</mark>.
         </p>
         <p>
-          I'm currently interested in the topics of technology, real estate,
+          I&apos;m currently interested in the topics of technology, real estate,
           finance and bitcoin. Looking to <mark>provide leadership</mark> on
           these topics to small to medium size organizations.
         </p>

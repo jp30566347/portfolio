@@ -41,7 +41,7 @@ export default async function Home() {
             </div>
             <div className="rounded-3xl bg-slate-700/5 p-4 w-full sm:w-80">
               <div>
-                <h4>Oxyg'App mobile app</h4>
+                <h4>Oxyg&apos;App mobile app</h4>
                 <h5>client: CRIUCPQ</h5>
               </div>
               <ul className="list-disc m-3">
