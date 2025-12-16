@@ -33,7 +33,7 @@ export function NavBar() {
       <NavbarBrand>
         <Link href="/" className="hover:bg-bitcoin-gray">
           <img
-            src="jp.png"
+            src="/jp.png"
             className="rounded-full w-[48px] h-[48px] border border-orange-200"
             alt="JP"
           />
