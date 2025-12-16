@@ -1,24 +1,28 @@
 import "../globals.css";
-import { getCurrentLocale, getI18n } from "../../../locales/server";
 import { Providers } from "@/components/providers";
 import AppLayout from "@/components/AppLayout";
 import Script from "next/script";
-import Head from "next/head";
+import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
 
-export async function generateMetadata() {
-  const t = await getI18n();
-  const locale = getCurrentLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'home' });
 
   return {
     title: {
       template: "JP Melanson - %s",
-      default: "JP Melanson - " + t("home.title"),
+      default: "JP Melanson - " + t("title"),
     },
-    description: t("home.description"),
+    description: t("description"),
     icons: "favicon.ico",
     openGraph: {
-      title: "JP Melanson - " + t("home.title"),
-      description: t("home.description"),
+      title: "JP Melanson - " + t("title"),
+      description: t("description"),
       url: "https://www.jpmelanson.info",
       siteName: "JP Melanson",
       locale,
@@ -28,28 +32,29 @@ export async function generateMetadata() {
 }
 
 interface Props extends React.PropsWithChildren {
-  params: {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
 
-export default async function Layout({ children, params: { locale } }: Props) {
+export default async function Layout({ children, params }: Props) {
+  const { locale } = await params;
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+
   return (
     <html lang={locale}>
-      {process.env.NODE_ENV === "production" && (
-        <>
-          <Script
-            defer
-            data-domain="jp305.dev"
-            src="https://plausible.io/js/script.js"
-          ></Script>
-        </>
-      )}
-      <Head>
+      <head>
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
-      </Head>
+      </head>
+      {process.env.NODE_ENV === "production" && (
+        <Script
+          defer
+          data-domain="jp305.dev"
+          src="https://plausible.io/js/script.js"
+        ></Script>
+      )}
       <body>
-        <Providers locale={locale}>
+        <Providers locale={locale} messages={messages}>
           <AppLayout>{children}</AppLayout>
         </Providers>
       </body>

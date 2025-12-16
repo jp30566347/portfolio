@@ -9,9 +9,9 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react";
-import Link from "next/link";
-import { useCurrentLocale, useI18n } from "../../locales/client";
+import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from "next/navigation";
+import { Link } from '@/i18n/routing';
 import classNames from "classnames";
 import { useState } from "react";
 import { ExternalLinkIcon } from "lucide-react";
@@ -19,8 +19,8 @@ import { ExternalLinkIcon } from "lucide-react";
 const menuItems = ["home", "resume", "portfolio"] as const;
 
 export function NavBar() {
-  const t = useI18n();
-  const locale = useCurrentLocale();
+  const t = useTranslations();
+  const locale = useLocale();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,6 +35,7 @@ export function NavBar() {
           <img
             src="jp.png"
             className="rounded-full w-[48px] h-[48px] border border-orange-200"
+            alt="JP"
           />
         </Link>
       </NavbarBrand>
@@ -50,7 +51,6 @@ export function NavBar() {
             <NavbarItem key={index}>
               <Link
                 href={href}
-                locale={locale}
                 className={classNames("text-lg px-3 py-1", {
                   "bg-orange-200 text-bitcoin-gray": isActive,
                 })}
@@ -85,7 +85,6 @@ export function NavBar() {
               <NavbarMenuItem key={index}>
                 <Link
                   href={href}
-                  locale={locale}
                   onClick={() => {
                     setIsMenuOpen(false);
                   }}

@@ -1,4 +1,4 @@
-import { Chip } from "@nextui-org/react";
+// import { Chip } from "@nextui-org/react";
 
 export default async function Home() {
   return (
@@ -318,16 +318,16 @@ export default async function Home() {
               <hr />
             </div>
             <div className="flex flex-wrap gap-1 m-1 mt-4">
-              <Chip size="sm">Javascript</Chip>
-              <Chip size="sm">Typescript</Chip>
-              <Chip size="sm">React</Chip>
-              <Chip size="sm">Next.js</Chip>
-              <Chip size="sm">React Native</Chip>
-              <Chip size="sm">Postgres</Chip>
-              <Chip size="sm">AWS</Chip>
-              <Chip size="sm">GitHub</Chip>
-              <Chip size="sm">System Design</Chip>
-              <Chip size="sm">Code Architecture</Chip>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">Javascript</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">Typescript</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">React</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">Next.js</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">React Native</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">Postgres</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">AWS</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">GitHub</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">System Design</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">Code Architecture</span>
             </div>
           </div>
           <div>
@@ -336,8 +336,8 @@ export default async function Home() {
               <hr />
             </div>
             <div className="flex flex-wrap gap-1 m-1 mt-4">
-              <Chip size="sm">French (native)</Chip>
-              <Chip size="sm">English</Chip>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">French (native)</span>
+              <span className="px-2 py-1 text-xs bg-gray-200 rounded">English</span>
             </div>
           </div>
         </div>

@@ -1,25 +1,18 @@
 "use client";
 
 import { NextUIProvider, Spinner } from "@nextui-org/react";
-
-import { I18nProviderClient } from "../../locales/client";
+import { NextIntlClientProvider } from 'next-intl';
 import { PropsWithChildren } from "react";
 
 interface Props extends PropsWithChildren {
   locale: string;
+  messages: any;
 }
 
-export function Providers({ children, locale }: Props) {
+export function Providers({ children, locale, messages }: Props) {
   return (
-    <I18nProviderClient
-      locale={locale}
-      fallback={
-        <div className="flex justify-center">
-          <Spinner />
-        </div>
-      }
-    >
+    <NextIntlClientProvider locale={locale} messages={messages}>
       <NextUIProvider>{children}</NextUIProvider>
-    </I18nProviderClient>
+    </NextIntlClientProvider>
   );
 }

@@ -1,21 +1,17 @@
 import "../../globals.css";
-import { getCurrentLocale, getI18n } from "../../../../locales/server";
+import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata() {
-  const t = await getI18n();
-  const locale = getCurrentLocale();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'resume' });
 
   return {
-    title: t("resume.title"),
-    description: t("resume.description"),
-    openGraph: {
-      title: "JP Melanson - " + t("resume.title"),
-      description: t("resume.description"),
-      url: "https://www.jpmelanson.info/resume",
-      siteName: "JP Melanson",
-      locale,
-      type: "website",
-    },
+    title: t("title"),
+    description: t("description"),
   };
 }
 
