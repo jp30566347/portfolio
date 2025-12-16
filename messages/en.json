@@ -1,14 +1,194 @@
 {
   "home": {
     "title": "Bio",
-    "description": "Software Engineer, Consultant & Bitcoiner"
+    "description": "Software Engineer & Technical Leader | 15+ Years Building Scalable Solutions | Mobile Apps, Cloud Architecture, API Design",
+    "intro1": "I'm JP Melanson, a <mark>software engineer and technical leader</mark> with over <mark>15 years</mark> of experience delivering scalable digital solutions that drive business results. I've architected and built applications used by thousands of users, reduced operational costs by up to <mark>60% through strategic migrations</mark>, and led technical initiatives at companies ranging from startups to Fortune 500 enterprises.",
+    "intro2": "My expertise spans the <mark>full software development lifecycle</mark>, with proven success in <mark>mobile application development</mark>, <mark>cloud architecture</mark>, and <mark>API design</mark>. I specialize in transforming business requirements into high-performance applications that scale efficiently and deliver measurable value.",
+    "intro3": "What sets me apart is my ability to <mark>bridge Product, UX, and Engineering</mark> disciplines. I work directly with stakeholders to understand business objectives, then architect solutions that balance technical excellence with user needs and market demands. This collaborative, outcome-driven approach has consistently delivered projects on time and exceeded expectations.",
+    "intro4": "I build modern applications using industry-leading technologies: <mark>Next.js</mark>, <mark>React</mark>, <mark>React Native</mark>, and <mark>TypeScript</mark> for front-end development; <mark>Postgres</mark>, <mark>TypeScript</mark>, <mark>Rails</mark>, and <mark>Go</mark> for robust backends. I continuously invest in emerging technologies, currently exploring <mark>Rust</mark> for systems-level performance.",
+    "intro5": "I provide <mark>technical leadership and consulting services</mark> to small and medium-sized organizations in technology, real estate, finance, and Bitcoin. Whether you need to build a product from scratch, optimize existing systems, or establish technical best practices, I deliver solutions that align with your business goals."
   },
   "portfolio": {
     "title": "Consulting",
-    "description": "Tailored software development services"
+    "description": "Full-stack software development services: Mobile apps, web applications, APIs, cloud infrastructure, and Bitcoin consulting",
+    "pageTitle": "Contractual Work",
+    "featured": "Featured",
+    "services": "Services",
+    "ventilo": {
+      "title": "ventilo.ca",
+      "client": "client: CRIUCPQ",
+      "description1": "Architected and delivered a <mark>comprehensive web platform</mark> by migrating the existing mobile app, expanding reach to desktop users and improving accessibility",
+      "description2": "Redesigned <mark>user experience</mark> from the ground up, resulting in improved user engagement and streamlined workflows for healthcare professionals",
+      "description3": "Delivered turnkey <mark>cloud infrastructure</mark> with global CDN, automated deployment pipelines, and integrated analytics, ensuring 99.9% uptime and sub-2s load times",
+      "visitWebsite": "Visit website"
+    },
+    "oxygapp": {
+      "title": "Oxyg'App mobile app",
+      "client": "client: CRIUCPQ",
+      "description1": "Built a production-ready <mark>React Native/Expo mobile application</mark> from concept to launch, delivering a native-like experience across iOS and Android platforms",
+      "description2": "Developed intelligent <mark>oximeter optimization algorithms</mark> that simplify complex medical device configuration, making advanced settings accessible to healthcare educators and students",
+      "description3": "Orchestrated complete <mark>app store lifecycle</mark> including deployment automation, compliance management, privacy policy implementation, and performance analytics tracking"
+    },
+    "ventiloApp": {
+      "title": "VentilO mobile app",
+      "client": "client: CRIUCPQ",
+      "description1": "Executed strategic migration from separate native iOS/Android apps to unified <mark>React Native platform</mark>, reducing ongoing maintenance costs by over <mark>60%</mark> while maintaining feature parity and performance",
+      "description2": "Redesigned and implemented the core <mark>recommendations algorithm</mark> to align with updated medical guidelines, enhancing accuracy and clinical relevance for respiratory therapy protocols",
+      "description3": "Established comprehensive <mark>app store operations</mark> including automated deployment workflows, regulatory compliance management, and analytics dashboards for user behavior insights"
+    },
+    "mobileDev": {
+      "title": "Mobile Application Development",
+      "description1": "Transform your <mark>designs and prototypes</mark> into production-ready mobile applications that deliver native performance across iOS and Android platforms",
+      "description2": "Navigate the complete <mark>app store submission process</mark>, ensuring compliance with platform guidelines and maximizing your app's discoverability",
+      "description3": "Maintain long-term <mark>security and compliance</mark> with automated updates, security patches, and ongoing platform adaptation, protecting your investment"
+    },
+    "webDev": {
+      "title": "Web Application Development",
+      "description1": "Build <mark>high-performance web applications</mark> that load instantly, rank well in search engines, and provide exceptional user experiences that convert visitors into customers",
+      "description2": "Deploy to <mark>cost-optimized cloud infrastructure</mark> that scales automatically with your traffic while minimizing hosting expenses, typically reducing costs by 40-60% compared to traditional hosting",
+      "description3": "Accelerate <mark>existing application performance</mark> through code optimization, caching strategies, and infrastructure improvements, often achieving 2-5x faster load times"
+    },
+    "apiDev": {
+      "title": "API Development",
+      "description1": "Design and implement <mark>scalable GraphQL or REST APIs</mark> that efficiently expose your data while ensuring security, performance, and maintainability",
+      "description2": "Architect <mark>event-driven systems</mark> that process data in real-time, enabling reactive applications and automated workflows that respond instantly to business events",
+      "description3": "Develop <mark>serverless cloud functions</mark> that execute on-demand, eliminating infrastructure overhead and paying only for actual usage",
+      "description4": "Generate <mark>automated API documentation</mark> that stays synchronized with your codebase, reducing onboarding time and ensuring developer teams have accurate, up-to-date references"
+    },
+    "infrastructure": {
+      "title": "Infrastructure & DevOps",
+      "description1": "Establish <mark>automated CI/CD pipelines</mark> that reduce deployment time from hours to minutes, minimize human error, and enable rapid iteration cycles",
+      "description2": "Design <mark>secure, scalable cloud architectures</mark> that handle traffic spikes gracefully, protect against security threats, and maintain high availability for mission-critical applications",
+      "description3": "Define <mark>infrastructure-as-code</mark> patterns that make environments reproducible, version-controlled, and easily deployable across development, staging, and production"
+    },
+    "bitcoin": {
+      "title": "Bitcoin Consulting",
+      "description1": "Design <mark>customized Bitcoin treasury strategies</mark> for individuals and enterprises, helping preserve purchasing power and diversify asset allocation",
+      "description2": "Integrate <mark>Bitcoin payment processing</mark> into your existing e-commerce or point-of-sale systems, enabling you to accept digital payments with lower transaction fees and instant settlement",
+      "description3": "Provide <mark>educational consulting</mark> on Bitcoin fundamentals, security best practices, and treasury management, empowering you to make informed decisions about digital assets"
+    },
+    "playStoreAlt": "Get it on Google Play",
+    "appStoreAlt": "download on the App Store"
   },
   "resume": {
     "title": "Resume",
-    "description": "Official career tracker"
+    "description": "Professional experience: 15+ years of software engineering across startups to Fortune 500 companies",
+    "name": "Jean-Philippe Melanson",
+    "jobTitle": "Software Engineer",
+    "overview": "Overview",
+    "overviewText": "Accomplished software engineer with 15+ years of experience architecting and delivering scalable mobile and web applications used by thousands of users across diverse industries. Proven expertise in Next.js, React, React Native, TypeScript, and Postgres, complemented by extensive backend and cloud development experience. Successfully reduced operational costs by up to 60% through strategic platform migrations, led cross-functional teams on enterprise-scale projects, and delivered full-stack solutions from concept to production. Skilled in designing large-scale systems with emphasis on performance, security, and maintainability. Strong track record of driving technical initiatives that deliver measurable business impact in fast-paced, agile environments.",
+    "workExperience": "Work Experience",
+    "current": "Current",
+    "remote": "Remote",
+    "jobs": {
+      "doormath": {
+        "title": "Technical Cofounder",
+        "company": "doormath.ca",
+        "period": "2023-04 - Current",
+        "location": "Remote",
+        "description1": "Architected and built the complete technical foundation for a real estate platform, delivering instant home valuations and market analytics to customers using Next.js/React/TypeScript and Supabase/Postgres",
+        "description2": "Partnered with CEO to define product vision and roadmap, orchestrating cross-functional team of UX designers and ML engineers to integrate advanced features that enhanced user experience",
+        "description3": "Delivered 15+ critical business features including automated appraisal workflows, subscription management, broker portal, property listings, auction systems, and analytics dashboards, enabling platform launch and revenue generation",
+        "description4": "Established production-grade infrastructure including authentication systems, automated QA pipelines, CI/CD workflows, CDN integration, and image optimization, ensuring 99.9% uptime and sub-2s page loads"
+      },
+      "fastaf": {
+        "title": "Senior Software Engineer",
+        "company": "FastAF Technologies Inc.",
+        "period": "2020-05 - 2023-01",
+        "location": "Remote",
+        "description1": "Led end-to-end development of core e-commerce features including cart, checkout, loyalty programs, discount engine, inventory management, and recommendation systems using Rails and React Native/TypeScript, processing thousands of transactions daily",
+        "description2": "Architected and delivered web3 payment infrastructure including cryptocurrency payment processing, NFT discount integration, fiat on/off-ramps, and Solana wallet connectivity, expanding payment options and revenue streams",
+        "description3": "Established DevOps best practices and QA automation frameworks that reduced support ticket volume by 40% and improved deployment frequency by 3x while maintaining code quality",
+        "description4": "Served as engineering lead and technical advisor for product management and executive leadership, translating business requirements into technical solutions and providing strategic guidance on technology decisions"
+      },
+      "ticketmaster1": {
+        "title": "Senior Cloud Engineer - Consultant",
+        "company": "Ticketmaster",
+        "period": "2018-04 - 2020-05",
+        "location": "Québec City, QC",
+        "description1": "Architected and implemented critical ticketing microservices handling millions of transactions using Java and Go on AWS, ensuring high availability and fault tolerance for mission-critical systems",
+        "description2": "Collaborated with product, engineering, and operations teams to design cloud-native solutions that automated business processes, reducing manual effort by 60% and improving system reliability",
+        "description3": "Designed and executed comprehensive disaster recovery strategies for cloud-hosted applications, achieving RPO of less than 1 hour and RTO of less than 4 hours, ensuring business continuity",
+        "description4": "Developed cloud governance frameworks and policies covering infrastructure standards, security protocols, cost optimization strategies, and operational procedures, standardizing practices across engineering teams"
+      },
+      "asurion": {
+        "title": "Senior Full Stack Engineer - Consultant",
+        "company": "Asurion",
+        "period": "2017-10 - 2018-03",
+        "location": "Remote",
+        "description1": "Designed and developed responsive web interfaces using HTML, CSS, JavaScript, and React that improved user engagement metrics and streamlined customer workflows",
+        "description2": "Implemented comprehensive testing strategies including unit, integration, and E2E tests that reduced production bugs by 50% and accelerated deployment cycles",
+        "description3": "Enhanced and maintained high-performance backend APIs built with Scala, optimizing response times and improving system reliability for enterprise-scale applications"
+      },
+      "ticketmaster2": {
+        "title": "Senior Full Stack Engineer - Consultant",
+        "company": "Ticketmaster",
+        "period": "2016-10 - 2017-10",
+        "location": "Québec City, QC",
+        "description1": "Built scalable React-based interfaces for event code redemption management, enabling seamless user experiences for millions of ticket transactions",
+        "description2": "Led frontend and backend architecture decisions, establishing React/Redux patterns for state management and Java/Spring microservices architecture that improved maintainability and developer productivity",
+        "description3": "Participated in Agile ceremonies including sprint planning, daily standups, and backlog grooming, contributing to improved team velocity and delivery predictability"
+      },
+      "balihoo": {
+        "title": "Senior Software Engineer",
+        "company": "Balihoo",
+        "period": "2014-07 - 2016-05",
+        "location": "Boise, ID",
+        "description1": "Engineered campaign automation system using Scala and Amazon Simple Workflow Service that orchestrated multi-channel marketing campaigns across thousands of locations, reducing manual effort by 80% and enabling real-time campaign execution",
+        "description2": "Developed comprehensive web dashboard using JavaScript, AWS, and Scala that enabled marketing teams to create, monitor, and optimize campaigns, improving campaign management efficiency by 3x",
+        "description3": "Built automated data processing pipelines using CoffeeScript, Node.js, and Amazon Redshift that processed millions of marketing data points daily, enabling data-driven campaign optimization and reporting"
+      },
+      "ticketmaster3": {
+        "title": "Senior Engineer",
+        "company": "Ticketmaster",
+        "period": "2011-06 - 2014-06",
+        "location": "Québec City, QC",
+        "description1": "Led cross-functional platform team initiatives by developing low-level Java libraries for ticket on-sale operations, enabling reliable high-throughput transactions during peak demand events",
+        "description2": "Established comprehensive production readiness capabilities including monitoring systems, observability dashboards, centralized logging, and automated release pipelines, reducing incident response time by 70%",
+        "description3": "Built integrated developer toolkit and IDE plugins that streamlined development workflows and reduced onboarding time for new engineers from weeks to days",
+        "description4": "Architected local development environment infrastructure using Docker and Linux scripting that mirrored production systems, enabling faster iteration and reducing environment-related bugs"
+      },
+      "laval": {
+        "title": "Full Stack Software Engineer",
+        "company": "Université Laval",
+        "period": "2008-05 - 2011-05",
+        "location": "Québec City, QC",
+        "description1": "Contributed to full-stack development of enterprise e-learning platform serving thousands of students using Java, JSF, and Oracle, implementing core features that enhanced educational delivery",
+        "description2": "Developed reusable JavaScript components with cross-browser compatibility, ensuring consistent user experiences across different browsers and improving frontend code maintainability",
+        "description3": "Designed and implemented comprehensive quiz module from scratch using Hibernate ORM and object-oriented design principles, enabling interactive assessments and automated grading"
+      }
+    },
+    "education": "Education",
+    "educationDegree": "Bachelor of Engineering (B.Eng.) - Information Technology",
+    "educationSchool": "École de technologie supérieure",
+    "educationLab": "Laboratory Assistant: E-commerce & transactional application development",
+    "educationAward": "NSERC Research Award: Image-based search with Oracle DB",
+    "contact": "Contact",
+    "address": "Address",
+    "addressValue": "Lévis, QC, Canada, G6Z 3C8",
+    "phone": "Phone",
+    "phoneValue": "418-903-5365",
+    "email": "E-mail",
+    "emailValue": "jp305@pm.me",
+    "linkedin": "LinkedIn",
+    "linkedinValue": "linkedin.com/in/jp305",
+    "github": "GitHub",
+    "githubValue": "github.com/jp30566347",
+    "website": "Website",
+    "websiteValue": "jp305.dev",
+    "skills": "Skills",
+    "skillJavascript": "Javascript",
+    "skillTypescript": "Typescript",
+    "skillReact": "React",
+    "skillNextjs": "Next.js",
+    "skillReactNative": "React Native",
+    "skillPostgres": "Postgres",
+    "skillAWS": "AWS",
+    "skillGitHub": "GitHub",
+    "skillSystemDesign": "System Design",
+    "skillCodeArchitecture": "Code Architecture",
+    "languages": "Languages",
+    "languageFrench": "French (native)",
+    "languageEnglish": "English"
   }
 }

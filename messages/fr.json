@@ -1,14 +1,194 @@
 {
   "home": {
     "title": "Bio",
-    "description": "Développeur logiciel"
+    "description": "Développeur logiciel et leader technique | 15+ années à construire des solutions évolutives | Applications mobiles, architecture cloud, conception d'API",
+    "intro1": "Je suis JP Melanson, <mark>développeur logiciel et leader technique</mark> avec plus de <mark>15 ans</mark> d'expérience dans la livraison de solutions numériques évolutives qui génèrent des résultats commerciaux. J'ai conçu et construit des applications utilisées par des milliers d'utilisateurs, réduit les coûts opérationnels jusqu'à <mark>60% grâce à des migrations stratégiques</mark>, et dirigé des initiatives techniques dans des entreprises allant des startups aux entreprises Fortune 500.",
+    "intro2": "Mon expertise couvre <mark>tout le cycle de vie du développement logiciel</mark>, avec un succès prouvé dans le <mark>développement d'applications mobiles</mark>, l'<mark>architecture cloud</mark> et la <mark>conception d'API</mark>. Je me spécialise dans la transformation des exigences commerciales en applications hautes performances qui évoluent efficacement et fournissent une valeur mesurable.",
+    "intro3": "Ce qui me distingue, c'est ma capacité à <mark>faire le pont entre Produit, UX et Ingénierie</mark>. Je travaille directement avec les parties prenantes pour comprendre les objectifs commerciaux, puis je conçois des solutions qui équilibrent l'excellence technique avec les besoins des utilisateurs et les demandes du marché. Cette approche collaborative axée sur les résultats a systématiquement livré des projets à temps et dépassé les attentes.",
+    "intro4": "Je construis des applications modernes en utilisant des technologies de pointe : <mark>Next.js</mark>, <mark>React</mark>, <mark>React Native</mark> et <mark>TypeScript</mark> pour le développement front-end ; <mark>Postgres</mark>, <mark>TypeScript</mark>, <mark>Rails</mark> et <mark>Go</mark> pour des backends robustes. J'investis continuellement dans les technologies émergentes, explorant actuellement <mark>Rust</mark> pour des performances au niveau système.",
+    "intro5": "J'offre des <mark>services de leadership technique et de consultation</mark> aux petites et moyennes organisations dans la technologie, l'immobilier, la finance et Bitcoin. Que vous ayez besoin de construire un produit à partir de zéro, d'optimiser des systèmes existants ou d'établir des meilleures pratiques techniques, je livre des solutions qui s'alignent avec vos objectifs commerciaux."
   },
   "portfolio": {
     "title": "Consultation",
-    "description": "Services en consultation technologique sur mesure"
+    "description": "Services de développement logiciel full-stack : applications mobiles, applications web, API, infrastructure cloud et consultation Bitcoin",
+    "pageTitle": "Travaux contractuels",
+    "featured": "Projets vedettes",
+    "services": "Services",
+    "ventilo": {
+      "title": "ventilo.ca",
+      "client": "client : CRIUCPQ",
+      "description1": "Conçu et livré une <mark>plateforme web complète</mark> en migrant l'application mobile existante, élargissant la portée aux utilisateurs de bureau et améliorant l'accessibilité",
+      "description2": "Refondu l'<mark>expérience utilisateur</mark> à partir de zéro, résultant en une meilleure engagement utilisateur et des flux de travail rationalisés pour les professionnels de la santé",
+      "description3": "Livré une <mark>infrastructure cloud clé en main</mark> avec CDN mondial, pipelines de déploiement automatisés et analyses intégrées, garantissant 99,9% de disponibilité et des temps de chargement inférieurs à 2 secondes",
+      "visitWebsite": "Visiter le site"
+    },
+    "oxygapp": {
+      "title": "Application mobile Oxyg'App",
+      "client": "client : CRIUCPQ",
+      "description1": "Construit une <mark>application mobile React Native/Expo prête pour la production</mark> du concept au lancement, offrant une expérience native sur les plateformes iOS et Android",
+      "description2": "Développé des <mark>algorithmes d'optimisation d'oxymètres intelligents</mark> qui simplifient la configuration complexe des appareils médicaux, rendant les paramètres avancés accessibles aux éducateurs et étudiants en santé",
+      "description3": "Orchestré le <mark>cycle de vie complet de la boutique d'applications</mark> incluant l'automatisation du déploiement, la gestion de la conformité, l'implémentation de politiques de confidentialité et le suivi des analyses de performance"
+    },
+    "ventiloApp": {
+      "title": "Application mobile VentilO",
+      "client": "client : CRIUCPQ",
+      "description1": "Exécuté une migration stratégique des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant les coûts de maintenance continus de plus de <mark>60%</mark> tout en maintenant la parité fonctionnelle et les performances",
+      "description2": "Refondu et implémenté l'<mark>algorithme de recommandations principal</mark> pour s'aligner avec les directives médicales mises à jour, améliorant la précision et la pertinence clinique pour les protocoles de thérapie respiratoire",
+      "description3": "Établi des <mark>opérations complètes de boutique d'applications</mark> incluant des flux de travail de déploiement automatisés, la gestion de la conformité réglementaire et des tableaux de bord d'analyse pour les insights sur le comportement des utilisateurs"
+    },
+    "mobileDev": {
+      "title": "Développement d'applications mobiles",
+      "description1": "Transformez vos <mark>designs et prototypes</mark> en applications mobiles prêtes pour la production qui offrent des performances natives sur les plateformes iOS et Android",
+      "description2": "Naviguez dans le <mark>processus complet de soumission à la boutique d'applications</mark>, garantissant la conformité aux directives de la plateforme et maximisant la découvrabilité de votre application",
+      "description3": "Maintenez la <mark>sécurité et la conformité à long terme</mark> avec des mises à jour automatisées, des correctifs de sécurité et une adaptation continue de la plateforme, protégeant votre investissement"
+    },
+    "webDev": {
+      "title": "Développement d'applications web",
+      "description1": "Construisez des <mark>applications web hautes performances</mark> qui se chargent instantanément, se classent bien dans les moteurs de recherche et offrent des expériences utilisateur exceptionnelles qui convertissent les visiteurs en clients",
+      "description2": "Déployez sur une <mark>infrastructure cloud optimisée en termes de coûts</mark> qui s'adapte automatiquement à votre trafic tout en minimisant les dépenses d'hébergement, réduisant généralement les coûts de 40 à 60% par rapport à l'hébergement traditionnel",
+      "description3": "Accélérez les <mark>performances des applications existantes</mark> grâce à l'optimisation du code, aux stratégies de mise en cache et aux améliorations d'infrastructure, atteignant souvent des temps de chargement 2 à 5 fois plus rapides"
+    },
+    "apiDev": {
+      "title": "Développement d'API",
+      "description1": "Concevez et implémentez des <mark>API GraphQL ou REST évolutives</mark> qui exposent efficacement vos données tout en garantissant la sécurité, les performances et la maintenabilité",
+      "description2": "Architecturez des <mark>systèmes orientés événements</mark> qui traitent les données en temps réel, permettant des applications réactives et des flux de travail automatisés qui répondent instantanément aux événements commerciaux",
+      "description3": "Développez des <mark>fonctions cloud serverless</mark> qui s'exécutent à la demande, éliminant la surcharge d'infrastructure et ne payant que pour l'utilisation réelle",
+      "description4": "Générez une <mark>documentation API automatisée</mark> qui reste synchronisée avec votre base de code, réduisant le temps d'intégration et garantissant que les équipes de développement disposent de références précises et à jour"
+    },
+    "infrastructure": {
+      "title": "Infrastructure et DevOps",
+      "description1": "Établissez des <mark>pipelines CI/CD automatisés</mark> qui réduisent le temps de déploiement de heures à minutes, minimisent les erreurs humaines et permettent des cycles d'itération rapides",
+      "description2": "Concevez des <mark>architectures cloud sécurisées et évolutives</mark> qui gèrent gracieusement les pics de trafic, protègent contre les menaces de sécurité et maintiennent une haute disponibilité pour les applications critiques",
+      "description3": "Définissez des modèles d'<mark>infrastructure-as-code</mark> qui rendent les environnements reproductibles, contrôlés par version et facilement déployables à travers le développement, la mise en scène et la production"
+    },
+    "bitcoin": {
+      "title": "Consultation Bitcoin",
+      "description1": "Concevez des <mark>stratégies de trésorerie Bitcoin personnalisées</mark> pour les particuliers et les entreprises, aidant à préserver le pouvoir d'achat et à diversifier l'allocation d'actifs",
+      "description2": "Intégrez le <mark>traitement des paiements Bitcoin</mark> dans vos systèmes de commerce électronique ou points de vente existants, vous permettant d'accepter les paiements numériques avec des frais de transaction plus bas et un règlement instantané",
+      "description3": "Offrez une <mark>consultation éducative</mark> sur les fondamentaux de Bitcoin, les meilleures pratiques de sécurité et la gestion de trésorerie, vous permettant de prendre des décisions éclairées sur les actifs numériques"
+    },
+    "playStoreAlt": "Obtenir sur Google Play",
+    "appStoreAlt": "Télécharger sur l'App Store"
   },
   "resume": {
     "title": "Carrière",
-    "description": "Carrière"
+    "description": "Expérience professionnelle : 15+ années en génie logiciel chez des startups aux entreprises Fortune 500",
+    "name": "Jean-Philippe Melanson",
+    "jobTitle": "Développeur logiciel",
+    "overview": "Aperçu",
+    "overviewText": "Développeur logiciel accompli avec plus de 15 ans d'expérience dans la conception et la livraison d'applications mobiles et web évolutives utilisées par des milliers d'utilisateurs dans diverses industries. Expertise prouvée en Next.js, React, React Native, TypeScript et Postgres, complétée par une vaste expérience en développement backend et cloud. Réduit avec succès les coûts opérationnels jusqu'à 60% grâce à des migrations de plateforme stratégiques, dirigé des équipes interfonctionnelles sur des projets à l'échelle de l'entreprise et livré des solutions full-stack du concept à la production. Compétent dans la conception de systèmes à grande échelle avec accent sur la performance, la sécurité et la maintenabilité. Solide historique de pilotage d'initiatives techniques qui génèrent un impact commercial mesurable dans des environnements agiles et rapides.",
+    "workExperience": "Expérience professionnelle",
+    "current": "Actuel",
+    "remote": "À distance",
+    "jobs": {
+      "doormath": {
+        "title": "Co-fondateur technique",
+        "company": "doormath.ca",
+        "period": "2023-04 - Actuel",
+        "location": "À distance",
+        "description1": "Conçu et construit les fondations techniques complètes d'une plateforme immobilière, livrant des évaluations immobilières instantanées et des analyses de marché aux clients en utilisant Next.js/React/TypeScript et Supabase/Postgres",
+        "description2": "Partenariat avec le PDG pour définir la vision produit et la feuille de route, orchestrant une équipe interfonctionnelle de designers UX et d'ingénieurs ML pour intégrer des fonctionnalités avancées qui ont amélioré l'expérience utilisateur",
+        "description3": "Livré plus de 15 fonctionnalités commerciales critiques incluant les flux de travail d'évaluation automatisés, la gestion d'abonnements, le portail courtier, les listes de propriétés, les systèmes d'enchères et les tableaux de bord d'analyse, permettant le lancement de la plateforme et la génération de revenus",
+        "description4": "Établi une infrastructure de qualité production incluant des systèmes d'authentification, des pipelines QA automatisés, des flux de travail CI/CD, l'intégration CDN et l'optimisation d'images, garantissant 99,9% de disponibilité et des chargements de page inférieurs à 2 secondes"
+      },
+      "fastaf": {
+        "title": "Développeur logiciel senior",
+        "company": "FastAF Technologies Inc.",
+        "period": "2020-05 - 2023-01",
+        "location": "À distance",
+        "description1": "Dirigé le développement de bout en bout des fonctionnalités de commerce électronique principales incluant le panier, le paiement, les programmes de fidélité, le moteur de remise, la gestion des stocks et les systèmes de recommandation en utilisant Rails et React Native/TypeScript, traitant des milliers de transactions quotidiennement",
+        "description2": "Conçu et livré une infrastructure de paiement web3 incluant le traitement des paiements en cryptomonnaie, l'intégration des remises NFT, les rampes on/off fiat et la connectivité du portefeuille Solana, élargissant les options de paiement et les sources de revenus",
+        "description3": "Établi des meilleures pratiques DevOps et des cadres d'automatisation QA qui ont réduit le volume de tickets de support de 40% et amélioré la fréquence de déploiement de 3x tout en maintenant la qualité du code",
+        "description4": "Servi de leader technique et conseiller technique pour la gestion de produit et la direction exécutive, traduisant les exigences commerciales en solutions techniques et fournissant des conseils stratégiques sur les décisions technologiques"
+      },
+      "ticketmaster1": {
+        "title": "Ingénieur cloud senior - Consultant",
+        "company": "Ticketmaster",
+        "period": "2018-04 - 2020-05",
+        "location": "Québec, QC",
+        "description1": "Conçu et implémenté des microservices de billetterie critiques gérant des millions de transactions en utilisant Java et Go sur AWS, garantissant une haute disponibilité et une tolérance aux pannes pour les systèmes critiques",
+        "description2": "Collaboré avec les équipes produit, ingénierie et opérations pour concevoir des solutions cloud natives qui ont automatisé les processus commerciaux, réduisant l'effort manuel de 60% et améliorant la fiabilité du système",
+        "description3": "Conçu et exécuté des stratégies complètes de reprise après sinistre pour les applications hébergées dans le cloud, atteignant un RPO de moins d'une heure et un RTO de moins de 4 heures, garantissant la continuité des activités",
+        "description4": "Développé des cadres et politiques de gouvernance cloud couvrant les normes d'infrastructure, les protocoles de sécurité, les stratégies d'optimisation des coûts et les procédures opérationnelles, standardisant les pratiques à travers les équipes d'ingénierie"
+      },
+      "asurion": {
+        "title": "Développeur full-stack senior - Consultant",
+        "company": "Asurion",
+        "period": "2017-10 - 2018-03",
+        "location": "À distance",
+        "description1": "Conçu et développé des interfaces web réactives utilisant HTML, CSS, JavaScript et React qui ont amélioré les métriques d'engagement utilisateur et rationalisé les flux de travail clients",
+        "description2": "Implémenté des stratégies de test complètes incluant des tests unitaires, d'intégration et E2E qui ont réduit les bogues de production de 50% et accéléré les cycles de déploiement",
+        "description3": "Amélioré et maintenu des API backend hautes performances construites avec Scala, optimisant les temps de réponse et améliorant la fiabilité du système pour les applications à l'échelle de l'entreprise"
+      },
+      "ticketmaster2": {
+        "title": "Développeur full-stack senior - Consultant",
+        "company": "Ticketmaster",
+        "period": "2016-10 - 2017-10",
+        "location": "Québec, QC",
+        "description1": "Construit des interfaces basées sur React évolutives pour la gestion de l'échange de codes d'événements, permettant des expériences utilisateur transparentes pour des millions de transactions de billets",
+        "description2": "Dirigé les décisions d'architecture frontend et backend, établissant des modèles React/Redux pour la gestion d'état et une architecture de microservices Java/Spring qui a amélioré la maintenabilité et la productivité des développeurs",
+        "description3": "Participé aux cérémonies Agile incluant la planification de sprint, les réunions quotidiennes et le grooming du backlog, contribuant à l'amélioration de la vélocité de l'équipe et de la prévisibilité de la livraison"
+      },
+      "balihoo": {
+        "title": "Développeur logiciel senior",
+        "company": "Balihoo",
+        "period": "2014-07 - 2016-05",
+        "location": "Boise, ID",
+        "description1": "Ingénié un système d'automatisation de campagnes utilisant Scala et Amazon Simple Workflow Service qui a orchestré des campagnes marketing multicanal à travers des milliers d'emplacements, réduisant l'effort manuel de 80% et permettant l'exécution de campagnes en temps réel",
+        "description2": "Développé un tableau de bord web complet utilisant JavaScript, AWS et Scala qui a permis aux équipes marketing de créer, surveiller et optimiser les campagnes, améliorant l'efficacité de la gestion des campagnes de 3x",
+        "description3": "Construit des pipelines de traitement de données automatisés utilisant CoffeeScript, Node.js et Amazon Redshift qui ont traité des millions de points de données marketing quotidiennement, permettant l'optimisation et la création de rapports de campagnes basés sur les données"
+      },
+      "ticketmaster3": {
+        "title": "Ingénieur senior",
+        "company": "Ticketmaster",
+        "period": "2011-06 - 2014-06",
+        "location": "Québec, QC",
+        "description1": "Dirigé les initiatives de l'équipe plateforme interfonctionnelle en développant des bibliothèques Java de bas niveau pour les opérations de mise en vente de billets, permettant des transactions haute performance fiables pendant les événements de forte demande",
+        "description2": "Établi des capacités complètes de préparation à la production incluant des systèmes de surveillance, des tableaux de bord d'observabilité, la journalisation centralisée et des pipelines de publication automatisés, réduisant le temps de réponse aux incidents de 70%",
+        "description3": "Construit une boîte à outils développeur intégrée et des plugins IDE qui ont rationalisé les flux de travail de développement et réduit le temps d'intégration pour les nouveaux ingénieurs de semaines à jours",
+        "description4": "Architecturé l'infrastructure d'environnement de développement local utilisant Docker et le scripting Linux qui reflétait les systèmes de production, permettant une itération plus rapide et réduisant les bogues liés à l'environnement"
+      },
+      "laval": {
+        "title": "Développeur logiciel full-stack",
+        "company": "Université Laval",
+        "period": "2008-05 - 2011-05",
+        "location": "Québec, QC",
+        "description1": "Contribué au développement full-stack d'une plateforme d'apprentissage en ligne d'entreprise servant des milliers d'étudiants en utilisant Java, JSF et Oracle, implémentant des fonctionnalités principales qui ont amélioré la livraison éducative",
+        "description2": "Développé des composants JavaScript réutilisables avec compatibilité multi-navigateurs, garantissant des expériences utilisateur cohérentes à travers différents navigateurs et améliorant la maintenabilité du code frontend",
+        "description3": "Conçu et implémenté un module de quiz complet à partir de zéro en utilisant Hibernate ORM et les principes de conception orientée objet, permettant des évaluations interactives et une notation automatisée"
+      }
+    },
+    "education": "Formation",
+    "educationDegree": "Baccalauréat en génie (B.Ing.) - Technologies de l'information",
+    "educationSchool": "École de technologie supérieure",
+    "educationLab": "Assistant de laboratoire : Développement d'applications de commerce électronique et transactionnelles",
+    "educationAward": "Prix de recherche NSERC : Recherche basée sur les images avec Oracle DB",
+    "contact": "Contact",
+    "address": "Adresse",
+    "addressValue": "Lévis, QC, Canada, G6Z 3C8",
+    "phone": "Téléphone",
+    "phoneValue": "418-903-5365",
+    "email": "Courriel",
+    "emailValue": "jp305@pm.me",
+    "linkedin": "LinkedIn",
+    "linkedinValue": "linkedin.com/in/jp305",
+    "github": "GitHub",
+    "githubValue": "github.com/jp30566347",
+    "website": "Site web",
+    "websiteValue": "jp305.dev",
+    "skills": "Compétences",
+    "skillJavascript": "Javascript",
+    "skillTypescript": "Typescript",
+    "skillReact": "React",
+    "skillNextjs": "Next.js",
+    "skillReactNative": "React Native",
+    "skillPostgres": "Postgres",
+    "skillAWS": "AWS",
+    "skillGitHub": "GitHub",
+    "skillSystemDesign": "Conception de systèmes",
+    "skillCodeArchitecture": "Architecture de code",
+    "languages": "Langues",
+    "languageFrench": "Français (langue maternelle)",
+    "languageEnglish": "Anglais"
   }
-} 
+}
