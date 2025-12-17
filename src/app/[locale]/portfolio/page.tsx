@@ -11,20 +11,21 @@ function parseRichText(text: string, components: { mark: (chunks: string) => Rea
   const regex = /<mark>(.*?)<\/mark>/g;
   let lastIndex = 0;
   let match;
+  let keyIndex = 0;
 
   while ((match = regex.exec(text)) !== null) {
     // Add text before the match
     if (match.index > lastIndex) {
-      parts.push(text.substring(lastIndex, match.index));
+      parts.push(<React.Fragment key={`text-${keyIndex++}`}>{text.substring(lastIndex, match.index)}</React.Fragment>);
     }
     // Add the marked content
-    parts.push(components.mark(match[1]));
+    parts.push(<React.Fragment key={`mark-${keyIndex++}`}>{components.mark(match[1])}</React.Fragment>);
     lastIndex = regex.lastIndex;
   }
   
   // Add remaining text
   if (lastIndex < text.length) {
-    parts.push(text.substring(lastIndex));
+    parts.push(<React.Fragment key={`text-${keyIndex++}`}>{text.substring(lastIndex)}</React.Fragment>);
   }
   
   return parts.length > 0 ? parts : text;
