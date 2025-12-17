@@ -6,7 +6,12 @@
     "intro2": "My expertise spans the <mark>full software development lifecycle</mark>, with proven success in <mark>mobile application development</mark>, <mark>cloud architecture</mark>, and <mark>API design</mark>. I specialize in transforming business requirements into high-performance applications that scale efficiently and deliver measurable value.",
     "intro3": "What sets me apart is my ability to <mark>bridge Product, UX, and Engineering</mark> disciplines. I work directly with stakeholders to understand business objectives, then architect solutions that balance technical excellence with user needs and market demands. This collaborative, outcome-driven approach has consistently delivered projects on time and exceeded expectations.",
     "intro4": "I build modern applications using industry-leading technologies: <mark>Next.js</mark>, <mark>React</mark>, <mark>React Native</mark>, and <mark>TypeScript</mark> for front-end development; <mark>Postgres</mark>, <mark>TypeScript</mark>, <mark>Rails</mark>, and <mark>Go</mark> for robust backends. I continuously invest in emerging technologies, currently exploring <mark>Rust</mark> for systems-level performance.",
-    "intro5": "I provide <mark>technical leadership and consulting services</mark> to small and medium-sized organizations in technology, real estate, finance, and Bitcoin. Whether you need to build a product from scratch, optimize existing systems, or establish technical best practices, I deliver solutions that align with your business goals."
+    "intro5": "I provide <mark>technical leadership and consulting services</mark> to small and medium-sized organizations in technology, real estate, finance, and Bitcoin. Whether you need to build a product from scratch, optimize existing systems, or establish technical best practices, I deliver solutions that align with your business goals.",
+    "yearsExperience": "Years Experience",
+    "projectsDelivered": "Projects Delivered",
+    "collaborations": "Collaborations",
+    "viewMyWork": "View My Work",
+    "bookConsultation": "Book Consultation"
   },
   "portfolio": {
     "title": "Consulting",
@@ -190,5 +195,9 @@
     "languages": "Languages",
     "languageFrench": "French (native)",
     "languageEnglish": "English"
-  }
+  },
+  "bookMe": "Book Me",
+  "allRightsReserved": "All Rights Reserved",
+  "openMenu": "Open menu",
+  "closeMenu": "Close menu"
 }

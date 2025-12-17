@@ -77,7 +77,7 @@ export function NavBar() {
             target="_blank"
             className="flex gap-2 items-center px-4 py-2 bg-accent hover:bg-accent-dark text-white rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg"
           >
-            <span>Book Me</span>
+            <span>{t('bookMe')}</span>
             <ExternalLinkIcon size={14} />
           </Link>
         </NavbarItem>
@@ -92,8 +92,8 @@ export function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end" className="sm:hidden flex">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
-        <NavbarMenu className="gap-3 py-6 bg-primary-800">
+        <NavbarMenuToggle aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')} />
+        <NavbarMenu className="gap-4 py-6 bg-primary-800">
           {menuItems.map((mi, index) => {
             const href = `/${mi.replace(menuItems[0], "")}`;
             const isActive =
@@ -109,7 +109,7 @@ export function NavBar() {
                     setIsMenuOpen(false);
                   }}
                   className={classNames(
-                    "text-lg px-6 py-4 rounded-lg transition-all duration-200 font-medium",
+                    "text-base px-4 py-3 rounded-lg transition-all duration-200 font-medium",
                     {
                       "bg-accent text-white": isActive,
                       "text-gray-300 hover:text-white hover:bg-primary-700": !isActive,
@@ -125,10 +125,10 @@ export function NavBar() {
             <Link
               href="https://calendly.com/jp305/30min"
               target="_blank"
-              className="bg-accent hover:bg-accent-dark text-white text-lg px-6 py-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-all duration-200 shadow-md"
+              className="bg-accent hover:bg-accent-dark text-white text-base px-4 py-3 rounded-lg flex items-center justify-center gap-2 font-medium transition-all duration-200 shadow-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              <span>Book Me</span>
+              <span>{t('bookMe')}</span>
               <ExternalLinkIcon size={14} />
             </Link>
           </NavbarMenuItem>
@@ -136,7 +136,7 @@ export function NavBar() {
             <Link
               href={localizedPathname}
               locale={oppositeLocale}
-              className="text-lg px-6 py-4 rounded-lg transition-all duration-200 font-medium text-gray-300 hover:text-white hover:bg-primary-700 border border-gray-600 hover:border-gray-500 text-center"
+              className="text-base px-4 py-3 rounded-lg transition-all duration-200 font-medium text-gray-300 hover:text-white hover:bg-primary-700 border border-gray-600 hover:border-gray-500 text-center"
               onClick={() => setIsMenuOpen(false)}
             >
               {localeLabel}

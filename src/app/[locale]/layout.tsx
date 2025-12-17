@@ -65,7 +65,7 @@ export default async function Layout({ children, params }: Props) {
       )}
       <body>
         <Providers locale={locale} messages={messages}>
-          <AppLayout>{children}</AppLayout>
+          <AppLayout locale={locale}>{children}</AppLayout>
         </Providers>
       </body>
     </html>

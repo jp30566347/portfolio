@@ -31,14 +31,14 @@ export default async function Home({
               href="/portfolio"
               className="px-8 py-3 bg-accent hover:bg-accent-dark text-white rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg"
             >
-              View My Work
+              {t('viewMyWork')}
             </Link>
             <Link
               href="https://calendly.com/jp305"
               target="_blank"
               className="px-8 py-3 bg-primary-100 hover:bg-primary-200 text-primary-800 rounded-lg font-semibold transition-all duration-200 border border-primary-300 flex items-center justify-center gap-2"
             >
-              Book Consultation
+              {t('bookConsultation')}
               <ExternalLinkIcon size={16} />
             </Link>
           </div>
@@ -50,15 +50,15 @@ export default async function Home({
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center">
             <div className="text-4xl font-bold text-accent mb-2">15+</div>
-            <div className="text-primary-700 font-medium">Years Experience</div>
+            <div className="text-primary-700 font-medium">{t('yearsExperience')}</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-accent mb-2">100+</div>
-            <div className="text-primary-700 font-medium">Projects Delivered</div>
+            <div className="text-primary-700 font-medium">{t('projectsDelivered')}</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-accent mb-2">60%</div>
-            <div className="text-primary-700 font-medium">Cost Reduction Achieved</div>
+            <div className="text-4xl font-bold text-accent mb-2">250+</div>
+            <div className="text-primary-700 font-medium">{t('collaborations')}</div>
           </div>
         </div>
       </section>
