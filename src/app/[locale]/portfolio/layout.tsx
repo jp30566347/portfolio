@@ -1,17 +1,23 @@
 import "../../globals.css";
-import { getTranslations } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import { getMessages } from '@/i18n/messages';
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'portfolio' });
+  let { locale } = await params;
+  // Ensure that a valid locale is used, default to 'en' if not provided or invalid
+  if (!locale || !routing.locales.includes(locale as any)) {
+    locale = routing.defaultLocale;
+  }
+  // Load messages directly to avoid next-intl namespace file loading issues
+  const messages = getMessages(locale);
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: messages.portfolio.title,
+    description: messages.portfolio.description,
   };
 }
 

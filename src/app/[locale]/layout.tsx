@@ -4,13 +4,18 @@ import AppLayout from "@/components/AppLayout";
 import Script from "next/script";
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import { getMessages } from '@/i18n/messages';
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  let { locale } = await params;
+  // Ensure that a valid locale is used, default to 'en' if not provided or invalid
+  if (!locale || !routing.locales.includes(locale as any)) {
+    locale = routing.defaultLocale;
+  }
   const t = await getTranslations({ locale, namespace: 'home' });
 
   return {
@@ -38,8 +43,13 @@ interface Props extends React.PropsWithChildren {
 }
 
 export default async function Layout({ children, params }: Props) {
-  const { locale } = await params;
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
+  let { locale } = await params;
+  // Ensure that a valid locale is used, default to 'en' if not provided or invalid
+  if (!locale || !routing.locales.includes(locale as any)) {
+    locale = routing.defaultLocale;
+  }
+
+  const messages = getMessages(locale);
 
   return (
     <html lang={locale}>

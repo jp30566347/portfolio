@@ -26,20 +26,22 @@ export function NavBar() {
 
   return (
     <Navbar
-      className="print:hidden bg-bitcoin-gray text-orange-200"
+      className="print:hidden bg-primary-800 text-white shadow-soft sticky top-0 z-50 backdrop-blur-sm bg-opacity-95"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
+      maxWidth="full"
+      height="72px"
     >
       <NavbarBrand>
-        <Link href="/" className="hover:bg-bitcoin-gray">
+        <Link href="/" className="hover:opacity-80 transition-opacity">
           <img
             src="/jp.png"
-            className="rounded-full w-[48px] h-[48px] border border-orange-200"
+            className="rounded-full w-[52px] h-[52px] border-2 border-accent-light shadow-md"
             alt="JP"
           />
         </Link>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-2" justify="center">
         {menuItems.map((mi, index) => {
           const href = `/${mi.replace(menuItems[0], "")}`;
           const isActive =
@@ -51,9 +53,13 @@ export function NavBar() {
             <NavbarItem key={index}>
               <Link
                 href={href}
-                className={classNames("text-lg px-3 py-1", {
-                  "bg-orange-200 text-bitcoin-gray": isActive,
-                })}
+                className={classNames(
+                  "text-base px-4 py-2 rounded-lg transition-all duration-200 font-medium",
+                  {
+                    "bg-accent text-white shadow-md": isActive,
+                    "text-gray-300 hover:text-white hover:bg-primary-700": !isActive,
+                  }
+                )}
               >
                 {t(`${mi}.title`)}
               </Link>
@@ -64,16 +70,16 @@ export function NavBar() {
           <Link
             href="https://calendly.com/jp305"
             target="_blank"
-            className="flex gap-1 items-center px-3 py-1"
+            className="flex gap-2 items-center px-4 py-2 bg-accent hover:bg-accent-dark text-white rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg"
           >
             <span>Book Me</span>
-            <ExternalLinkIcon size={12} />
+            <ExternalLinkIcon size={14} />
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end" className="sm:hidden flex">
-        <NavbarMenuToggle />
-        <NavbarMenu className="gap-4 py-4 bg-bitcoin-gray">
+        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+        <NavbarMenu className="gap-3 py-6 bg-primary-800">
           {menuItems.map((mi, index) => {
             const href = `/${mi.replace(menuItems[0], "")}`;
             const isActive =
@@ -88,23 +94,30 @@ export function NavBar() {
                   onClick={() => {
                     setIsMenuOpen(false);
                   }}
-                  className="bg-bitcoin-gray text-white border border-orange-200 text-xl px-8 py-4 flex"
+                  className={classNames(
+                    "text-lg px-6 py-4 rounded-lg transition-all duration-200 font-medium",
+                    {
+                      "bg-accent text-white": isActive,
+                      "text-gray-300 hover:text-white hover:bg-primary-700": !isActive,
+                    }
+                  )}
                 >
                   {t(`${mi}.title`)}
                 </Link>
               </NavbarMenuItem>
             );
           })}
-          <NavbarItem key="book">
+          <NavbarMenuItem>
             <Link
               href="https://calendly.com/jp305/30min"
               target="_blank"
-              className="bg-orange-200 text-bitcoin-gray border border-orange-200 text-xl px-8 py-4 flex items-center gap-1"
+              className="bg-accent hover:bg-accent-dark text-white text-lg px-6 py-4 rounded-lg flex items-center justify-center gap-2 font-medium transition-all duration-200 shadow-md"
+              onClick={() => setIsMenuOpen(false)}
             >
               <span>Book Me</span>
-              <ExternalLinkIcon size={12} />
+              <ExternalLinkIcon size={14} />
             </Link>
-          </NavbarItem>
+          </NavbarMenuItem>
         </NavbarMenu>
       </NavbarContent>
     </Navbar>
