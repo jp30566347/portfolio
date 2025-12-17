@@ -24,7 +24,7 @@ export async function generateMetadata({
       default: "JP Melanson - " + t("title"),
     },
     description: t("description"),
-    icons: "favicon.ico",
+    icons: "/favicon.ico",
     openGraph: {
       title: "JP Melanson - " + t("title"),
       description: t("description"),
