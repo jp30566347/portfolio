@@ -79,7 +79,7 @@
     "title": "Carrière",
     "description": "Expérience professionnelle : 15+ années en génie logiciel chez des startups aux entreprises Fortune 500",
     "name": "Jean-Philippe Melanson",
-    "jobTitle": "Développeur logiciel",
+    "jobTitle": "Ingénieur logiciel",
     "overview": "Aperçu",
     "overviewText": "Développeur logiciel accompli avec plus de 15 ans d'expérience dans la conception et la livraison d'applications mobiles et web évolutives utilisées par des milliers d'utilisateurs dans diverses industries. Expertise prouvée en Next.js, React, React Native, TypeScript et Postgres, complétée par une vaste expérience en développement backend et cloud. Réduit avec succès les coûts opérationnels jusqu'à 60% grâce à des migrations de plateforme stratégiques, dirigé des équipes interfonctionnelles sur des projets à l'échelle de l'entreprise et livré des solutions full-stack du concept à la production. Compétent dans la conception de systèmes à grande échelle avec accent sur la performance, la sécurité et la maintenabilité. Solide historique de pilotage d'initiatives techniques qui génèrent un impact commercial mesurable dans des environnements agiles et rapides.",
     "workExperience": "Expérience professionnelle",
@@ -87,7 +87,7 @@
     "remote": "À distance",
     "jobs": {
       "sapien": {
-        "title": "Développeur logiciel",
+        "title": "Ingénieur logiciel",
         "company": "Sapien.io",
         "period": "2024-09 - Actuel",
         "location": "À distance",
@@ -97,7 +97,7 @@
         "description4": "Mentoré et supervisé activement le travail des développeurs juniors, fournissant des conseils techniques, des revues de code et une direction architecturale pour assurer la qualité du code et la croissance de l'équipe"
       },
       "doormath": {
-        "title": "Co-fondateur technique",
+        "title": "Ingénieur logiciel - Co-fondateur technique",
         "company": "doormath.ca",
         "period": "2023-04 - 2024-09",
         "location": "À distance",
@@ -107,7 +107,7 @@
         "description4": "Établi une infrastructure de qualité production incluant des systèmes d'authentification, des pipelines QA automatisés, des flux de travail CI/CD, l'intégration CDN et l'optimisation d'images, garantissant 99,9% de disponibilité et des chargements de page inférieurs à 2 secondes"
       },
       "fastaf": {
-        "title": "Développeur logiciel senior",
+        "title": "Ingénieur logiciel",
         "company": "FastAF Technologies Inc.",
         "period": "2020-05 - 2023-01",
         "location": "À distance",
@@ -117,7 +117,7 @@
         "description4": "Servi de leader technique et conseiller technique pour la gestion de produit et la direction exécutive, traduisant les exigences commerciales en solutions techniques et fournissant des conseils stratégiques sur les décisions technologiques"
       },
       "ticketmaster1": {
-        "title": "Ingénieur cloud senior - Consultant",
+        "title": "Ingénieur logiciel - Consultant",
         "company": "Ticketmaster",
         "period": "2018-04 - 2020-05",
         "location": "Québec, QC",
@@ -127,7 +127,7 @@
         "description4": "Développé des cadres et politiques de gouvernance cloud couvrant les normes d'infrastructure, les protocoles de sécurité, les stratégies d'optimisation des coûts et les procédures opérationnelles, standardisant les pratiques à travers les équipes d'ingénierie"
       },
       "asurion": {
-        "title": "Développeur full-stack senior - Consultant",
+        "title": "Ingénieur logiciel - Consultant",
         "company": "Asurion",
         "period": "2017-10 - 2018-03",
         "location": "À distance",
@@ -136,7 +136,7 @@
         "description3": "Amélioré et maintenu des API backend hautes performances construites avec Scala, optimisant les temps de réponse et améliorant la fiabilité du système pour les applications à l'échelle de l'entreprise"
       },
       "ticketmaster2": {
-        "title": "Développeur full-stack senior - Consultant",
+        "title": "Ingénieur logiciel - Consultant",
         "company": "Ticketmaster",
         "period": "2016-10 - 2017-10",
         "location": "Québec, QC",
@@ -145,7 +145,7 @@
         "description3": "Participé aux cérémonies Agile incluant la planification de sprint, les réunions quotidiennes et le grooming du backlog, contribuant à l'amélioration de la vélocité de l'équipe et de la prévisibilité de la livraison"
       },
       "balihoo": {
-        "title": "Développeur logiciel senior",
+        "title": "Ingénieur logiciel",
         "company": "Balihoo",
         "period": "2014-07 - 2016-05",
         "location": "Boise, ID",
@@ -154,7 +154,7 @@
         "description3": "Construit des pipelines de traitement de données automatisés utilisant CoffeeScript, Node.js et Amazon Redshift qui ont traité des millions de points de données marketing quotidiennement, permettant l'optimisation et la création de rapports de campagnes basés sur les données"
       },
       "ticketmaster3": {
-        "title": "Ingénieur senior",
+        "title": "Ingénieur logiciel",
         "company": "Ticketmaster",
         "period": "2011-06 - 2014-06",
         "location": "Québec, QC",
@@ -164,7 +164,7 @@
         "description4": "Architecturé l'infrastructure d'environnement de développement local utilisant Docker et le scripting Linux qui reflétait les systèmes de production, permettant une itération plus rapide et réduisant les bogues liés à l'environnement"
       },
       "laval": {
-        "title": "Développeur logiciel full-stack",
+        "title": "Ingénieur logiciel",
         "company": "Université Laval",
         "period": "2008-05 - 2011-05",
         "location": "Québec, QC",

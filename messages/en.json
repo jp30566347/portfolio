@@ -97,7 +97,7 @@
         "description4": "Actively mentored and oversaw junior engineers' work, providing technical guidance, code reviews, and architectural direction to ensure code quality and team growth"
       },
       "doormath": {
-        "title": "Technical Cofounder",
+        "title": "Software Engineer - Technical Cofounder",
         "company": "doormath.ca",
         "period": "2023-04 - 2024-09",
         "location": "Remote",
@@ -107,7 +107,7 @@
         "description4": "Established production-grade infrastructure including authentication systems, automated QA pipelines, CI/CD workflows, CDN integration, and image optimization, ensuring 99.9% uptime and sub-2s page loads"
       },
       "fastaf": {
-        "title": "Senior Software Engineer",
+        "title": "Software Engineer",
         "company": "FastAF Technologies Inc.",
         "period": "2020-05 - 2023-01",
         "location": "Remote",
@@ -117,7 +117,7 @@
         "description4": "Served as engineering lead and technical advisor for product management and executive leadership, translating business requirements into technical solutions and providing strategic guidance on technology decisions"
       },
       "ticketmaster1": {
-        "title": "Senior Cloud Engineer - Consultant",
+        "title": "Software Engineer - Consultant",
         "company": "Ticketmaster",
         "period": "2018-04 - 2020-05",
         "location": "Québec City, QC",
@@ -127,7 +127,7 @@
         "description4": "Developed cloud governance frameworks and policies covering infrastructure standards, security protocols, cost optimization strategies, and operational procedures, standardizing practices across engineering teams"
       },
       "asurion": {
-        "title": "Senior Full Stack Engineer - Consultant",
+        "title": "Software Engineer - Consultant",
         "company": "Asurion",
         "period": "2017-10 - 2018-03",
         "location": "Remote",
@@ -136,7 +136,7 @@
         "description3": "Enhanced and maintained high-performance backend APIs built with Scala, optimizing response times and improving system reliability for enterprise-scale applications"
       },
       "ticketmaster2": {
-        "title": "Senior Full Stack Engineer - Consultant",
+        "title": "Software Engineer - Consultant",
         "company": "Ticketmaster",
         "period": "2016-10 - 2017-10",
         "location": "Québec City, QC",
@@ -145,7 +145,7 @@
         "description3": "Participated in Agile ceremonies including sprint planning, daily standups, and backlog grooming, contributing to improved team velocity and delivery predictability"
       },
       "balihoo": {
-        "title": "Senior Software Engineer",
+        "title": "Software Engineer",
         "company": "Balihoo",
         "period": "2014-07 - 2016-05",
         "location": "Boise, ID",
@@ -154,7 +154,7 @@
         "description3": "Built automated data processing pipelines using CoffeeScript, Node.js, and Amazon Redshift that processed millions of marketing data points daily, enabling data-driven campaign optimization and reporting"
       },
       "ticketmaster3": {
-        "title": "Senior Engineer",
+        "title": "Software Engineer",
         "company": "Ticketmaster",
         "period": "2011-06 - 2014-06",
         "location": "Québec City, QC",
@@ -164,7 +164,7 @@
         "description4": "Architected local development environment infrastructure using Docker and Linux scripting that mirrored production systems, enabling faster iteration and reducing environment-related bugs"
       },
       "laval": {
-        "title": "Full Stack Software Engineer",
+        "title": "Software Engineer",
         "company": "Université Laval",
         "period": "2008-05 - 2011-05",
         "location": "Québec City, QC",
