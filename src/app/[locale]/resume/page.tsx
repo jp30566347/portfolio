@@ -54,56 +54,56 @@ export default async function Home({
           {/* Contact */}
           <div>
             <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">{t('contact')}</h3>
-            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"></div>
+            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2" aria-hidden="true"></div>
             <div className="flex flex-col gap-4 print:gap-2">
               <div className="flex items-start gap-3 print:gap-2">
-                <MapPin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" />
+                <MapPin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('address')}</h4>
-                  <a className="text-sm print:text-xs text-primary-600">{t('addressValue')}</a>
+                  <address className="text-sm print:text-xs text-primary-600 not-italic">{t('addressValue')}</address>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Phone className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" />
+                <Phone className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('phone')}</h4>
                   <a href="tel:+14189035365" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors">{t('phoneValue')}</a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Mail className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" />
+                <Mail className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('email')}</h4>
                   <a href="mailto:jp305@pm.me" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors break-all">{t('emailValue')}</a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Linkedin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" />
+                <Linkedin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('linkedin')}</h4>
-                  <a href="https://www.linkedin.com/in/jp305" target="_blank" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
+                  <a href="https://www.linkedin.com/in/jp305" target="_blank" rel="noopener noreferrer" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
                     {t('linkedinValue')}
-                    <ExternalLink className="w-3 h-3 print:w-2 print:h-2" />
+                    <ExternalLink className="w-3 h-3 print:w-2 print:h-2" aria-hidden="true" />
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Github className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" />
+                <Github className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('github')}</h4>
-                  <a href="https://www.github.com/jp30566347" target="_blank" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
+                  <a href="https://www.github.com/jp30566347" target="_blank" rel="noopener noreferrer" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
                     {t('githubValue')}
-                    <ExternalLink className="w-3 h-3 print:w-2 print:h-2" />
+                    <ExternalLink className="w-3 h-3 print:w-2 print:h-2" aria-hidden="true" />
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Globe className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" />
+                <Globe className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('website')}</h4>
-                  <a href="https://www.jpmelanson.info/portfolio" target="_blank" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
+                  <a href="https://www.jpmelanson.info/portfolio" target="_blank" rel="noopener noreferrer" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
                     {t('websiteValue')}
-                    <ExternalLink className="w-3 h-3 print:w-2 print:h-2" />
+                    <ExternalLink className="w-3 h-3 print:w-2 print:h-2" aria-hidden="true" />
                   </a>
                 </div>
               </div>
@@ -113,29 +113,29 @@ export default async function Home({
           {/* Skills */}
           <div>
             <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">{t('skills')}</h3>
-            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"></div>
-            <div className="flex flex-wrap gap-2 print:gap-1">
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillJavascript')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillTypescript')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillReact')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillNextjs')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillReactNative')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillPostgres')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillAWS')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillGitHub')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillSystemDesign')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillCodeArchitecture')}</span>
-            </div>
+            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2" aria-hidden="true"></div>
+            <ul className="flex flex-wrap gap-2 print:gap-1 list-none">
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillJavascript')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillTypescript')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillReact')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillNextjs')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillReactNative')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillPostgres')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillAWS')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillGitHub')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillSystemDesign')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('skillCodeArchitecture')}</li>
+            </ul>
           </div>
 
           {/* Languages */}
           <div>
             <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">{t('languages')}</h3>
-            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"></div>
-            <div className="flex flex-wrap gap-2 print:gap-1">
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('languageFrench')}</span>
-              <span className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('languageEnglish')}</span>
-            </div>
+            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2" aria-hidden="true"></div>
+            <ul className="flex flex-wrap gap-2 print:gap-1 list-none">
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('languageFrench')}</li>
+              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">{t('languageEnglish')}</li>
+            </ul>
           </div>
         </div>
 
@@ -144,7 +144,7 @@ export default async function Home({
           {/* Overview */}
           <section>
             <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">{t('overview')}</h3>
-            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"></div>
+            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2" aria-hidden="true"></div>
             <p className="text-primary-700 print:text-sm leading-relaxed print:leading-snug">
               {t('overviewText')}
             </p>
@@ -153,7 +153,7 @@ export default async function Home({
           {/* Work Experience */}
           <section>
             <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">{t('workExperience')}</h3>
-            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-6 print:mb-3"></div>
+            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-6 print:mb-3" aria-hidden="true"></div>
             <div className="space-y-8 print:space-y-4">
               {jobs.map((jobKey, index) => {
                 const period = t(`jobs.${jobKey}.period`);
@@ -174,7 +174,7 @@ export default async function Home({
 
                 return (
                   <div key={jobKey} className={`flex gap-6 print:gap-3 print:break-inside-avoid ${index === 2 || index === 5 ? 'print:break-before-page' : ''}`}>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center" aria-hidden="true">
                       <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
                       {index < jobs.length - 1 && (
                         <div className="w-0.5 print:w-px h-full bg-primary-200 min-h-[60px] print:min-h-[40px] mt-2 print:mt-1"></div>
@@ -201,9 +201,9 @@ export default async function Home({
           {/* Education */}
           <section>
             <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">{t('education')}</h3>
-            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-6 print:mb-3"></div>
+            <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-6 print:mb-3" aria-hidden="true"></div>
             <div className="flex gap-6 print:gap-3">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center" aria-hidden="true">
                 <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
               </div>
               <div className="flex-1">
