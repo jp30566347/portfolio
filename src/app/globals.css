@@ -15,6 +15,18 @@
   body {
     @apply leading-relaxed text-primary-700 bg-white text-base antialiased;
   }
+  @media print {
+    html {
+      font-size: 12px;
+    }
+    body {
+      @apply text-sm;
+    }
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
   a {
     @apply text-accent hover:text-accent-dark transition-colors duration-200;
   }
@@ -36,11 +48,37 @@
   h6 {
     @apply text-sm font-semibold text-primary-600;
   }
+  @media print {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+    h3 {
+      @apply text-lg;
+    }
+    h4 {
+      @apply text-base;
+    }
+    h5 {
+      @apply text-sm;
+    }
+    h6 {
+      @apply text-xs;
+    }
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  @media print {
+    .print\:break-inside-avoid {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
   }
 }
 
