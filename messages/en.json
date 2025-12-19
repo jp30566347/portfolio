@@ -86,6 +86,16 @@
     "current": "Current",
     "remote": "Remote",
     "jobs": {
+      "sapien": {
+        "title": "Software Engineer",
+        "company": "Sapien.io",
+        "period": "2023-01 - Current",
+        "location": "Remote",
+        "description1": "Engineered an airdrop experience for blockchain-integrated data labelling platform, enabling seamless token distribution and user onboarding workflows",
+        "description2": "Built and architected an email template engine that streamlined communication workflows, improving engagement rates and reducing email development time by 50%",
+        "description3": "Designed and implemented a goal-based reward mechanism integrated with blockchain technology for quality control, incentivizing high-quality data labelling and improving platform reliability",
+        "description4": "Actively mentored and oversaw junior engineers' work, providing technical guidance, code reviews, and architectural direction to ensure code quality and team growth"
+      },
       "doormath": {
         "title": "Technical Cofounder",
         "company": "doormath.ca",

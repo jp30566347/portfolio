@@ -86,6 +86,16 @@
     "current": "Actuel",
     "remote": "À distance",
     "jobs": {
+      "sapien": {
+        "title": "Développeur logiciel",
+        "company": "Sapien.io",
+        "period": "2023-01 - Actuel",
+        "location": "À distance",
+        "description1": "Ingénié une expérience d'airdrop pour une plateforme d'étiquetage de données intégrée à la blockchain, permettant une distribution de tokens transparente et des flux de travail d'intégration utilisateur",
+        "description2": "Construit et architecturé un moteur de modèles d'email qui a rationalisé les flux de travail de communication, améliorant les taux d'engagement et réduisant le temps de développement d'email de 50%",
+        "description3": "Conçu et implémenté un mécanisme de récompense basé sur les objectifs intégré à la technologie blockchain pour le contrôle qualité, incitant l'étiquetage de données de haute qualité et améliorant la fiabilité de la plateforme",
+        "description4": "Mentoré et supervisé activement le travail des développeurs juniors, fournissant des conseils techniques, des revues de code et une direction architecturale pour assurer la qualité du code et la croissance de l'équipe"
+      },
       "doormath": {
         "title": "Co-fondateur technique",
         "company": "doormath.ca",
