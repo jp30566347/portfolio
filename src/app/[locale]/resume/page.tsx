@@ -74,7 +74,7 @@ export default async function Home({
                 <Mail className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('email')}</h4>
-                  <a href="mailto:jp305@pm.me" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors break-all">{t('emailValue')}</a>
+                  <a href="mailto:jp@jp305.dev" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors break-all">{t('emailValue')}</a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
