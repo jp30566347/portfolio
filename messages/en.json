@@ -91,10 +91,10 @@
         "company": "Sapien.io",
         "period": "2024-09 - Current",
         "location": "Remote",
-        "description1": "Engineered an airdrop experience for blockchain-integrated data labelling platform, enabling seamless token distribution and user onboarding workflows",
-        "description2": "Built and architected an email template engine that streamlined communication workflows, improving engagement rates and reducing email development time by 50%",
-        "description3": "Designed and implemented a goal-based reward mechanism integrated with blockchain technology for quality control, incentivizing high-quality data labelling and improving platform reliability",
-        "description4": "Actively mentored and oversaw junior engineers' work, providing technical guidance, code reviews, and architectural direction to ensure code quality and team growth"
+        "description1": "Architected and launched the Sapien Proof of Quality blockchain protocol and application from the ground up, defining core incentives and quality-control mechanisms for data labelling.",
+        "description2": "Leveraged AI coding agents to accelerate full-stack development, maintaining high code quality and enabling rapid iteration on protocol and product features.",
+        "description3": "Engineered token distribution and goal-based reward mechanisms integrated with the protocol, enabling seamless airdrops and incentivizing high-quality data labelling.",
+        "description4": "Mentored junior engineers and established practices for effective use of AI-assisted development; built an email template engine that streamlined communication and reduced email development time by 50%."
       },
       "doormath": {
         "title": "Software Engineer - Technical Cofounder",

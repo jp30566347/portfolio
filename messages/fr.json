@@ -91,10 +91,10 @@
         "company": "Sapien.io",
         "period": "2024-09 - Actuel",
         "location": "À distance",
-        "description1": "Ingénié une expérience d'airdrop pour une plateforme d'étiquetage de données intégrée à la blockchain, permettant une distribution de tokens transparente et des flux de travail d'intégration utilisateur",
-        "description2": "Construit et architecturé un moteur de modèles d'email qui a rationalisé les flux de travail de communication, améliorant les taux d'engagement et réduisant le temps de développement d'email de 50%",
-        "description3": "Conçu et implémenté un mécanisme de récompense basé sur les objectifs intégré à la technologie blockchain pour le contrôle qualité, incitant l'étiquetage de données de haute qualité et améliorant la fiabilité de la plateforme",
-        "description4": "Mentoré et supervisé activement le travail des développeurs juniors, fournissant des conseils techniques, des revues de code et une direction architecturale pour assurer la qualité du code et la croissance de l'équipe"
+        "description1": "Conception et lancement du protocole blockchain et de l'application Sapien Proof of Quality depuis zéro, en définissant les incitatifs et mécanismes de contrôle qualité pour l'étiquetage de données.",
+        "description2": "Utilisation d'agents de codage IA pour accélérer le développement full-stack, en maintenant une haute qualité de code et en permettant une itération rapide sur le protocole et les fonctionnalités produit.",
+        "description3": "Mise en place de la distribution de jetons et de mécanismes de récompense par objectifs intégrés au protocole, permettant des airdrops fluides et incitant un étiquetage de données de haute qualité.",
+        "description4": "Mentorat des ingénieurs juniors et mise en place de pratiques pour l'usage efficace des outils de développement assistés par l'IA; construction d'un moteur de modèles d'email qui a rationalisé la communication et réduit le temps de développement des emails de 50%."
       },
       "doormath": {
         "title": "Ingénieur logiciel - Co-fondateur technique",
