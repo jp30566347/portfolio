@@ -41,7 +41,7 @@ export default async function Home({
   ] as const;
 
   return (
-    <div className="flex flex-col print:mt-0 print:border-b-0 sm:mt-3 sm:border sm:border-primary-300 sm:rounded-2xl overflow-hidden shadow-soft-lg">
+    <div className="resume-page flex flex-col print:mt-0 print:border-b-0 sm:mt-3 sm:border sm:border-primary-300 sm:rounded-2xl overflow-hidden shadow-soft-lg">
       {/* Header */}
       <div className="w-full px-6 sm:px-8 py-8 print:px-4 print:py-4 bg-primary-800 text-white flex flex-col gap-2 print:gap-1">
         <h1 className="text-white print:text-3xl">{t('name')}</h1>
@@ -173,24 +173,29 @@ export default async function Home({
                 }
 
                 return (
-                  <div key={jobKey} className={`flex gap-6 print:gap-3 print:break-inside-avoid ${index === 2 || index === 4 || index === 5 ? 'print:break-before-page' : ''}`}>
-                    <div className="flex flex-col items-center" aria-hidden="true">
-                      <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
-                      {index < jobs.length - 1 && (
-                        <div className="w-0.5 print:w-px h-full bg-primary-200 min-h-[60px] print:min-h-[40px] mt-2 print:mt-1"></div>
-                      )}
-                    </div>
-                    <div className="flex-1 pb-2 print:pb-1">
-                      <div className="mb-2 print:mb-1">
-                        <h4 className="text-primary-900 mb-1 print:mb-0.5 print:text-base">{title}</h4>
-                        <h5 className="text-accent font-semibold print:text-sm">{company} <span className="text-primary-600 font-normal">({location})</span></h5>
-                        <h6 className="text-primary-600 text-sm print:text-xs mt-1 print:mt-0.5">{period}</h6>
+                  <div
+                    key={jobKey}
+                    className={`print:break-inside-avoid ${index === 4 ? 'print:break-before-page print:pt-6' : ''}`}
+                  >
+                    <div className="flex gap-6 print:gap-3">
+                      <div className="flex flex-col items-center" aria-hidden="true">
+                        <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
+                        {index < jobs.length - 1 && (
+                          <div className="w-0.5 print:w-px h-full bg-primary-200 min-h-[60px] print:min-h-[40px] mt-2 print:mt-1"></div>
+                        )}
                       </div>
-                      <ul className="list-disc list-inside space-y-2 print:space-y-1 text-primary-700 print:text-xs ml-2 print:ml-1">
-                        {descriptions.map((desc, i) => (
-                          <li key={i}>{desc}</li>
-                        ))}
-                      </ul>
+                      <div className="flex-1 pb-2 print:pb-1 min-w-0">
+                        <div className="mb-2 print:mb-1">
+                          <h4 className="text-primary-900 mb-1 print:mb-0.5 print:text-base">{title}</h4>
+                          <h5 className="text-accent font-semibold print:text-sm">{company} <span className="text-primary-600 font-normal">({location})</span></h5>
+                          <h6 className="text-primary-600 text-sm print:text-xs mt-1 print:mt-0.5">{period}</h6>
+                        </div>
+                        <ul className="list-disc list-inside space-y-2 print:space-y-1 text-primary-700 print:text-xs ml-2 print:ml-1">
+                          {descriptions.map((desc, i) => (
+                            <li key={i}>{desc}</li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 );

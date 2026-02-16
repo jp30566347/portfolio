@@ -79,6 +79,17 @@
       page-break-inside: avoid;
       break-inside: avoid;
     }
+    .print\:break-before-page {
+      page-break-before: always;
+      break-before: page;
+    }
+  }
+}
+
+/* Resume print: overflow-hidden can block page breaks */
+@media print {
+  .resume-page {
+    overflow: visible !important;
   }
 }
 
