@@ -173,7 +173,7 @@ export default async function Home({
                 }
 
                 return (
-                  <div key={jobKey} className={`flex gap-6 print:gap-3 print:break-inside-avoid ${index === 2 || index === 5 ? 'print:break-before-page' : ''}`}>
+                  <div key={jobKey} className={`flex gap-6 print:gap-3 print:break-inside-avoid ${index === 2 || index === 4 || index === 5 ? 'print:break-before-page' : ''}`}>
                     <div className="flex flex-col items-center" aria-hidden="true">
                       <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
                       {index < jobs.length - 1 && (
