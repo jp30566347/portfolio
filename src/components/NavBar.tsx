@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
 import { Link, usePathname as useLocalizedPathname } from "@/i18n/routing";
 import { useState } from "react";
 import Image from "next/image";
@@ -18,7 +17,6 @@ const localeLinkStyle =
 export function NavBar() {
   const t = useTranslations();
   const locale = useLocale();
-  const pathname = usePathname();
   const localizedPathname = useLocalizedPathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,12 +24,19 @@ export function NavBar() {
   const oppositeLocale = locale === "en" ? "fr" : "en";
   const localeLabel = locale === "en" ? "FR" : "EN";
 
-  const isActive = (mi: (typeof menuItems)[number]) =>
-    (mi === "home" && (pathname === `/${locale}/` || pathname === "/")) ||
-    pathname.indexOf("/" + mi) > -1;
-
   const hrefFor = (mi: (typeof menuItems)[number]) =>
     `/${mi.replace(menuItems[0], "")}`;
+
+  // localizedPathname comes from @/i18n/routing, so the locale prefix is
+  // already stripped: /en -> "/", /fr/resume -> "/resume". Comparing against
+  // the raw next/navigation pathname is what previously left "home" never
+  // matching, since that returns "/en" with no trailing slash.
+  const isActive = (mi: (typeof menuItems)[number]) => {
+    const href = hrefFor(mi);
+    return href === "/"
+      ? localizedPathname === "/"
+      : localizedPathname === href || localizedPathname.startsWith(`${href}/`);
+  };
 
   return (
     <nav className="print:hidden bg-primary-800/95 text-white shadow-soft sticky top-0 z-50 backdrop-blur-xs backdrop-saturate-150 flex w-full items-center justify-center">
