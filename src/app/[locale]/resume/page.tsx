@@ -57,28 +57,28 @@ export default async function Home({
             <div className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2" aria-hidden="true"></div>
             <div className="flex flex-col gap-4 print:gap-2">
               <div className="flex items-start gap-3 print:gap-2">
-                <MapPin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
+                <MapPin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('address')}</h4>
                   <address className="text-sm print:text-xs text-primary-600 not-italic">{t('addressValue')}</address>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Phone className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
+                <Phone className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('phone')}</h4>
                   <a href="tel:+14189035365" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors">{t('phoneValue')}</a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Mail className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
+                <Mail className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('email')}</h4>
                   <a href="mailto:jp@jp305.dev" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors break-all">{t('emailValue')}</a>
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Linkedin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
+                <Linkedin className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('linkedin')}</h4>
                   <a href="https://www.linkedin.com/in/jp305" target="_blank" rel="noopener noreferrer" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
@@ -88,7 +88,7 @@ export default async function Home({
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Github className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
+                <Github className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('github')}</h4>
                   <a href="https://www.github.com/jp30566347" target="_blank" rel="noopener noreferrer" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">
@@ -98,7 +98,7 @@ export default async function Home({
                 </div>
               </div>
               <div className="flex items-start gap-3 print:gap-2">
-                <Globe className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 flex-shrink-0" aria-hidden="true" />
+                <Globe className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0" aria-hidden="true" />
                 <div>
                   <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">{t('website')}</h4>
                   <a href="https://www.jpmelanson.info/portfolio" target="_blank" rel="noopener noreferrer" className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5">

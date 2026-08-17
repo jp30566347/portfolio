@@ -33,7 +33,7 @@ export function NavBar() {
     `/${mi.replace(menuItems[0], "")}`;
 
   return (
-    <nav className="print:hidden bg-primary-800 text-white shadow-soft sticky top-0 z-50 backdrop-blur-sm backdrop-saturate-150 bg-opacity-95 flex w-full items-center justify-center">
+    <nav className="print:hidden bg-primary-800/95 text-white shadow-soft sticky top-0 z-50 backdrop-blur-xs backdrop-saturate-150 flex w-full items-center justify-center">
       <div className="flex flex-row flex-nowrap items-center justify-between gap-4 w-full max-w-full h-[72px] px-6">
         <Link href="/" className="hover:opacity-80 transition-opacity">
           <img

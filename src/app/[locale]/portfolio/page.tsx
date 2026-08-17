@@ -85,7 +85,7 @@ export default async function Home({
                 <h4 className="mb-1">{t('portfolio.ventilo.title')}</h4>
                 <h5 className="text-accent">{t('portfolio.ventilo.client')}</h5>
               </div>
-              <ul className="list-disc list-inside space-y-2 mb-6 flex-grow text-primary-700">
+              <ul className="list-disc list-inside space-y-2 mb-6 grow text-primary-700">
                 <li>{tWithRich.rich('portfolio.ventilo.description1', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
                 <li>{tWithRich.rich('portfolio.ventilo.description2', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
                 <li>{tWithRich.rich('portfolio.ventilo.description3', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
@@ -108,7 +108,7 @@ export default async function Home({
                 <h4 className="mb-1">{tWithRich('portfolio.oxygapp.title')}</h4>
                 <h5 className="text-accent">{tWithRich('portfolio.oxygapp.client')}</h5>
               </div>
-              <ul className="list-disc list-inside space-y-2 mb-6 flex-grow text-primary-700">
+              <ul className="list-disc list-inside space-y-2 mb-6 grow text-primary-700">
                 <li>{tWithRich.rich('portfolio.oxygapp.description1', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
                 <li>{tWithRich.rich('portfolio.oxygapp.description2', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
                 <li>{tWithRich.rich('portfolio.oxygapp.description3', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
@@ -145,7 +145,7 @@ export default async function Home({
                 <h4 className="mb-1">{tWithRich('portfolio.ventiloApp.title')}</h4>
                 <h5 className="text-accent">{tWithRich('portfolio.ventiloApp.client')}</h5>
               </div>
-              <ul className="list-disc list-inside space-y-2 mb-6 flex-grow text-primary-700">
+              <ul className="list-disc list-inside space-y-2 mb-6 grow text-primary-700">
                 <li>{tWithRich.rich('portfolio.ventiloApp.description1', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
                 <li>{tWithRich.rich('portfolio.ventiloApp.description2', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
                 <li>{tWithRich.rich('portfolio.ventiloApp.description3', { mark: (chunks) => <mark className="font-medium">{chunks}</mark> })}</li>
