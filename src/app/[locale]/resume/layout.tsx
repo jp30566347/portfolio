@@ -1,28 +1,25 @@
 import "../../globals.css";
-import { routing } from '@/i18n/routing';
-import { getMessages } from '@/i18n/messages';
+import { hasLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  let { locale } = await params;
-  // Ensure that a valid locale is used, default to 'en' if not provided or invalid
-  if (!locale || !routing.locales.includes(locale as any)) {
-    locale = routing.defaultLocale;
-  }
-  // Load messages directly to avoid next-intl namespace file loading issues
-  const messages = getMessages(locale);
+  const { locale: requested } = await params;
+  const locale = hasLocale(routing.locales, requested)
+    ? requested
+    : routing.defaultLocale;
+  const t = await getTranslations({ locale, namespace: "resume" });
 
   return {
-    title: messages.resume.title,
-    description: messages.resume.description,
+    title: t("title"),
+    description: t("description"),
   };
 }
 
-interface Props extends React.PropsWithChildren {}
-
-export default async function Layout({ children }: Props) {
+export default async function Layout({ children }: React.PropsWithChildren) {
   return <>{children}</>;
 }

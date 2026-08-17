@@ -1,22 +1,20 @@
 import "../globals.css";
 import AppLayout from "@/components/AppLayout";
 import Script from "next/script";
-import { NextIntlClientProvider } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
-import { routing } from '@/i18n/routing';
-import { getMessages } from '@/i18n/messages';
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  let { locale } = await params;
-  // Ensure that a valid locale is used, default to 'en' if not provided or invalid
-  if (!locale || !routing.locales.includes(locale as any)) {
-    locale = routing.defaultLocale;
-  }
-  const t = await getTranslations({ locale, namespace: 'home' });
+  const { locale: requested } = await params;
+  const locale = hasLocale(routing.locales, requested)
+    ? requested
+    : routing.defaultLocale;
+  const t = await getTranslations({ locale, namespace: "home" });
 
   return {
     title: {
@@ -43,13 +41,10 @@ interface Props extends React.PropsWithChildren {
 }
 
 export default async function Layout({ children, params }: Props) {
-  let { locale } = await params;
-  // Ensure that a valid locale is used, default to 'en' if not provided or invalid
-  if (!locale || !routing.locales.includes(locale as any)) {
-    locale = routing.defaultLocale;
-  }
-
-  const messages = getMessages(locale);
+  const { locale: requested } = await params;
+  const locale = hasLocale(routing.locales, requested)
+    ? requested
+    : routing.defaultLocale;
 
   return (
     <html lang={locale}>
@@ -64,11 +59,8 @@ export default async function Layout({ children, params }: Props) {
         ></Script>
       )}
       <body>
-        <NextIntlClientProvider
-          locale={locale}
-          messages={messages}
-          timeZone="UTC"
-        >
+        {/* locale, messages and timeZone are inherited from i18n/request.ts */}
+        <NextIntlClientProvider>
           <AppLayout locale={locale}>{children}</AppLayout>
         </NextIntlClientProvider>
       </body>

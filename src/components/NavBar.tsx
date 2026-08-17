@@ -9,8 +9,7 @@ import { ExternalLink, Menu, X } from "lucide-react";
 const menuItems = ["home", "resume", "portfolio"] as const;
 
 const linkBase = "text-base rounded-lg transition-all duration-200 font-medium";
-const linkInactive =
-  "text-gray-300 hover:text-white hover:bg-primary-700";
+const linkInactive = "text-gray-300 hover:text-white hover:bg-primary-700";
 const localeLinkStyle =
   "text-gray-300 hover:text-white hover:bg-primary-700 border border-gray-600 hover:border-gray-500";
 
@@ -49,9 +48,7 @@ export function NavBar() {
               <Link
                 href={hrefFor(mi)}
                 className={`${linkBase} px-4 py-2 ${
-                  isActive(mi)
-                    ? "bg-accent text-white shadow-md"
-                    : linkInactive
+                  isActive(mi) ? "bg-accent text-white shadow-md" : linkInactive
                 }`}
               >
                 {t(`${mi}.title`)}

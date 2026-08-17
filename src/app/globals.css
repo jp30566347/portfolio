@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-primary-50: #f8fafc;
@@ -166,4 +166,3 @@ mark {
   background-size: 200% 100%;
   background-position: 100% 0;
 }
-
