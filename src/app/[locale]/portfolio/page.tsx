@@ -1,5 +1,15 @@
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import playstore from "@/assets/playstore.png";
+import appstore from "@/assets/appstore.png";
+import reactNative from "@/assets/react-native.jpg";
+import nextjsLogo from "@/assets/nextjs.svg";
+import reactLogo from "@/assets/react.svg";
+import postgresLogo from "@/assets/pg.png";
+import supabaseLogo from "@/assets/supabase.svg";
+import awsArch from "@/assets/aws-arch.png";
+import bitcoinLogo from "@/assets/bitcoin-btc-logo.svg";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -107,10 +117,10 @@ export default async function Home({
                   target="_blank"
                   className="transition-transform hover:scale-105"
                 >
-                  <img
-                    src="/playstore.png"
+                  <Image
+                    src={playstore}
                     alt={t("playStoreAlt")}
-                    className="h-12"
+                    className="h-12 w-auto"
                   />
                 </Link>
                 <Link
@@ -118,10 +128,10 @@ export default async function Home({
                   target="_blank"
                   className="transition-transform hover:scale-105"
                 >
-                  <img
-                    src="/appstore.png"
+                  <Image
+                    src={appstore}
                     alt={t("appStoreAlt")}
-                    className="h-12"
+                    className="h-12 w-auto"
                   />
                 </Link>
               </div>
@@ -162,10 +172,10 @@ export default async function Home({
                   target="_blank"
                   className="transition-transform hover:scale-105"
                 >
-                  <img
-                    src="/playstore.png"
+                  <Image
+                    src={playstore}
                     alt={t("playStoreAlt")}
-                    className="h-12"
+                    className="h-12 w-auto"
                   />
                 </Link>
                 <Link
@@ -173,10 +183,10 @@ export default async function Home({
                   target="_blank"
                   className="transition-transform hover:scale-105"
                 >
-                  <img
-                    src="/appstore.png"
+                  <Image
+                    src={appstore}
                     alt={t("appStoreAlt")}
-                    className="h-12"
+                    className="h-12 w-auto"
                   />
                 </Link>
               </div>
@@ -218,9 +228,9 @@ export default async function Home({
                 </li>
               </ul>
               <div className="flex justify-center">
-                <img
-                  src="/react-native.jpg"
-                  className="object-contain h-32 rounded-lg"
+                <Image
+                  src={reactNative}
+                  className="object-contain h-32 rounded-lg w-auto"
                   alt="React Native"
                 />
               </div>
@@ -253,15 +263,15 @@ export default async function Home({
                 </li>
               </ul>
               <div className="flex items-center justify-center gap-3 pt-4">
-                <img
-                  src="/nextjs.svg"
-                  className="object-contain h-20"
+                <Image
+                  src={nextjsLogo}
+                  className="object-contain h-20 w-auto"
                   alt="Next.js"
                 />
                 <span className="text-primary-400">+</span>
-                <img
-                  src="/react.svg"
-                  className="object-contain h-20"
+                <Image
+                  src={reactLogo}
+                  className="object-contain h-20 w-auto"
                   alt="React"
                 />
               </div>
@@ -301,15 +311,15 @@ export default async function Home({
                 </li>
               </ul>
               <div className="flex items-center justify-center gap-3 pt-4">
-                <img
-                  src="/pg.png"
-                  className="object-contain h-20"
+                <Image
+                  src={postgresLogo}
+                  className="object-contain h-20 w-auto"
                   alt="PostgreSQL"
                 />
                 <span className="text-primary-400">+</span>
-                <img
-                  src="/supabase.svg"
-                  className="object-contain h-20"
+                <Image
+                  src={supabaseLogo}
+                  className="object-contain h-20 w-auto"
                   alt="Supabase"
                 />
               </div>
@@ -342,9 +352,9 @@ export default async function Home({
                 </li>
               </ul>
               <div className="flex justify-center pt-4">
-                <img
-                  src="/aws-arch.png"
-                  className="object-contain h-32 rounded-lg"
+                <Image
+                  src={awsArch}
+                  className="object-contain h-32 rounded-lg w-auto"
                   alt="AWS Architecture"
                 />
               </div>
@@ -377,9 +387,9 @@ export default async function Home({
                 </li>
               </ul>
               <div className="flex justify-center pt-4">
-                <img
-                  src="/bitcoin-btc-logo.svg"
-                  className="object-contain h-24"
+                <Image
+                  src={bitcoinLogo}
+                  className="object-contain h-24 w-auto"
                   alt="Bitcoin"
                 />
               </div>

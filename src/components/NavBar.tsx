@@ -4,7 +4,9 @@ import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Link, usePathname as useLocalizedPathname } from "@/i18n/routing";
 import { useState } from "react";
+import Image from "next/image";
 import { ExternalLink, Menu, X } from "lucide-react";
+import avatar from "@/assets/jp.png";
 
 const menuItems = ["home", "resume", "portfolio"] as const;
 
@@ -35,8 +37,11 @@ export function NavBar() {
     <nav className="print:hidden bg-primary-800/95 text-white shadow-soft sticky top-0 z-50 backdrop-blur-xs backdrop-saturate-150 flex w-full items-center justify-center">
       <div className="flex flex-row flex-nowrap items-center justify-between gap-4 w-full max-w-full h-[72px] px-6">
         <Link href="/" className="hover:opacity-80 transition-opacity">
-          <img
-            src="/jp.png"
+          <Image
+            src={avatar}
+            width={52}
+            height={52}
+            priority
             className="rounded-full w-[52px] h-[52px] border-2 border-accent-light shadow-md"
             alt="JP"
           />
