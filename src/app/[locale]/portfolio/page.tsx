@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from "@nextui-org/react";
-import { ExternalLinkIcon, EyeIcon } from "lucide-react";
+import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import { routing } from '@/i18n/routing';
 import { getMessages } from '@/i18n/messages';

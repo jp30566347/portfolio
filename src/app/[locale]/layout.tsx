@@ -1,7 +1,7 @@
 import "../globals.css";
-import { Providers } from "@/components/providers";
 import AppLayout from "@/components/AppLayout";
 import Script from "next/script";
+import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getMessages } from '@/i18n/messages';
@@ -64,9 +64,13 @@ export default async function Layout({ children, params }: Props) {
         ></Script>
       )}
       <body>
-        <Providers locale={locale} messages={messages}>
+        <NextIntlClientProvider
+          locale={locale}
+          messages={messages}
+          timeZone="UTC"
+        >
           <AppLayout locale={locale}>{children}</AppLayout>
-        </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

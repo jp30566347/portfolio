@@ -1,4 +1,3 @@
-// import { Chip } from "@nextui-org/react";
 import { getTranslations } from 'next-intl/server';
 import { Mail, Phone, MapPin, ExternalLink, Linkedin, Github, Globe } from 'lucide-react';
 import { routing } from '@/i18n/routing';

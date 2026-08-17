@@ -12,9 +12,6 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "^16.0.10",
-    "@nextui-org/react": "^2.6.11",
-    "classnames": "^2.5.1",
-    "framer-motion": "^12.23.26",
     "lucide-react": "^0.561.0",
     "next": "^16.0.10",
     "next-intl": "^4.6.1",

@@ -8,10 +8,6 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    optimizePackageImports: ["@nextui-org/react"],
-  },
-};
+const nextConfig = {};
 
 export default withBundleAnalyzer(withNextIntl(nextConfig));
