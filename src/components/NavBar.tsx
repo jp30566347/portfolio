@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Link, usePathname as useLocalizedPathname } from "@/i18n/routing";
 import { useState } from "react";
-import { ExternalLinkIcon, Menu, X } from "lucide-react";
+import { ExternalLink, Menu, X } from "lucide-react";
 
 const menuItems = ["home", "resume", "portfolio"] as const;
 
@@ -65,7 +65,7 @@ export function NavBar() {
               className="flex gap-2 items-center px-4 py-2 bg-accent hover:bg-accent-dark text-white rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg"
             >
               <span>{t("bookMe")}</span>
-              <ExternalLinkIcon size={14} />
+              <ExternalLink size={14} />
             </Link>
           </li>
           <li>
@@ -117,7 +117,7 @@ export function NavBar() {
               className="bg-accent hover:bg-accent-dark text-white text-base px-4 py-3 rounded-lg flex items-center justify-center gap-2 font-medium transition-all duration-200 shadow-md"
             >
               <span>{t("bookMe")}</span>
-              <ExternalLinkIcon size={14} />
+              <ExternalLink size={14} />
             </Link>
           </li>
           <li>

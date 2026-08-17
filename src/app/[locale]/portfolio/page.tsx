@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLinkIcon } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { routing } from '@/i18n/routing';
 import { getMessages } from '@/i18n/messages';
@@ -97,7 +97,7 @@ export default async function Home({
                   className="w-full bg-accent hover:bg-accent-dark text-white px-6 py-3 flex gap-2 items-center justify-center rounded-lg transition-all duration-200 font-medium shadow-md hover:shadow-lg"
                 >
                   <span>{tWithRich('portfolio.ventilo.visitWebsite')}</span>
-                  <ExternalLinkIcon size={16} />
+                  <ExternalLink size={16} />
                 </Link>
               </div>
             </div>

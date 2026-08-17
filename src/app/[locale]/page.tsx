@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
-import { ExternalLinkIcon } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { routing } from '@/i18n/routing';
 
 export default async function Home({
@@ -39,7 +39,7 @@ export default async function Home({
               className="px-8 py-3 bg-primary-100 hover:bg-primary-200 text-primary-800 rounded-lg font-semibold transition-all duration-200 border border-primary-300 flex items-center justify-center gap-2"
             >
               {t('bookConsultation')}
-              <ExternalLinkIcon size={16} />
+              <ExternalLink size={16} />
             </Link>
           </div>
         </div>

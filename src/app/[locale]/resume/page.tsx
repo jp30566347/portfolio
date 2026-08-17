@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
-import { Mail, Phone, MapPin, ExternalLink, Linkedin, Github, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, Globe } from 'lucide-react';
+import { Github, Linkedin } from '@/components/BrandIcons';
 import { routing } from '@/i18n/routing';
 import { getMessages } from '@/i18n/messages';
 
