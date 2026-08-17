@@ -23,7 +23,7 @@
       "title": "ventilo.ca",
       "client": "client : CRIUCPQ",
       "description1": "Conçu et livré une <mark>plateforme web complète</mark> en migrant l'application mobile existante, élargissant la portée aux utilisateurs de bureau et améliorant l'accessibilité",
-      "description2": "Refondu l'<mark>expérience utilisateur</mark> à partir de zéro, résultant en une meilleure engagement utilisateur et des flux de travail rationalisés pour les professionnels de la santé",
+      "description2": "Refondu l''<mark>expérience utilisateur</mark> à partir de zéro, résultant en une meilleure engagement utilisateur et des flux de travail rationalisés pour les professionnels de la santé",
       "description3": "Livré une <mark>infrastructure cloud clé en main</mark> avec CDN mondial, pipelines de déploiement automatisés et analyses intégrées, garantissant 99,9% de disponibilité et des temps de chargement inférieurs à 2 secondes",
       "visitWebsite": "Visiter le site"
     },
@@ -38,7 +38,7 @@
       "title": "Application mobile VentilO",
       "client": "client : CRIUCPQ",
       "description1": "Exécuté une migration stratégique des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant les coûts de maintenance continus de plus de <mark>60%</mark> tout en maintenant la parité fonctionnelle et les performances",
-      "description2": "Refondu et implémenté l'<mark>algorithme de recommandations principal</mark> pour s'aligner avec les directives médicales mises à jour, améliorant la précision et la pertinence clinique pour les protocoles de thérapie respiratoire",
+      "description2": "Refondu et implémenté l''<mark>algorithme de recommandations principal</mark> pour s'aligner avec les directives médicales mises à jour, améliorant la précision et la pertinence clinique pour les protocoles de thérapie respiratoire",
       "description3": "Établi des <mark>opérations complètes de boutique d'applications</mark> incluant des flux de travail de déploiement automatisés, la gestion de la conformité réglementaire et des tableaux de bord d'analyse pour les insights sur le comportement des utilisateurs"
     },
     "mobileDev": {
@@ -64,7 +64,7 @@
       "title": "Infrastructure et DevOps",
       "description1": "Établissez des <mark>pipelines CI/CD automatisés</mark> qui réduisent le temps de déploiement de heures à minutes, minimisent les erreurs humaines et permettent des cycles d'itération rapides",
       "description2": "Concevez des <mark>architectures cloud sécurisées et évolutives</mark> qui gèrent gracieusement les pics de trafic, protègent contre les menaces de sécurité et maintiennent une haute disponibilité pour les applications critiques",
-      "description3": "Définissez des modèles d'<mark>infrastructure-as-code</mark> qui rendent les environnements reproductibles, contrôlés par version et facilement déployables à travers le développement, la mise en scène et la production"
+      "description3": "Définissez des modèles d''<mark>infrastructure-as-code</mark> qui rendent les environnements reproductibles, contrôlés par version et facilement déployables à travers le développement, la mise en scène et la production"
     },
     "bitcoin": {
       "title": "Consultation Bitcoin",

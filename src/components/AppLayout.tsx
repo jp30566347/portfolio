@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import { NavBar } from "./NavBar";
-import { getTranslations } from 'next-intl/server';
+import { getTranslations } from "next-intl/server";
 
 interface AppLayoutProps extends PropsWithChildren {
   locale: string;
@@ -8,7 +8,7 @@ interface AppLayoutProps extends PropsWithChildren {
 
 export default async function AppLayout({ children, locale }: AppLayoutProps) {
   const t = await getTranslations({ locale });
-  
+
   return (
     <main className="flex min-h-screen flex-col bg-white">
       <NavBar />
@@ -17,7 +17,7 @@ export default async function AppLayout({ children, locale }: AppLayoutProps) {
       </div>
       <footer className="flex justify-center items-center py-8 print:hidden border-t border-primary-200 bg-primary-50 mt-16">
         <span className="text-sm text-primary-600">
-          {new Date().getFullYear()} &#169; {t('allRightsReserved')}
+          {new Date().getFullYear()} &#169; {t("allRightsReserved")}
         </span>
       </footer>
     </main>
