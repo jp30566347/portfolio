@@ -1,5 +1,5 @@
 import { hasLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Mail, Phone, MapPin, ExternalLink, Globe } from "lucide-react";
 import { Github, Linkedin } from "@/components/BrandIcons";
 import { routing } from "@/i18n/routing";
@@ -13,6 +13,7 @@ export default async function Home({
   const locale = hasLocale(routing.locales, requested)
     ? requested
     : routing.defaultLocale;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "resume" });
 
   const jobs = [

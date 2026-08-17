@@ -1,6 +1,6 @@
 import "../../globals.css";
 import { hasLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -12,6 +12,7 @@ export async function generateMetadata({
   const locale = hasLocale(routing.locales, requested)
     ? requested
     : routing.defaultLocale;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "portfolio" });
 
   return {
