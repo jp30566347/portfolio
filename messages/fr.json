@@ -1,87 +1,117 @@
 {
   "home": {
-    "title": "Bio",
-    "description": "Développeur logiciel et leader technique | 15+ années à construire des solutions évolutives | Applications mobiles, architecture cloud, conception d'API",
-    "intro1": "Je suis JP Melanson, <mark>développeur logiciel et leader technique</mark> avec plus de <mark>15 ans</mark> d'expérience dans la livraison de solutions numériques évolutives qui génèrent des résultats commerciaux. J'ai conçu et construit des applications utilisées par des milliers d'utilisateurs, réduit les coûts opérationnels jusqu'à <mark>60% grâce à des migrations stratégiques</mark>, et dirigé des initiatives techniques dans des entreprises allant des startups aux entreprises Fortune 500.",
-    "intro2": "Mon expertise couvre <mark>tout le cycle de vie du développement logiciel</mark>, avec un succès prouvé dans le <mark>développement d'applications mobiles</mark>, <mark>l'architecture cloud</mark> et la <mark>conception d'API</mark>. Je me spécialise dans la transformation des exigences commerciales en applications hautes performances qui évoluent efficacement et fournissent une valeur mesurable.",
-    "intro3": "Ce qui me distingue, c'est ma capacité à <mark>faire le pont entre Produit, UX et Ingénierie</mark>. Je travaille directement avec les parties prenantes pour comprendre les objectifs commerciaux, puis je conçois des solutions qui équilibrent l'excellence technique avec les besoins des utilisateurs et les demandes du marché. Cette approche collaborative axée sur les résultats a systématiquement livré des projets à temps et dépassé les attentes.",
-    "intro4": "Je construis des applications modernes en utilisant des technologies de pointe : <mark>Next.js</mark>, <mark>React</mark>, <mark>React Native</mark> et <mark>TypeScript</mark> pour le développement front-end ; <mark>Postgres</mark>, <mark>TypeScript</mark>, <mark>Rails</mark> et <mark>Go</mark> pour des backends robustes. J'investis continuellement dans les technologies émergentes, explorant actuellement <mark>Rust</mark> pour des performances au niveau système.",
-    "intro5": "J'offre des <mark>services de leadership technique et de consultation</mark> aux petites et moyennes organisations dans la technologie, l'immobilier, la finance et Bitcoin. Que vous ayez besoin de construire un produit à partir de zéro, d'optimiser des systèmes existants ou d'établir des meilleures pratiques techniques, je livre des solutions qui s'alignent avec vos objectifs commerciaux.",
-    "yearsExperience": "Années d'expérience",
-    "projectsDelivered": "Projets livrés",
-    "collaborations": "Collaborations",
-    "viewMyWork": "Voir mes travaux",
-    "bookConsultation": "Réserver une consultation"
+    "title": "Accueil",
+    "label": "Ingénieur logiciel et leader technique",
+    "metaTitle": "Ingénieur logiciel et leader technique, Québec",
+    "description": "JP Melanson construit des applications mobiles, des plateformes web et l'infrastructure infonuagique en dessous. 15 ans et plus, de la startup au Fortune 500, depuis Lévis, QC.",
+    "heroTitle": "Bonjour, je suis JP. Je construis des logiciels qui se rendent en production — <mark>et qui y restent.</mark>",
+    "heroSub": "Quinze ans d'applications mobiles, de plateformes web et d'infrastructure infonuagique, pour des équipes de deux personnes jusqu'au Fortune 500. J'aime les petites équipes, les objectifs clairs et l'infrastructure ennuyante.",
+    "seeWork": "Voir les projets",
+    "book30": "Réserver 30 minutes",
+    "stat": {
+      "years": "années à livrer",
+      "projects": "projets livrés",
+      "bill": "coûts de maintenance, une migration",
+      "billNote": "oui, vraiment 60 %. J'ai vérifié deux fois.",
+      "apps": "applications en ligne sur iOS et Android"
+    },
+    "intro1": "Je suis JP, ingénieur logiciel et leader technique près de Québec. Depuis plus de 15 ans, je construis des <mark>applications mobiles</mark>, des <mark>plateformes web</mark> et la <mark>plomberie infonuagique</mark> en dessous — pour des startups, un centre de recherche hospitalier (CRIUCPQ), une plateforme immobilière que j'ai cofondée, et Ticketmaster.",
+    "intro2": "Je suis le plus utile là où produit, design et ingénierie se rencontrent : on décide ensemble ce qui vaut la peine d'être construit, je le <mark>construis</mark>, puis je m'assure que ça <mark>tienne</mark>. Au quotidien, c'est Next.js, React, React Native, TypeScript et Postgres ; Go, Rails, Java et AWS quand le projet le demande.",
+    "intro3": "Je travaille avec de petites et moyennes équipes en techno, en immobilier, en finance et en Bitcoin — comme <mark>premier ingénieur</mark>, <mark>CTO à temps partiel</mark>, ou comme la personne qui migre enfin le système que tout le monde a peur de toucher.",
+    "currently": {
+      "title": "En ce moment",
+      "buildingK": "je construis",
+      "buildingV": "Sapien — protocole Proof of Quality",
+      "learningK": "j'apprends",
+      "learningV": "Rust (bruyamment)",
+      "openK": "ouvert à",
+      "openV": "mandats de consultation et rôles à temps partiel"
+    },
+    "ctaTitle": "Un projet en tête ?",
+    "ctaSub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan."
   },
   "portfolio": {
-    "title": "Consultation",
-    "description": "Services de développement logiciel full-stack : applications mobiles, applications web, API, infrastructure cloud et consultation Bitcoin",
-    "pageTitle": "Travaux contractuels",
-    "featured": "Projets vedettes",
+    "title": "Projets",
+    "description": "Une sélection de mandats clients et les services derrière : applications mobiles, plateformes web, API, infrastructure infonuagique et consultation Bitcoin en langage clair.",
+    "pageTitle": "Ce que j'ai livré, et ce que je peux livrer pour vous.",
+    "featured": "Mandats clients",
+    "featuredNote": "en production aujourd'hui",
     "services": "Services",
+    "servicesNote": "ce pour quoi on m'engage habituellement",
+    "sticker": "vrais chiffres",
+    "visitWebsite": "Visiter ventilo.ca",
     "ventilo": {
       "title": "ventilo.ca",
-      "client": "client : CRIUCPQ",
-      "description1": "Conçu et livré une <mark>plateforme web complète</mark> en migrant l'application mobile existante, élargissant la portée aux utilisateurs de bureau et améliorant l'accessibilité",
-      "description2": "Refondu l''<mark>expérience utilisateur</mark> à partir de zéro, résultant en une meilleure engagement utilisateur et des flux de travail rationalisés pour les professionnels de la santé",
-      "description3": "Livré une <mark>infrastructure cloud clé en main</mark> avec CDN mondial, pipelines de déploiement automatisés et analyses intégrées, garantissant 99,9% de disponibilité et des temps de chargement inférieurs à 2 secondes",
-      "visitWebsite": "Visiter le site"
+      "client": "pour le CRIUCPQ · web",
+      "lead": "Un outil de thérapie respiratoire, mobile seulement, porté sur le web, repensé pour les cliniciens et déployé sur une infrastructure qui tient 99,9 % de disponibilité.",
+      "description1": "Migré l'application mobile vers une <mark>plateforme web complète</mark>, ouverte aux utilisateurs de bureau et plus accessible",
+      "description2": "Repensé l'<mark>expérience utilisateur</mark> à partir de zéro, autour du vrai travail des professionnels de la santé",
+      "description3": "Livré une <mark>infrastructure infonuagique clé en main</mark> : CDN mondial, déploiements automatisés, analytique — chargement sous 2 s"
     },
     "oxygapp": {
-      "title": "Application mobile Oxyg'App",
-      "client": "client : CRIUCPQ",
-      "description1": "Construit une <mark>application mobile React Native/Expo prête pour la production</mark> du concept au lancement, offrant une expérience native sur les plateformes iOS et Android",
-      "description2": "Développé des <mark>algorithmes d'optimisation d'oxymètres intelligents</mark> qui simplifient la configuration complexe des appareils médicaux, rendant les paramètres avancés accessibles aux éducateurs et étudiants en santé",
-      "description3": "Orchestré le <mark>cycle de vie complet de la boutique d'applications</mark> incluant l'automatisation du déploiement, la gestion de la conformité, l'implémentation de politiques de confidentialité et le suivi des analyses de performance"
+      "title": "Oxyg'App",
+      "client": "pour le CRIUCPQ · iOS et Android",
+      "lead": "Une application React Native qui rend les réglages complexes d'oxymètres utilisables par les formateurs et les étudiants — du premier croquis aux deux boutiques d'applications.",
+      "description1": "Construit une <mark>application React Native / Expo</mark> de production, du concept au lancement, avec un rendu natif sur iOS et Android",
+      "description2": "Écrit les <mark>algorithmes d'optimisation d'oxymètres</mark> qui rendent les réglages avancés d'appareils médicaux abordables",
+      "description3": "Géré tout le <mark>cycle de vie en boutique</mark> : automatisation du déploiement, conformité, politique de confidentialité, analytique"
     },
     "ventiloApp": {
-      "title": "Application mobile VentilO",
-      "client": "client : CRIUCPQ",
-      "description1": "Exécuté une migration stratégique des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant les coûts de maintenance continus de plus de <mark>60%</mark> tout en maintenant la parité fonctionnelle et les performances",
-      "description2": "Refondu et implémenté l''<mark>algorithme de recommandations principal</mark> pour s'aligner avec les directives médicales mises à jour, améliorant la précision et la pertinence clinique pour les protocoles de thérapie respiratoire",
-      "description3": "Établi des <mark>opérations complètes de boutique d'applications</mark> incluant des flux de travail de déploiement automatisés, la gestion de la conformité réglementaire et des tableaux de bord d'analyse pour les insights sur le comportement des utilisateurs"
+      "title": "VentilO",
+      "client": "pour le CRIUCPQ · iOS et Android",
+      "lead": "Deux applications natives distinctes devenues une seule base de code React Native — mêmes fonctionnalités, mêmes performances, 60 % de moins à maintenir chaque année.",
+      "description1": "Migré des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant les coûts de maintenance de <mark>60 %</mark>",
+      "description2": "Reconstruit l'<mark>algorithme de recommandations</mark> principal pour suivre les lignes directrices médicales à jour",
+      "description3": "Mis en place les <mark>opérations en boutique</mark> : publications automatisées, conformité réglementaire, analytique d'usage"
     },
     "mobileDev": {
-      "title": "Développement d'applications mobiles",
-      "description1": "Transformez vos <mark>designs et prototypes</mark> en applications mobiles prêtes pour la production qui offrent des performances natives sur les plateformes iOS et Android",
-      "description2": "Naviguez dans le <mark>processus complet de soumission à la boutique d'applications</mark>, garantissant la conformité aux directives de la plateforme et maximisant la découvrabilité de votre application",
-      "description3": "Maintenez la <mark>sécurité et la conformité à long terme</mark> avec des mises à jour automatisées, des correctifs de sécurité et une adaptation continue de la plateforme, protégeant votre investissement"
+      "title": "Applications mobiles",
+      "lead": "De Figma à l'App Store — une seule base de code React Native pour iOS et Android, plus la partie dont personne ne vous parle.",
+      "description1": "Transformer vos <mark>maquettes et prototypes</mark> en application de production avec des performances natives sur les deux plateformes",
+      "description2": "Prendre en charge tout le <mark>processus de soumission en boutique</mark> : lignes directrices, formulaires de confidentialité, allers-retours de révision",
+      "description3": "La garder <mark>sécuritaire et à jour</mark> à travers les mises à jour d'OS, les correctifs de sécurité et les bris annuels de plateforme"
     },
     "webDev": {
-      "title": "Développement d'applications web",
-      "description1": "Construisez des <mark>applications web hautes performances</mark> qui se chargent instantanément, se classent bien dans les moteurs de recherche et offrent des expériences utilisateur exceptionnelles qui convertissent les visiteurs en clients",
-      "description2": "Déployez sur une <mark>infrastructure cloud optimisée en termes de coûts</mark> qui s'adapte automatiquement à votre trafic tout en minimisant les dépenses d'hébergement, réduisant généralement les coûts de 40 à 60% par rapport à l'hébergement traditionnel",
-      "description3": "Accélérez les <mark>performances des applications existantes</mark> grâce à l'optimisation du code, aux stratégies de mise en cache et aux améliorations d'infrastructure, atteignant souvent des temps de chargement 2 à 5 fois plus rapides"
+      "title": "Applications web",
+      "lead": "Rapides, faciles à trouver, et moins chères à héberger que vous ne le pensez.",
+      "description1": "Construire des <mark>applications web performantes</mark> qui chargent instantanément, se classent bien et convertissent les visiteurs en clients",
+      "description2": "Déployer sur une <mark>infrastructure infonuagique optimisée</mark> qui suit le trafic — habituellement 40 à 60 % moins chère que ce qu'elle remplace",
+      "description3": "Accélérer les <mark>applications existantes</mark> par le code, la mise en cache et l'infrastructure — souvent 2 à 5× plus rapides"
     },
     "apiDev": {
-      "title": "Développement d'API",
-      "description1": "Concevez et implémentez des <mark>API GraphQL ou REST évolutives</mark> qui exposent efficacement vos données tout en garantissant la sécurité, les performances et la maintenabilité",
-      "description2": "Architecturez des <mark>systèmes orientés événements</mark> qui traitent les données en temps réel, permettant des applications réactives et des flux de travail automatisés qui répondent instantanément aux événements commerciaux",
-      "description3": "Développez des <mark>fonctions cloud serverless</mark> qui s'exécutent à la demande, éliminant la surcharge d'infrastructure et ne payant que pour l'utilisation réelle",
-      "description4": "Générez une <mark>documentation API automatisée</mark> qui reste synchronisée avec votre base de code, réduisant le temps d'intégration et garantissant que les équipes de développement disposent de références précises et à jour"
+      "title": "API",
+      "lead": "REST ou GraphQL, documentées automatiquement — pour que la documentation reste vraie après mon départ.",
+      "description1": "Concevoir et construire des <mark>API REST ou GraphQL évolutives</mark>, sécuritaires, rapides et faciles à maintenir",
+      "description2": "Architecturer des <mark>systèmes événementiels</mark> qui réagissent en temps réel aux événements d'affaires",
+      "description3": "Livrer des <mark>fonctions sans serveur</mark> qui s'exécutent à la demande et ne coûtent rien au repos",
+      "description4": "Générer la <mark>documentation d'API à partir du code</mark>, pour un accueil rapide et des références qui ne dérivent jamais"
     },
     "infrastructure": {
       "title": "Infrastructure et DevOps",
-      "description1": "Établissez des <mark>pipelines CI/CD automatisés</mark> qui réduisent le temps de déploiement de heures à minutes, minimisent les erreurs humaines et permettent des cycles d'itération rapides",
-      "description2": "Concevez des <mark>architectures cloud sécurisées et évolutives</mark> qui gèrent gracieusement les pics de trafic, protègent contre les menaces de sécurité et maintiennent une haute disponibilité pour les applications critiques",
-      "description3": "Définissez des modèles d''<mark>infrastructure-as-code</mark> qui rendent les environnements reproductibles, contrôlés par version et facilement déployables à travers le développement, la mise en scène et la production"
+      "lead": "CI/CD, infrastructure-as-code et tableaux de bord que vous ouvrirez vraiment. Les déploiements passent de « vendredi après-midi » à « n'importe quand ».",
+      "description1": "Mettre en place des <mark>pipelines CI/CD automatisés</mark> : déploiements en minutes, moins d'erreurs humaines, itérations plus rapides",
+      "description2": "Concevoir des <mark>architectures infonuagiques sécuritaires et évolutives</mark> qui absorbent les pointes de trafic et restent disponibles",
+      "description3": "Définir l'<mark>infrastructure-as-code</mark> pour que dev, staging et production soient reproductibles et versionnés"
     },
     "bitcoin": {
-      "title": "Consultation Bitcoin",
-      "description1": "Concevez des <mark>stratégies de trésorerie Bitcoin personnalisées</mark> pour les particuliers et les entreprises, aidant à préserver le pouvoir d'achat et à diversifier l'allocation d'actifs",
-      "description2": "Intégrez le <mark>traitement des paiements Bitcoin</mark> dans vos systèmes de commerce électronique ou points de vente existants, vous permettant d'accepter les paiements numériques avec des frais de transaction plus bas et un règlement instantané",
-      "description3": "Offrez une <mark>consultation éducative</mark> sur les fondamentaux de Bitcoin, les meilleures pratiques de sécurité et la gestion de trésorerie, vous permettant de prendre des décisions éclairées sur les actifs numériques"
+      "title": "Bitcoin",
+      "lead": "Stratégie de trésorerie, intégration de paiements et formation en langage clair. Sans battage, sans prédiction de prix.",
+      "description1": "Concevoir une <mark>stratégie de trésorerie Bitcoin</mark> adaptée à votre situation, personnelle ou d'entreprise",
+      "description2": "Intégrer les <mark>paiements Bitcoin</mark> à votre commerce en ligne ou point de vente : frais plus bas, règlement instantané",
+      "description3": "Animer des <mark>séances de formation</mark> sur les fondamentaux, la sécurité et la garde, pour que les décisions soient les vôtres, et éclairées"
     },
-    "playStoreAlt": "Obtenir sur Google Play",
-    "appStoreAlt": "Télécharger sur l'App Store"
+    "playStoreAlt": "Disponible sur Google Play",
+    "appStoreAlt": "Télécharger dans l'App Store"
   },
   "resume": {
-    "title": "Carrière",
-    "description": "Expérience professionnelle : 15+ années en génie logiciel chez des startups aux entreprises Fortune 500",
+    "title": "CV",
+    "description": "15 ans et plus en génie logiciel, de la startup au Fortune 500. Mobile, web, infonuagique.",
+    "intro": "La version formelle. Elle s'imprime proprement sur deux pages si vous en voulez une copie.",
+    "printHint": "⌘P pour une copie propre",
     "name": "Jean-Philippe Melanson",
     "jobTitle": "Ingénieur logiciel",
     "overview": "Aperçu",
-    "overviewText": "Développeur logiciel accompli avec plus de 15 ans d'expérience dans la conception et la livraison d'applications mobiles et web évolutives utilisées par des milliers d'utilisateurs dans diverses industries. Expertise prouvée en Next.js, React, React Native, TypeScript et Postgres, complétée par une vaste expérience en développement backend et cloud. Réduit avec succès les coûts opérationnels jusqu'à 60% grâce à des migrations de plateforme stratégiques, dirigé des équipes interfonctionnelles sur des projets à l'échelle de l'entreprise et livré des solutions full-stack du concept à la production. Compétent dans la conception de systèmes à grande échelle avec accent sur la performance, la sécurité et la maintenabilité. Solide historique de pilotage d'initiatives techniques qui génèrent un impact commercial mesurable dans des environnements agiles et rapides.",
+    "overviewText": "Ingénieur logiciel avec plus de 15 ans d'expérience en mobile, web et infonuagique. Next.js, React, React Native, TypeScript et Postgres au quotidien ; Go, Rails, Java, Scala et AWS quand le projet le demande. Bilan : des migrations de plateforme qui ont réduit les coûts de maintenance de 60 %, des microservices de billetterie qui ont traité des millions de transactions, et une entreprise bâtie à partir de zéro comme cofondateur technique. À l'aise pour porter un système de bout en bout — architecture, livraison, opérations — et travailler directement avec le produit et la direction.",
     "workExperience": "Expérience professionnelle",
     "current": "Actuel",
     "remote": "À distance",
@@ -89,95 +119,95 @@
       "sapien": {
         "title": "Ingénieur logiciel",
         "company": "Sapien.io",
-        "period": "2024-09 - Actuel",
+        "period": "2024-09 – aujourd'hui",
         "location": "À distance",
-        "description1": "Conception et lancement du protocole blockchain et de l'application Sapien Proof of Quality depuis zéro, en définissant les incitatifs et mécanismes de contrôle qualité pour l'étiquetage de données.",
-        "description2": "Utilisation d'agents de codage IA pour accélérer le développement full-stack, en maintenant une haute qualité de code et en permettant une itération rapide sur le protocole et les fonctionnalités produit.",
-        "description3": "Mise en place de la distribution de jetons et de mécanismes de récompense par objectifs intégrés au protocole, permettant des airdrops fluides et incitant un étiquetage de données de haute qualité.",
-        "description4": "Mentorat des ingénieurs juniors et mise en place de pratiques pour l'usage efficace des outils de développement assistés par l'IA; construction d'un moteur de modèles d'email qui a rationalisé la communication et réduit le temps de développement des emails de 50%."
+        "description1": "Conçu et lancé le protocole blockchain et l'application Sapien Proof of Quality à partir de zéro, en définissant les incitatifs et les mécanismes de contrôle de qualité pour l'étiquetage de données.",
+        "description2": "Utilisé des agents de codage IA pour accélérer la livraison full-stack tout en maintenant une haute qualité de code, permettant une itération rapide sur le protocole et le produit.",
+        "description3": "Construit la distribution de jetons et les mécanismes de récompense par objectifs intégrés au protocole, permettant les airdrops et récompensant l'étiquetage de qualité.",
+        "description4": "Encadré des ingénieurs juniors sur le développement assisté par IA ; construit un moteur de gabarits de courriel qui a réduit de 50 % le temps de développement des courriels."
       },
       "doormath": {
-        "title": "Ingénieur logiciel - Co-fondateur technique",
+        "title": "Ingénieur logiciel — Cofondateur technique",
         "company": "doormath.ca",
-        "period": "2023-04 - 2024-09",
+        "period": "2023-04 – 2024-09",
         "location": "À distance",
-        "description1": "Conçu et construit les fondations techniques complètes d'une plateforme immobilière, livrant des évaluations immobilières instantanées et des analyses de marché aux clients en utilisant Next.js/React/TypeScript et Supabase/Postgres",
-        "description2": "Partenariat avec le PDG pour définir la vision produit et la feuille de route, orchestrant une équipe interfonctionnelle de designers UX et d'ingénieurs ML pour intégrer des fonctionnalités avancées qui ont amélioré l'expérience utilisateur",
-        "description3": "Livré plus de 15 fonctionnalités commerciales critiques incluant les flux de travail d'évaluation automatisés, la gestion d'abonnements, le portail courtier, les listes de propriétés, les systèmes d'enchères et les tableaux de bord d'analyse, permettant le lancement de la plateforme et la génération de revenus",
-        "description4": "Établi une infrastructure de qualité production incluant des systèmes d'authentification, des pipelines QA automatisés, des flux de travail CI/CD, l'intégration CDN et l'optimisation d'images, garantissant 99,9% de disponibilité et des chargements de page inférieurs à 2 secondes"
+        "description1": "Bâti les fondations techniques complètes d'une plateforme immobilière offrant des évaluations instantanées et des analyses de marché (Next.js, React, TypeScript, Supabase/Postgres).",
+        "description2": "Défini la vision produit et la feuille de route avec le PDG ; coordonné designers UX et ingénieurs ML pour livrer des fonctionnalités avancées.",
+        "description3": "Livré plus de 15 fonctionnalités clés — évaluations automatisées, abonnements, portail courtier, inscriptions, enchères, tableaux de bord — permettant le lancement et les premiers revenus.",
+        "description4": "Mis en place l'infrastructure de production : authentification, QA automatisée, CI/CD, CDN et optimisation d'images, avec 99,9 % de disponibilité et des pages sous 2 s."
       },
       "fastaf": {
         "title": "Ingénieur logiciel",
         "company": "FastAF Technologies Inc.",
-        "period": "2020-05 - 2023-01",
+        "period": "2020-05 – 2023-01",
         "location": "À distance",
-        "description1": "Dirigé le développement de bout en bout des fonctionnalités de commerce électronique principales incluant le panier, le paiement, les programmes de fidélité, le moteur de remise, la gestion des stocks et les systèmes de recommandation en utilisant Rails et React Native/TypeScript, traitant des milliers de transactions quotidiennement",
-        "description2": "Conçu et livré une infrastructure de paiement web3 incluant le traitement des paiements en cryptomonnaie, l'intégration des remises NFT, les rampes on/off fiat et la connectivité du portefeuille Solana, élargissant les options de paiement et les sources de revenus",
-        "description3": "Établi des meilleures pratiques DevOps et des cadres d'automatisation QA qui ont réduit le volume de tickets de support de 40% et amélioré la fréquence de déploiement de 3x tout en maintenant la qualité du code",
-        "description4": "Servi de leader technique et conseiller technique pour la gestion de produit et la direction exécutive, traduisant les exigences commerciales en solutions techniques et fournissant des conseils stratégiques sur les décisions technologiques"
+        "description1": "Dirigé le développement de bout en bout des fonctionnalités de commerce électronique — panier, paiement, fidélité, rabais, inventaire, recommandations — en Rails et React Native/TypeScript, avec des milliers de transactions par jour.",
+        "description2": "Architecturé l'infrastructure de paiement web3 : paiements crypto, rabais NFT, passerelles fiat et connexion de portefeuilles Solana.",
+        "description3": "Établi les pratiques DevOps et l'automatisation QA qui ont réduit les billets de soutien de 40 % et triplé la fréquence de déploiement.",
+        "description4": "Agi comme leader technique et conseiller auprès du produit et de la direction."
       },
       "ticketmaster1": {
-        "title": "Ingénieur logiciel - Consultant",
+        "title": "Ingénieur logiciel — Consultant",
         "company": "Ticketmaster",
-        "period": "2018-04 - 2020-05",
+        "period": "2018-04 – 2020-05",
         "location": "Québec, QC",
-        "description1": "Conçu et implémenté des microservices de billetterie critiques gérant des millions de transactions en utilisant Java et Go sur AWS, garantissant une haute disponibilité et une tolérance aux pannes pour les systèmes critiques",
-        "description2": "Collaboré avec les équipes produit, ingénierie et opérations pour concevoir des solutions cloud natives qui ont automatisé les processus commerciaux, réduisant l'effort manuel de 60% et améliorant la fiabilité du système",
-        "description3": "Conçu et exécuté des stratégies complètes de reprise après sinistre pour les applications hébergées dans le cloud, atteignant un RPO de moins d'une heure et un RTO de moins de 4 heures, garantissant la continuité des activités",
-        "description4": "Développé des cadres et politiques de gouvernance cloud couvrant les normes d'infrastructure, les protocoles de sécurité, les stratégies d'optimisation des coûts et les procédures opérationnelles, standardisant les pratiques à travers les équipes d'ingénierie"
+        "description1": "Construit des microservices de billetterie critiques traitant des millions de transactions en Java et Go sur AWS, avec haute disponibilité et tolérance aux pannes.",
+        "description2": "Conçu avec le produit, l'ingénierie et les opérations des solutions infonuagiques natives qui ont automatisé des processus d'affaires et réduit l'effort manuel de 60 %.",
+        "description3": "Conçu et exécuté des stratégies de reprise après sinistre pour les applications infonuagiques : RPO sous 1 heure, RTO sous 4 heures.",
+        "description4": "Rédigé des cadres de gouvernance infonuagique — normes d'infrastructure, protocoles de sécurité, optimisation des coûts, procédures — adoptés par les équipes d'ingénierie."
       },
       "asurion": {
-        "title": "Ingénieur logiciel - Consultant",
+        "title": "Ingénieur logiciel — Consultant",
         "company": "Asurion",
-        "period": "2017-10 - 2018-03",
+        "period": "2017-10 – 2018-03",
         "location": "À distance",
-        "description1": "Conçu et développé des interfaces web réactives utilisant HTML, CSS, JavaScript et React qui ont amélioré les métriques d'engagement utilisateur et rationalisé les flux de travail clients",
-        "description2": "Implémenté des stratégies de test complètes incluant des tests unitaires, d'intégration et E2E qui ont réduit les bogues de production de 50% et accéléré les cycles de déploiement",
-        "description3": "Amélioré et maintenu des API backend hautes performances construites avec Scala, optimisant les temps de réponse et améliorant la fiabilité du système pour les applications à l'échelle de l'entreprise"
+        "description1": "Construit des interfaces web adaptatives en React qui ont amélioré l'engagement et simplifié les parcours clients.",
+        "description2": "Introduit des tests unitaires, d'intégration et de bout en bout qui ont réduit les bogues en production de 50 % et accéléré les déploiements.",
+        "description3": "Maintenu et optimisé des API backend performantes en Scala pour un trafic à l'échelle de l'entreprise."
       },
       "ticketmaster2": {
-        "title": "Ingénieur logiciel - Consultant",
+        "title": "Ingénieur logiciel — Consultant",
         "company": "Ticketmaster",
-        "period": "2016-10 - 2017-10",
+        "period": "2016-10 – 2017-10",
         "location": "Québec, QC",
-        "description1": "Construit des interfaces basées sur React évolutives pour la gestion de l'échange de codes d'événements, permettant des expériences utilisateur transparentes pour des millions de transactions de billets",
-        "description2": "Dirigé les décisions d'architecture frontend et backend, établissant des modèles React/Redux pour la gestion d'état et une architecture de microservices Java/Spring qui a amélioré la maintenabilité et la productivité des développeurs",
-        "description3": "Participé aux cérémonies Agile incluant la planification de sprint, les réunions quotidiennes et le grooming du backlog, contribuant à l'amélioration de la vélocité de l'équipe et de la prévisibilité de la livraison"
+        "description1": "Construit des interfaces React pour la gestion des codes d'événements, utilisées pour des millions de transactions de billets.",
+        "description2": "Dirigé les décisions d'architecture frontend et backend : patrons React/Redux et microservices Java/Spring.",
+        "description3": "Travaillé en équipe Agile — planification de sprint, mêlées quotidiennes, raffinement du carnet — améliorant la vélocité et la prévisibilité."
       },
       "balihoo": {
         "title": "Ingénieur logiciel",
         "company": "Balihoo",
-        "period": "2014-07 - 2016-05",
+        "period": "2014-07 – 2016-05",
         "location": "Boise, ID",
-        "description1": "Ingénié un système d'automatisation de campagnes utilisant Scala et Amazon Simple Workflow Service qui a orchestré des campagnes marketing multicanal à travers des milliers d'emplacements, réduisant l'effort manuel de 80% et permettant l'exécution de campagnes en temps réel",
-        "description2": "Développé un tableau de bord web complet utilisant JavaScript, AWS et Scala qui a permis aux équipes marketing de créer, surveiller et optimiser les campagnes, améliorant l'efficacité de la gestion des campagnes de 3x",
-        "description3": "Construit des pipelines de traitement de données automatisés utilisant CoffeeScript, Node.js et Amazon Redshift qui ont traité des millions de points de données marketing quotidiennement, permettant l'optimisation et la création de rapports de campagnes basés sur les données"
+        "description1": "Conçu un système d'automatisation de campagnes en Scala et Amazon SWF orchestrant du marketing multicanal pour des milliers d'emplacements, réduisant l'effort manuel de 80 %.",
+        "description2": "Construit le tableau de bord web (JavaScript, AWS, Scala) utilisé par les équipes marketing pour créer, suivre et optimiser les campagnes — gestion 3× plus rapide.",
+        "description3": "Construit des pipelines de données (Node.js, Amazon Redshift) traitant des millions de points de données marketing par jour pour les rapports et l'optimisation."
       },
       "ticketmaster3": {
         "title": "Ingénieur logiciel",
         "company": "Ticketmaster",
-        "period": "2011-06 - 2014-06",
+        "period": "2011-06 – 2014-06",
         "location": "Québec, QC",
-        "description1": "Dirigé les initiatives de l'équipe plateforme interfonctionnelle en développant des bibliothèques Java de bas niveau pour les opérations de mise en vente de billets, permettant des transactions haute performance fiables pendant les événements de forte demande",
-        "description2": "Établi des capacités complètes de préparation à la production incluant des systèmes de surveillance, des tableaux de bord d'observabilité, la journalisation centralisée et des pipelines de publication automatisés, réduisant le temps de réponse aux incidents de 70%",
-        "description3": "Construit une boîte à outils développeur intégrée et des plugins IDE qui ont rationalisé les flux de travail de développement et réduit le temps d'intégration pour les nouveaux ingénieurs de semaines à jours",
-        "description4": "Architecturé l'infrastructure d'environnement de développement local utilisant Docker et le scripting Linux qui reflétait les systèmes de production, permettant une itération plus rapide et réduisant les bogues liés à l'environnement"
+        "description1": "Dirigé des initiatives de l'équipe plateforme, avec des bibliothèques Java de bas niveau pour les mises en vente qui ont tenu lors des événements de pointe.",
+        "description2": "Établi la préparation à la production : surveillance, tableaux d'observabilité, journalisation centralisée et pipelines de publication automatisés — temps de réponse aux incidents réduit de 70 %.",
+        "description3": "Construit une boîte à outils développeur et des extensions IDE qui ont fait passer l'accueil des nouveaux ingénieurs de semaines à jours.",
+        "description4": "Architecturé un environnement local Docker reproduisant la production, réduisant les bogues liés à l'environnement."
       },
       "laval": {
         "title": "Ingénieur logiciel",
         "company": "Université Laval",
-        "period": "2008-05 - 2011-05",
+        "period": "2008-05 – 2011-05",
         "location": "Québec, QC",
-        "description1": "Contribué au développement full-stack d'une plateforme d'apprentissage en ligne d'entreprise servant des milliers d'étudiants en utilisant Java, JSF et Oracle, implémentant des fonctionnalités principales qui ont amélioré la livraison éducative",
-        "description2": "Développé des composants JavaScript réutilisables avec compatibilité multi-navigateurs, garantissant des expériences utilisateur cohérentes à travers différents navigateurs et améliorant la maintenabilité du code frontend",
-        "description3": "Conçu et implémenté un module de quiz complet à partir de zéro en utilisant Hibernate ORM et les principes de conception orientée objet, permettant des évaluations interactives et une notation automatisée"
+        "description1": "Développement full-stack d'une plateforme d'apprentissage en ligne servant des milliers d'étudiants (Java, JSF, Oracle).",
+        "description2": "Construit des composants JavaScript réutilisables et multinavigateurs qui ont amélioré la maintenabilité du frontend.",
+        "description3": "Conçu et construit le module de quiz à partir de zéro (Hibernate, conception objet), permettant des évaluations interactives et la correction automatisée."
       }
     },
     "education": "Formation",
-    "educationDegree": "Baccalauréat en génie (B.Ing.) - Technologies de l'information",
+    "educationDegree": "Baccalauréat en génie (B.Ing.) — Technologies de l'information",
     "educationSchool": "École de technologie supérieure",
-    "educationLab": "Assistant de laboratoire : Développement d'applications de commerce électronique et transactionnelles",
-    "educationAward": "Prix de recherche NSERC : Recherche basée sur les images avec Oracle DB",
+    "educationLab": "Assistant de laboratoire : développement d'applications de commerce électronique et transactionnelles",
+    "educationAward": "Bourse de recherche CRSNG : recherche par image avec Oracle DB",
     "contact": "Contact",
     "address": "Adresse",
     "addressValue": "Lévis, QC, Canada, G6Z 3C8",
@@ -192,8 +222,8 @@
     "website": "Site web",
     "websiteValue": "jp305.dev",
     "skills": "Compétences",
-    "skillJavascript": "Javascript",
-    "skillTypescript": "Typescript",
+    "skillJavascript": "JavaScript",
+    "skillTypescript": "TypeScript",
     "skillReact": "React",
     "skillNextjs": "Next.js",
     "skillReactNative": "React Native",
@@ -201,13 +231,15 @@
     "skillAWS": "AWS",
     "skillGitHub": "GitHub",
     "skillSystemDesign": "Conception de systèmes",
-    "skillCodeArchitecture": "Architecture de code",
+    "skillCodeArchitecture": "Architecture logicielle",
     "languages": "Langues",
     "languageFrench": "Français (langue maternelle)",
     "languageEnglish": "Anglais"
   },
-  "bookMe": "Réserver",
-  "allRightsReserved": "Tous droits réservés",
+  "notebook": "Carnet",
+  "bookMe": "Réserver un appel",
+  "switchLocale": "Switch to English",
+  "footerSignoff": "Écrit à la main à Lévis. Déployé partout ailleurs.",
   "openMenu": "Ouvrir le menu",
   "closeMenu": "Fermer le menu"
 }

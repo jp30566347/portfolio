@@ -1,121 +1,170 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary-50: #f8fafc;
-  --color-primary-100: #f1f5f9;
-  --color-primary-200: #e2e8f0;
-  --color-primary-300: #cbd5e1;
-  --color-primary-400: #94a3b8;
-  --color-primary-500: #64748b;
-  --color-primary-600: #475569;
-  --color-primary-700: #334155;
-  --color-primary-800: #1e293b;
-  --color-primary-900: #0f172a;
-  --color-primary: #1e293b;
+/*
+  Atelier — the engineer's notebook.
+  Cool grid paper, hard ink borders, a highlighter, one blue pen,
+  and the occasional sticker. Humour lives in the copy and margin notes;
+  the layout stays disciplined.
+*/
 
-  --color-accent: #0d9488;
-  --color-accent-light: #5eead4;
-  --color-accent-dark: #14b8a6;
+:root {
+  --paper: #f3f5f2;
+  --sheet: #ffffff;
+  --ink: #1c2530;
+  --ink-soft: #3d4856;
+  --mute: #5c6875;
+  --pen: #2f5bea;
+  --pen-deep: #2247c2;
+  --hl: #ffe45c;
+  --hl-ink: #1c2530;
+  --sticker: #ff6a3d;
+  --grid: #d5dad4;
+  --grid-strong: #c4cac3;
+  --shadow-ink: #1c2530;
+}
 
-  --color-bitcoin-orange: #f7931a;
-  --color-bitcoin-gray: #4d4d4d;
-
-  /* Drives the <mark> highlight gradient below. */
-  --color-mark: #5eead4;
-
-  --font-sans: century-gothic, sans-serif;
-
-  --tracking-wider: 0.05em;
-  --tracking-widest: 0.1em;
-
-  --shadow-soft:
-    0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
-  --shadow-soft-lg:
-    0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-
-  --animate-fade-in-up: fadeInUp 0.6s ease-out;
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #191d23;
+    --sheet: #21262e;
+    --ink: #eaedf0;
+    --ink-soft: #cfd5dc;
+    --mute: #a0a9b4;
+    --pen: #7ea0ff;
+    --pen-deep: #9db6ff;
+    --hl: #7c6117;
+    --hl-ink: #eaedf0;
+    --sticker: #ff7d55;
+    --grid: #2b313a;
+    --grid-strong: #363d47;
+    --shadow-ink: #05070a;
   }
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
+/* Paper is always paper on paper. */
+@media print {
+  :root {
+    --paper: #ffffff;
+    --sheet: #ffffff;
+    --ink: #1c2530;
+    --ink-soft: #3d4856;
+    --mute: #5c6875;
+    --pen: #2f5bea;
+    --pen-deep: #2247c2;
+    --hl: #ffe45c;
+    --hl-ink: #1c2530;
+    --sticker: #ff6a3d;
+    --grid: #d5dad4;
+    --grid-strong: #c4cac3;
+    --shadow-ink: #1c2530;
+  }
+}
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
+@theme inline {
+  --color-paper: var(--paper);
+  --color-sheet: var(--sheet);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-mute: var(--mute);
+  --color-pen: var(--pen);
+  --color-pen-deep: var(--pen-deep);
+  --color-hl: var(--hl);
+  --color-sticker: var(--sticker);
+  --color-grid: var(--grid);
+  --color-grid-strong: var(--grid-strong);
+
+  --font-sans: var(--font-body), "Source Sans 3", "Avenir Next", sans-serif;
+  --font-display:
+    var(--font-display), "Bricolage Grotesque", "Gill Sans", sans-serif;
+  --font-mono: var(--font-mono), "IBM Plex Mono", Menlo, monospace;
+  --font-note: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+
+  --tracking-wider: 0.06em;
+  --tracking-widest: 0.12em;
+
+  --shadow-lift: 3px 3px 0 var(--shadow-ink);
+  --shadow-lift-lg: 6px 6px 0 var(--shadow-ink);
+}
+
 @layer base {
   *,
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+    border-color: var(--color-grid);
   }
-}
 
-/*
-  text-balance, break-inside-avoid and break-before-page are all built-in
-  Tailwind utilities, and `print:` is a built-in variant, so the hand-escaped
-  .print\:break-* classes this file used to declare are redundant — they only
-  duplicated what Tailwind already generates for print:break-inside-avoid.
-*/
-
-@layer base {
   html {
-    font-family: century-gothic, sans-serif;
-    font-weight: 300;
-    font-style: normal;
     scroll-behavior: smooth;
   }
-  body {
-    @apply leading-relaxed text-primary-700 bg-white text-base antialiased;
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
+
+  body {
+    @apply bg-paper text-ink text-base leading-relaxed antialiased;
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-attachment: fixed;
+  }
+
+  a {
+    @apply text-pen hover:text-pen-deep transition-colors duration-150;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+    text-wrap: balance;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.02];
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl font-semibold tracking-tight leading-tight;
+  }
+  h3 {
+    @apply text-xl sm:text-2xl font-semibold leading-snug;
+  }
+  h4 {
+    @apply text-lg font-semibold leading-snug;
+  }
+  h5 {
+    @apply text-base font-semibold text-ink-soft;
+  }
+  h6 {
+    @apply text-sm font-semibold text-mute;
+  }
+
+  ::selection {
+    background: var(--hl);
+    color: var(--hl-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--pen);
+    outline-offset: 3px;
+  }
+
   @media print {
     html {
       font-size: 12px;
     }
     body {
       @apply text-sm;
+      background-image: none;
     }
     * {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-  }
-  a {
-    @apply text-accent hover:text-accent-dark transition-colors duration-200;
-  }
-  h1 {
-    @apply text-5xl sm:text-6xl font-bold text-primary-900 tracking-tight;
-  }
-  h2 {
-    @apply text-3xl sm:text-4xl font-semibold text-primary-900 tracking-tight;
-  }
-  h3 {
-    @apply text-2xl sm:text-3xl font-semibold text-primary-800;
-  }
-  h4 {
-    @apply text-xl font-semibold text-primary-800;
-  }
-  h5 {
-    @apply text-base font-semibold text-primary-600;
-  }
-  h6 {
-    @apply text-sm font-semibold text-primary-600;
-  }
-  @media print {
     h1 {
       @apply text-2xl;
     }
@@ -137,32 +186,105 @@
   }
 }
 
-/* Resume print: overflow-hidden can block page breaks */
-@media print {
-  .resume-page {
-    overflow: visible !important;
+@layer components {
+  /* Small-caps mono label: "Notebook · p.2 · Work" */
+  .label {
+    @apply font-mono text-xs uppercase tracking-widest text-mute;
+  }
+
+  /* A sheet of paper laid on the grid. */
+  .sheet {
+    @apply bg-sheet border-2 border-ink rounded-md;
+  }
+  .sheet-lift {
+    @apply shadow-lift transition-[transform,box-shadow] duration-200;
+  }
+  .sheet-lift:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-lift-lg);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-sm font-sans font-semibold text-sm sm:text-base border-2 border-ink transition-[transform,box-shadow,background-color] duration-150 shadow-lift;
+  }
+  .btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--shadow-ink);
+  }
+  .btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--shadow-ink);
+  }
+  .btn-primary {
+    @apply bg-pen text-paper hover:text-paper;
+    border-color: var(--pen-deep);
+  }
+  .btn-ghost {
+    @apply bg-sheet text-ink hover:text-ink;
+  }
+
+  /* Highlighter tape across the top edge of a sheet. */
+  .tape {
+    @apply absolute -top-2.5 left-6 h-4 w-16 rotate-[-2deg] pointer-events-none;
+    background: color-mix(in srgb, var(--hl) 80%, transparent);
+  }
+
+  /* One sticker per viewport, max. */
+  .sticker {
+    @apply absolute -top-3 -right-2 rotate-[-6deg] bg-sticker text-white font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-sm shadow-[1px_1px_0_var(--shadow-ink)] pointer-events-none;
+  }
+
+  /* Blue-pen margin note in a serif italic. */
+  .margin-note {
+    @apply font-note italic text-pen text-sm leading-tight;
   }
 }
 
-@-webkit-keyframes highlight {
-  to {
-    background-position: 0 0;
-  }
-}
+/* Highlighter draws in as it scrolls into view; falls back to a timed sweep. */
 @keyframes highlight {
   to {
     background-position: 0 0;
   }
 }
 mark {
-  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
-  animation: 1.5s highlight 1.5s 1 normal forwards;
-  background-color: none;
-  background: linear-gradient(
+  color: inherit;
+  font-weight: 600;
+  padding: 0 0.1em;
+  background-color: transparent;
+  background-image: linear-gradient(
     90deg,
-    var(--color-mark) 50%,
+    var(--hl) 50%,
     rgba(255, 255, 255, 0) 50%
   );
   background-size: 200% 100%;
   background-position: 100% 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  animation: highlight 1.2s ease-out 0.6s 1 normal forwards;
+}
+@supports (animation-timeline: view()) {
+  mark {
+    animation: highlight linear both;
+    animation-timeline: view();
+    animation-range: entry 20% entry 70%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  mark {
+    animation: none;
+    background-position: 0 0;
+  }
+  .sheet-lift,
+  .btn {
+    transition: none;
+  }
+}
+@media print {
+  mark {
+    animation: none;
+    background-position: 0 0;
+  }
+  .resume-page {
+    overflow: visible !important;
+  }
 }

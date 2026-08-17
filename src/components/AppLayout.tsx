@@ -10,15 +10,16 @@ export default async function AppLayout({ children, locale }: AppLayoutProps) {
   const t = await getTranslations({ locale });
 
   return (
-    <main className="flex min-h-screen flex-col bg-white">
+    <main className="flex min-h-screen flex-col">
       <NavBar />
-      <div className="mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 flex-1">
+      <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 flex-1">
         {children}
       </div>
-      <footer className="flex justify-center items-center py-8 print:hidden border-t border-primary-200 bg-primary-50 mt-16">
-        <span className="text-sm text-primary-600">
-          {new Date().getFullYear()} &#169; {t("allRightsReserved")}
-        </span>
+      <footer className="print:hidden border-t-2 border-ink bg-sheet mt-16">
+        <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-xs text-mute">
+          <span>© {new Date().getFullYear()} JP Melanson · Lévis, QC</span>
+          <span className="margin-note">{t("footerSignoff")}</span>
+        </div>
       </footer>
     </main>
   );
