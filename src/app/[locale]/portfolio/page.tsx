@@ -148,12 +148,11 @@ export default async function Work({
           <span className="label">{t("featuredNote")}</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p, idx) => (
+          {projects.map((p) => (
             <article
               key={p.key}
               className="relative sheet sheet-lift p-6 flex flex-col"
             >
-              {idx === 0 && <span className="tape" aria-hidden="true"></span>}
               <p className="label mb-3">{t(`${p.key}.client`)}</p>
               <h3 className="mb-2">{t(`${p.key}.title`)}</h3>
               <p className="text-ink-soft mb-5">{t(`${p.key}.lead`)}</p>
