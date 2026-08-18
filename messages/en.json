@@ -17,7 +17,7 @@
     },
     "intro1": "I'm JP, a software engineer and technical lead near Québec City. For 15+ years I've built <mark>mobile apps</mark>, <mark>web platforms</mark> and the <mark>cloud plumbing</mark> underneath them — for startups, a research hospital (CRIUCPQ), a real-estate platform I co-founded, and Ticketmaster.",
     "intro2": "I'm most useful where product, design and engineering meet: I'll sit with you to figure out what's worth building, then <mark>build it</mark>, then make sure it <mark>stays up</mark>. Day to day that's Next.js, React, React Native, TypeScript and Postgres; Go, Rails, Java and AWS when the job calls for them.",
-    "intro3": "I work with small and mid-size teams in tech, real estate, finance and Bitcoin — as your <mark>first engineer</mark>, a <mark>fractional CTO</mark>, or the person who finally migrates the thing everyone's afraid to touch.",
+    "intro3": "I work with small and mid-size teams in tech, real estate and finance — as your <mark>first engineer</mark>, a <mark>fractional CTO</mark>, or the person who finally migrates the thing everyone's afraid to touch.",
     "currently": {
       "title": "Currently",
       "buildingK": "building",
@@ -32,7 +32,7 @@
   },
   "portfolio": {
     "title": "Work",
-    "description": "Selected client work and the services behind it: mobile apps, web platforms, APIs, cloud infrastructure and plain-language Bitcoin consulting.",
+    "description": "Selected client work and the services behind it: mobile apps, web platforms, APIs and cloud infrastructure.",
     "pageTitle": "Things I've shipped, and things I can ship for you.",
     "featured": "Client work",
     "featuredNote": "in production today",
@@ -92,13 +92,6 @@
       "description1": "Set up <mark>automated CI/CD pipelines</mark>: deploys in minutes, fewer human errors, faster iteration",
       "description2": "Design <mark>secure, scalable cloud architectures</mark> that absorb traffic spikes and stay available",
       "description3": "Define <mark>infrastructure-as-code</mark> so dev, staging and production are reproducible and version-controlled"
-    },
-    "bitcoin": {
-      "title": "Bitcoin",
-      "lead": "Treasury strategy, payment integration and plain-language education. No hype, no price predictions.",
-      "description1": "Design a <mark>Bitcoin treasury strategy</mark> for your situation, personal or corporate",
-      "description2": "Integrate <mark>Bitcoin payments</mark> into your existing e-commerce or point-of-sale: lower fees, instant settlement",
-      "description3": "Run <mark>education sessions</mark> on fundamentals, security and custody, so the decisions are yours and informed"
     },
     "playStoreAlt": "Get it on Google Play",
     "appStoreAlt": "Download on the App Store"

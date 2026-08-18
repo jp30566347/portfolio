@@ -9,7 +9,6 @@ import reactLogo from "@/assets/react.svg";
 import postgresLogo from "@/assets/pg.png";
 import supabaseLogo from "@/assets/supabase.svg";
 import awsArch from "@/assets/aws-arch.png";
-import bitcoinLogo from "@/assets/bitcoin-btc-logo.svg";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -44,7 +43,7 @@ const projects: Project[] = [
 ];
 
 type Service = {
-  key: "mobileDev" | "webDev" | "apiDev" | "infrastructure" | "bitcoin";
+  key: "mobileDev" | "webDev" | "apiDev" | "infrastructure";
   bullets: number;
   logos: { src: StaticImageData; alt: string; className?: string }[];
   sticker?: boolean;
@@ -77,11 +76,6 @@ const services: Service[] = [
     key: "infrastructure",
     bullets: 3,
     logos: [{ src: awsArch, alt: "AWS", className: "h-16" }],
-  },
-  {
-    key: "bitcoin",
-    bullets: 3,
-    logos: [{ src: bitcoinLogo, alt: "Bitcoin" }],
   },
 ];
 
@@ -190,7 +184,7 @@ export default async function Work({
           <h2>{t("services")}</h2>
           <span className="label">{t("servicesNote")}</span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((s) => (
             <article
               key={s.key}

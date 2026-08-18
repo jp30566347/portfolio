@@ -17,7 +17,7 @@
     },
     "intro1": "Je suis JP, ingénieur logiciel et leader technique près de Québec. Depuis plus de 15 ans, je construis des <mark>applications mobiles</mark>, des <mark>plateformes web</mark> et la <mark>plomberie infonuagique</mark> en dessous — pour des startups, un centre de recherche hospitalier (CRIUCPQ), une plateforme immobilière que j'ai cofondée, et Ticketmaster.",
     "intro2": "Je suis le plus utile là où produit, design et ingénierie se rencontrent : on décide ensemble ce qui vaut la peine d'être construit, je le <mark>construis</mark>, puis je m'assure que ça <mark>tienne</mark>. Au quotidien, c'est Next.js, React, React Native, TypeScript et Postgres ; Go, Rails, Java et AWS quand le projet le demande.",
-    "intro3": "Je travaille avec de petites et moyennes équipes en techno, en immobilier, en finance et en Bitcoin — comme <mark>premier ingénieur</mark>, <mark>CTO à temps partiel</mark>, ou comme la personne qui migre enfin le système que tout le monde a peur de toucher.",
+    "intro3": "Je travaille avec de petites et moyennes équipes en techno, en immobilier et en finance — comme <mark>premier ingénieur</mark>, <mark>CTO à temps partiel</mark>, ou comme la personne qui migre enfin le système que tout le monde a peur de toucher.",
     "currently": {
       "title": "En ce moment",
       "buildingK": "je construis",
@@ -32,7 +32,7 @@
   },
   "portfolio": {
     "title": "Projets",
-    "description": "Une sélection de mandats clients et les services derrière : applications mobiles, plateformes web, API, infrastructure infonuagique et consultation Bitcoin en langage clair.",
+    "description": "Une sélection de mandats clients et les services derrière : applications mobiles, plateformes web, API et infrastructure infonuagique.",
     "pageTitle": "Ce que j'ai livré, et ce que je peux livrer pour vous.",
     "featured": "Mandats clients",
     "featuredNote": "en production aujourd'hui",
@@ -92,13 +92,6 @@
       "description1": "Mettre en place des <mark>pipelines CI/CD automatisés</mark> : déploiements en minutes, moins d'erreurs humaines, itérations plus rapides",
       "description2": "Concevoir des <mark>architectures infonuagiques sécuritaires et évolutives</mark> qui absorbent les pointes de trafic et restent disponibles",
       "description3": "Définir l'<mark>infrastructure-as-code</mark> pour que dev, staging et production soient reproductibles et versionnés"
-    },
-    "bitcoin": {
-      "title": "Bitcoin",
-      "lead": "Stratégie de trésorerie, intégration de paiements et formation en langage clair. Sans battage, sans prédiction de prix.",
-      "description1": "Concevoir une <mark>stratégie de trésorerie Bitcoin</mark> adaptée à votre situation, personnelle ou d'entreprise",
-      "description2": "Intégrer les <mark>paiements Bitcoin</mark> à votre commerce en ligne ou point de vente : frais plus bas, règlement instantané",
-      "description3": "Animer des <mark>séances de formation</mark> sur les fondamentaux, la sécurité et la garde, pour que les décisions soient les vôtres, et éclairées"
     },
     "playStoreAlt": "Disponible sur Google Play",
     "appStoreAlt": "Télécharger dans l'App Store"
