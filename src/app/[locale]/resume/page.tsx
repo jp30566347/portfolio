@@ -17,6 +17,7 @@ import { PageLabel } from "@/components/PageLabel";
 const jobs = [
   "sapien",
   "doormath",
+  "criucpq",
   "fastaf",
   "ticketmaster1",
   "asurion",

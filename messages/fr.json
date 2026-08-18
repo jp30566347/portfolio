@@ -159,6 +159,15 @@
         "description3": "Livré plus de 15 fonctionnalités clés — évaluations automatisées, abonnements, portail courtier, inscriptions, enchères, analytique — permettant le lancement et les premiers clients payants.",
         "description4": "Mis en place l'infrastructure de production : authentification, QA automatisée, CI/CD, CDN et optimisation d'images ; 99,9 % de disponibilité et pages sous 2 s. Parti lorsque l'entreprise n'a pas pu boucler sa ronde suivante."
       },
+      "criucpq": {
+        "title": "Ingénieur logiciel — Contrat",
+        "company": "CRIUCPQ (centre de recherche hospitalier)",
+        "period": "2021-09 – aujourd'hui",
+        "location": "À distance · Québec",
+        "description1": "Engagé pour diriger le développement d'une application scientifique de thérapie respiratoire utilisée par cliniciens, formateurs et étudiants ; responsable du produit de bout en bout depuis.",
+        "description2": "Regroupé deux applications natives iOS/Android en une seule base React Native, réduisant l'effort de maintenance annuel d'environ la moitié ; reconstruit l'algorithme de recommandations selon les lignes directrices médicales à jour.",
+        "description3": "Porté l'outil sur le web (ventilo.ca) sur une infrastructure infonuagique clé en main — CDN, déploiements automatisés, analytique — à 99,9 % de disponibilité ; opérations en boutique et conformité pour les deux applications."
+      },
       "fastaf": {
         "title": "Ingénieur logiciel",
         "company": "FastAF Technologies",

@@ -159,6 +159,15 @@
         "description3": "Delivered 15+ core features — automated appraisals, subscriptions, broker portal, listings, auctions, analytics — enabling launch and the first paying customers.",
         "description4": "Set up production infrastructure: auth, automated QA, CI/CD, CDN and image optimisation; 99.9% uptime and sub-2 s page loads. Left when the company could not close its next round."
       },
+      "criucpq": {
+        "title": "Software Engineer — Contract",
+        "company": "CRIUCPQ (research hospital)",
+        "period": "2021-09 – present",
+        "location": "Remote · Québec City",
+        "description1": "Hired to lead development of a scientific respiratory-therapy app used by clinicians, educators and students; own the product end to end since.",
+        "description2": "Consolidated two native iOS/Android apps into one React Native codebase, roughly halving yearly maintenance effort; rebuilt the recommendations algorithm to updated medical guidelines.",
+        "description3": "Took the tool to the web (ventilo.ca) on turnkey cloud infrastructure — CDN, automated deploys, analytics — at 99.9% uptime; run app-store operations and compliance for both apps."
+      },
       "fastaf": {
         "title": "Software Engineer",
         "company": "FastAF Technologies",
