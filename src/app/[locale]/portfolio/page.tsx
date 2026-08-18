@@ -43,7 +43,7 @@ const projects: Project[] = [
 ];
 
 type Service = {
-  key: "agentic" | "mobileDev" | "webDev" | "apiDev" | "infrastructure";
+  key: "agentic" | "product" | "aiProduct" | "platform" | "cto";
   bullets: number;
   logos?: { src: StaticImageData; alt: string; className?: string }[];
   sticker?: boolean;
@@ -53,32 +53,26 @@ type Service = {
 const services: Service[] = [
   { key: "agentic", bullets: 4, wide: true },
   {
-    key: "mobileDev",
-    bullets: 3,
-    logos: [{ src: reactNative, alt: "React Native", className: "h-16" }],
-  },
-  {
-    key: "webDev",
-    bullets: 3,
+    key: "product",
+    bullets: 4,
     sticker: true,
     logos: [
       { src: nextjsLogo, alt: "Next.js" },
       { src: reactLogo, alt: "React" },
+      { src: reactNative, alt: "React Native", className: "h-12" },
     ],
   },
+  { key: "aiProduct", bullets: 4 },
   {
-    key: "apiDev",
+    key: "platform",
     bullets: 4,
     logos: [
       { src: postgresLogo, alt: "PostgreSQL" },
       { src: supabaseLogo, alt: "Supabase" },
+      { src: awsArch, alt: "AWS", className: "h-12" },
     ],
   },
-  {
-    key: "infrastructure",
-    bullets: 3,
-    logos: [{ src: awsArch, alt: "AWS", className: "h-16" }],
-  },
+  { key: "cto", bullets: 4 },
 ];
 
 export default async function Work({

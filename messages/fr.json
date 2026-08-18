@@ -32,7 +32,7 @@
   },
   "portfolio": {
     "title": "Projets",
-    "description": "Une sélection de mandats clients et les services derrière : applications mobiles, plateformes web, API et infrastructure infonuagique.",
+    "description": "Une sélection de mandats clients et les services derrière : ingénierie agentique, livraison de produit, IA en production, plateforme et leadership technique.",
     "pageTitle": "Ce que j'ai livré, et ce que je peux livrer pour vous.",
     "featured": "Mandats clients",
     "featuredNote": "en production aujourd'hui",
@@ -65,41 +65,44 @@
       "description3": "Mis en place les <mark>opérations en boutique</mark> : publications automatisées, conformité réglementaire, analytique d'usage"
     },
     "agentic": {
-      "title": "Processus de développement agentique",
-      "lead": "Je livre du code de production avec des agents de codage IA depuis 2024 — et je mets le processus en place pour que votre équipe puisse en faire autant, sans le désordre.",
+      "title": "Mise en place de l'ingénierie agentique",
+      "lead": "Je livre du code de production avec des agents de codage IA depuis 2024. Je mets votre équipe en état d'en faire autant — plus vite, et sans le désordre.",
       "description1": "Rendre la base de code <mark>prête pour les agents</mark> : conventions, garde-fous, tests et CI qui laissent les agents aller vite sans rien casser",
       "description2": "Concevoir le <mark>flux de travail</mark> — ce que les agents rédigent, ce que les humains révisent, comment le travail est spécifié, vérifié et fusionné",
-      "description3": "Former vos ingénieurs au <mark>développement assisté par IA</mark> ; chez Sapien, la pratique a réduit de moitié le temps de construction d'un projet",
-      "description4": "Construire des <mark>systèmes d'agents en production</mark> : agents outillés avec évaluations, observabilité et contrôle des coûts, sur votre pile"
+      "description3": "Former les ingénieurs au <mark>développement assisté par IA</mark> ; chez Sapien, la pratique a réduit de moitié le temps de construction d'un projet",
+      "description4": "Choisir et brancher l'<mark>outillage</mark> — agents de codage, serveurs MCP, robots de revue — et mesurer si ça rapporte vraiment"
     },
-    "mobileDev": {
-      "title": "Applications mobiles",
-      "lead": "De Figma à l'App Store — une seule base de code React Native pour iOS et Android, plus la partie dont personne ne vous parle.",
-      "description1": "Transformer vos <mark>maquettes et prototypes</mark> en application de production avec des performances natives sur les deux plateformes",
-      "description2": "Prendre en charge tout le <mark>processus de soumission en boutique</mark> : lignes directrices, formulaires de confidentialité, allers-retours de révision",
-      "description3": "La garder <mark>sécuritaire et à jour</mark> à travers les mises à jour d'OS, les correctifs de sécurité et les bris annuels de plateforme"
+    "product": {
+      "title": "Livraison de produit, web et mobile",
+      "lead": "Le produit au complet, de Figma à la production — un ingénieur, un flux agentique, et une portée qui aurait pris une équipe.",
+      "description1": "<mark>Applications web</mark> en Next.js/React qui chargent instantanément, se classent bien et convertissent",
+      "description2": "<mark>Applications mobiles</mark> en React Native pour iOS et Android à partir d'une seule base de code — soumission en boutique et bris annuels d'OS inclus",
+      "description3": "<mark>Hébergement optimisé</mark> qui suit le trafic — habituellement 40 à 60 % moins cher que ce qu'il remplace",
+      "description4": "Sauver et <mark>accélérer les applications existantes</mark> — code, cache et infrastructure, souvent 2 à 5× plus rapides"
     },
-    "webDev": {
-      "title": "Applications web",
-      "lead": "Rapides, faciles à trouver, et moins chères à héberger que vous ne le pensez.",
-      "description1": "Construire des <mark>applications web performantes</mark> qui chargent instantanément, se classent bien et convertissent les visiteurs en clients",
-      "description2": "Déployer sur une <mark>infrastructure infonuagique optimisée</mark> qui suit le trafic — habituellement 40 à 60 % moins chère que ce qu'elle remplace",
-      "description3": "Accélérer les <mark>applications existantes</mark> par le code, la mise en cache et l'infrastructure — souvent 2 à 5× plus rapides"
+    "aiProduct": {
+      "title": "Fonctionnalités IA en production",
+      "lead": "Des fonctionnalités LLM et des agents qui survivent au contact des vrais utilisateurs — avec évaluations, observabilité et une facture prévisible.",
+      "description1": "Construire des <mark>agents outillés</mark> et des fonctionnalités LLM sur vos données et votre pile (Claude, OpenAI, modèles ouverts)",
+      "description2": "Mettre en place <mark>évaluations et observabilité</mark> : la qualité se mesure, les régressions se détectent, les prompts changent sans risque",
+      "description3": "Garder <mark>coûts et latence</mark> sous contrôle : cache, routage de modèles, traitement par lots, budgets",
+      "description4": "Gérer <mark>sécurité et données</mark> : garde-fous, permissions, renseignements personnels, traces d'audit — avant que ça devienne un billet de soutien"
     },
-    "apiDev": {
-      "title": "API",
-      "lead": "REST ou GraphQL, documentées automatiquement — pour que la documentation reste vraie après mon départ.",
-      "description1": "Concevoir et construire des <mark>API REST ou GraphQL évolutives</mark>, sécuritaires, rapides et faciles à maintenir",
-      "description2": "Architecturer des <mark>systèmes événementiels</mark> qui réagissent en temps réel aux événements d'affaires",
-      "description3": "Livrer des <mark>fonctions sans serveur</mark> qui s'exécutent à la demande et ne coûtent rien au repos",
-      "description4": "Générer la <mark>documentation d'API à partir du code</mark>, pour un accueil rapide et des références qui ne dérivent jamais"
+    "platform": {
+      "title": "API, infonuagique et plateforme",
+      "lead": "La partie ennuyante qui rend la partie rapide sécuritaire.",
+      "description1": "<mark>API REST ou GraphQL</mark> sécuritaires, rapides, documentées à partir du code pour que la documentation reste vraie",
+      "description2": "Back-ends <mark>événementiels et sans serveur</mark> qui réagissent en temps réel et ne coûtent rien au repos",
+      "description3": "<mark>CI/CD et infrastructure-as-code</mark> : déploiements en minutes, environnements reproductibles et versionnés",
+      "description4": "<mark>Architecture infonuagique</mark> qui absorbe les pointes, reste disponible et ne surprend pas sur la facture"
     },
-    "infrastructure": {
-      "title": "Infrastructure et DevOps",
-      "lead": "CI/CD, infrastructure-as-code et tableaux de bord que vous ouvrirez vraiment. Les déploiements passent de « vendredi après-midi » à « n'importe quand ».",
-      "description1": "Mettre en place des <mark>pipelines CI/CD automatisés</mark> : déploiements en minutes, moins d'erreurs humaines, itérations plus rapides",
-      "description2": "Concevoir des <mark>architectures infonuagiques sécuritaires et évolutives</mark> qui absorbent les pointes de trafic et restent disponibles",
-      "description3": "Définir l'<mark>infrastructure-as-code</mark> pour que dev, staging et production soient reproductibles et versionnés"
+    "cto": {
+      "title": "CTO à temps partiel et leadership technique",
+      "lead": "Un ingénieur senior dans la pièce quand les décisions se prennent — une journée par semaine ou un trimestre critique.",
+      "description1": "<mark>Feuille de route et architecture</mark> : quoi construire, quoi acheter, quoi reporter, et pourquoi",
+      "description2": "<mark>Les migrations qui font peur</mark> : plateforme, cadriciel, infonuagique — planifiées, dérisquées et livrées",
+      "description3": "<mark>Recrutement et mentorat</mark> d'ingénieurs, et mise en place des pratiques qu'une petite équipe doit garder pour rester rapide",
+      "description4": "<mark>Vérification diligente et audits</mark> d'une base de code, d'une équipe ou d'un fournisseur, en langage clair"
     },
     "playStoreAlt": "Disponible sur Google Play",
     "appStoreAlt": "Télécharger dans l'App Store"

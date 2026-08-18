@@ -32,7 +32,7 @@
   },
   "portfolio": {
     "title": "Work",
-    "description": "Selected client work and the services behind it: mobile apps, web platforms, APIs and cloud infrastructure.",
+    "description": "Selected client work and the services behind it: agentic engineering, product delivery, AI in production, platform and technical leadership.",
     "pageTitle": "Things I've shipped, and things I can ship for you.",
     "featured": "Client work",
     "featuredNote": "in production today",
@@ -65,41 +65,44 @@
       "description3": "Set up <mark>app-store operations</mark>: automated releases, regulatory compliance, behaviour analytics"
     },
     "agentic": {
-      "title": "Agentic coding process",
-      "lead": "I've shipped production code with AI coding agents since 2024 — and I set the process up so your team can too, without the mess.",
+      "title": "Agentic engineering setup",
+      "lead": "I've shipped production code with AI coding agents since 2024. I set your team up to do the same — faster, and without the mess.",
       "description1": "Make the codebase <mark>agent-ready</mark>: conventions, guardrails, tests and CI that let agents move fast without breaking things",
-      "description2": "Design the <mark>workflow</mark> — what agents draft, what humans review, how work gets specced, verified and merged",
-      "description3": "Coach your engineers on <mark>effective AI-assisted development</mark>; at Sapien the practice cut one project's build time by 50%",
-      "description4": "Build <mark>production agent systems</mark>: tool-using agents with evals, observability and cost controls, on your stack"
+      "description2": "Design the <mark>workflow</mark> — what agents draft, what humans review, how work is specced, verified and merged",
+      "description3": "Coach engineers on <mark>effective AI-assisted development</mark>; at Sapien the practice cut one project's build time by 50%",
+      "description4": "Pick and wire the <mark>tooling</mark> — coding agents, MCP servers, review bots — and measure whether it's actually paying off"
     },
-    "mobileDev": {
-      "title": "Mobile apps",
-      "lead": "From Figma to the App Store — one React Native codebase for iOS and Android, plus the part nobody warns you about.",
-      "description1": "Turn your <mark>designs and prototypes</mark> into a production app with native performance on both platforms",
-      "description2": "Handle the full <mark>store submission process</mark>: guidelines, privacy forms, review back-and-forth",
-      "description3": "Keep it <mark>secure and current</mark> through OS updates, security patches and the yearly platform breakages"
+    "product": {
+      "title": "Product delivery, web & mobile",
+      "lead": "The whole product, from Figma to production — one engineer, an agentic workflow, and a scope that would have taken a team.",
+      "description1": "<mark>Web apps</mark> in Next.js/React that load instantly, rank well and turn visitors into customers",
+      "description2": "<mark>Mobile apps</mark> in React Native for iOS and Android from one codebase — including store submission and the yearly OS breakages",
+      "description3": "<mark>Cost-optimised hosting</mark> that scales with traffic — typically 40–60% cheaper than what it replaces",
+      "description4": "Rescue and <mark>speed up existing apps</mark> — code, caching and infrastructure fixes, often 2–5× faster loads"
     },
-    "webDev": {
-      "title": "Web apps",
-      "lead": "Fast, findable, and cheaper to host than you'd expect.",
-      "description1": "Build <mark>high-performance web apps</mark> that load instantly, rank well and turn visitors into customers",
-      "description2": "Deploy on <mark>cost-optimised cloud infrastructure</mark> that scales with traffic — typically 40–60% cheaper than what it replaces",
-      "description3": "Speed up <mark>existing apps</mark> with code, caching and infrastructure fixes — often 2–5× faster loads"
+    "aiProduct": {
+      "title": "AI features in production",
+      "lead": "LLM features and agents that survive contact with real users — with evals, observability and a bill you can predict.",
+      "description1": "Build <mark>tool-using agents</mark> and LLM features on your data and your stack (Claude, OpenAI, open models)",
+      "description2": "Set up <mark>evals and observability</mark> so quality is measured, regressions are caught and prompts can change safely",
+      "description3": "Keep <mark>cost and latency</mark> under control: caching, model routing, batching, budgets",
+      "description4": "Handle <mark>safety and data</mark>: guardrails, permissions, PII, audit trails — before it becomes a support ticket"
     },
-    "apiDev": {
-      "title": "APIs",
-      "lead": "REST or GraphQL, documented automatically — so the docs stay true after I leave.",
-      "description1": "Design and build <mark>scalable REST or GraphQL APIs</mark> that are secure, fast and easy to maintain",
-      "description2": "Architect <mark>event-driven systems</mark> that react to business events in real time",
-      "description3": "Ship <mark>serverless functions</mark> that run on demand and cost nothing when idle",
-      "description4": "Generate <mark>API documentation from the code</mark>, so onboarding is quick and references never drift"
+    "platform": {
+      "title": "APIs, cloud & platform",
+      "lead": "The boring part that makes the fast part safe.",
+      "description1": "<mark>REST or GraphQL APIs</mark> that are secure, fast, and documented from the code so the docs stay true",
+      "description2": "<mark>Event-driven and serverless</mark> back-ends that react in real time and cost nothing when idle",
+      "description3": "<mark>CI/CD and infrastructure-as-code</mark>: deploys in minutes, environments reproducible and versioned",
+      "description4": "<mark>Cloud architecture</mark> that absorbs traffic spikes, stays available and doesn't surprise you on the invoice"
     },
-    "infrastructure": {
-      "title": "Infrastructure & DevOps",
-      "lead": "CI/CD, infrastructure-as-code and dashboards you'll actually open. Deploys go from “Friday afternoon” to “whenever”.",
-      "description1": "Set up <mark>automated CI/CD pipelines</mark>: deploys in minutes, fewer human errors, faster iteration",
-      "description2": "Design <mark>secure, scalable cloud architectures</mark> that absorb traffic spikes and stay available",
-      "description3": "Define <mark>infrastructure-as-code</mark> so dev, staging and production are reproducible and version-controlled"
+    "cto": {
+      "title": "Fractional CTO & technical leadership",
+      "lead": "A senior engineer in the room when the decisions get made — for a day a week or a critical quarter.",
+      "description1": "<mark>Roadmap and architecture</mark>: what to build, what to buy, what to postpone, and why",
+      "description2": "<mark>Migrations everyone's afraid of</mark>: platform, framework, cloud — planned, de-risked and shipped",
+      "description3": "<mark>Hiring and mentoring</mark> engineers, and setting the practices a small team needs to stay fast",
+      "description4": "<mark>Due diligence and audits</mark> of an existing codebase, team or vendor, in plain language"
     },
     "playStoreAlt": "Get it on Google Play",
     "appStoreAlt": "Download on the App Store"
