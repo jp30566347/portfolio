@@ -1,13 +1,6 @@
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  ExternalLink,
-  Globe,
-  Printer,
-} from "lucide-react";
+import { Mail, MapPin, ExternalLink, Globe, Printer } from "lucide-react";
 import Link from "next/link";
 import type { ComponentType, SVGProps } from "react";
 import { Github, Linkedin } from "@/components/BrandIcons";
@@ -54,12 +47,6 @@ export default async function Resume({
     external?: boolean;
   }[] = [
     { Icon: MapPin, label: t("address"), value: t("addressValue") },
-    {
-      Icon: Phone,
-      label: t("phone"),
-      value: t("phoneValue"),
-      href: "tel:+14189035365",
-    },
     {
       Icon: Mail,
       label: t("email"),

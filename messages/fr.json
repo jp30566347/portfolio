@@ -39,7 +39,7 @@
       "client": "pour le CRIUCPQ · web",
       "lead": "Un outil de thérapie respiratoire, mobile seulement, porté sur le web, repensé pour les cliniciens et déployé sur une infrastructure qui tient 99,9 % de disponibilité.",
       "description1": "Migré l'application mobile vers une <mark>plateforme web complète</mark>, ouverte aux utilisateurs de bureau et plus accessible",
-      "description2": "Repensé l'<mark>expérience utilisateur</mark> à partir de zéro, autour du vrai travail des professionnels de la santé",
+      "description2": "Repensé <mark>l'expérience utilisateur</mark> à partir de zéro, autour du vrai travail des professionnels de la santé",
       "description3": "Livré une <mark>infrastructure infonuagique clé en main</mark> : CDN mondial, déploiements automatisés, analytique — chargement sous 2 s"
     },
     "oxygapp": {
@@ -54,8 +54,8 @@
       "title": "VentilO",
       "client": "pour le CRIUCPQ · iOS et Android",
       "lead": "Deux applications natives distinctes devenues une seule base de code React Native — mêmes fonctionnalités, mêmes performances, environ la moitié de la maintenance annuelle.",
-      "description1": "Migré des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant l'<mark>effort de maintenance d'environ la moitié</mark>",
-      "description2": "Reconstruit l'<mark>algorithme de recommandations</mark> principal pour suivre les lignes directrices médicales à jour",
+      "description1": "Migré des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant <mark>l'effort de maintenance d'environ la moitié</mark>",
+      "description2": "Reconstruit <mark>l'algorithme de recommandations</mark> principal pour suivre les lignes directrices médicales à jour",
       "description3": "Mis en place les <mark>opérations en boutique</mark> : publications automatisées, conformité réglementaire, analytique d'usage"
     },
     "agentic": {
@@ -64,7 +64,7 @@
       "description1": "Rendre la base de code <mark>prête pour les agents</mark> : conventions, garde-fous, tests et CI qui laissent les agents aller vite sans rien casser",
       "description2": "Concevoir le <mark>flux de travail</mark> — ce que les agents rédigent, ce que les humains révisent, comment le travail est spécifié, vérifié et fusionné",
       "description3": "Former les ingénieurs au <mark>développement assisté par IA</mark> ; chez Sapien, la pratique a réduit de moitié le temps de construction d'un projet",
-      "description4": "Choisir et brancher l'<mark>outillage</mark> — agents de codage, serveurs MCP, robots de revue — et mesurer si ça rapporte vraiment"
+      "description4": "Choisir et brancher <mark>l'outillage</mark> — agents de codage, serveurs MCP, robots de revue — et mesurer si ça rapporte vraiment"
     },
     "product": {
       "title": "Livraison de produit, web et mobile",
@@ -235,8 +235,6 @@
     "contact": "Contact",
     "address": "Adresse",
     "addressValue": "Lévis, QC, Canada, G6Z 3C8",
-    "phone": "Téléphone",
-    "phoneValue": "418-903-5365",
     "email": "Courriel",
     "emailValue": "jp@jp305.dev",
     "linkedin": "LinkedIn",
