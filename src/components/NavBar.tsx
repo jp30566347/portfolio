@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname as useLocalizedPathname } from "@/i18n/routing";
 import { useState } from "react";
 import Image from "next/image";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Mail, Menu, X } from "lucide-react";
 import avatar from "@/assets/jp.png";
 
 const menuItems = ["home", "portfolio", "resume"] as const;
@@ -55,12 +55,12 @@ export function NavBar() {
             className="rounded-full w-10 h-10 border-2 border-ink"
             alt=""
           />
-          <span className="font-mono font-semibold text-sm tracking-wide">
+          <span className="font-mono font-semibold text-sm tracking-wide whitespace-nowrap">
             JP MELANSON
           </span>
         </Link>
 
-        <ul className="hidden sm:flex items-center gap-6">
+        <ul className="hidden sm:flex items-center gap-4 md:gap-6 whitespace-nowrap">
           {menuItems.map((mi) => (
             <li key={mi}>
               <Link
@@ -83,6 +83,16 @@ export function NavBar() {
             >
               {localeLabel}
             </Link>
+          </li>
+          <li>
+            <a
+              href="mailto:jp@jp305.dev"
+              className={`${linkBase} inline-flex items-center gap-1.5 px-2 py-1 ${localeLinkStyle}`}
+              aria-label={t("emailMe")}
+            >
+              <Mail size={13} aria-hidden="true" />
+              <span className="hidden md:inline">{t("emailMe")}</span>
+            </a>
           </li>
           <li>
             <Link
@@ -141,14 +151,24 @@ export function NavBar() {
               <span>{t("bookMe")}</span>
               <ArrowUpRight size={16} aria-hidden="true" />
             </Link>
+            <a
+              href="mailto:jp@jp305.dev"
+              onClick={() => setIsMenuOpen(false)}
+              className="btn btn-ghost flex-1"
+            >
+              <Mail size={16} aria-hidden="true" />
+              <span>{t("emailMe")}</span>
+            </a>
+          </li>
+          <li className="mt-2">
             <Link
               href={localizedPathname}
               locale={oppositeLocale}
               onClick={() => setIsMenuOpen(false)}
-              className="btn btn-ghost"
+              className={`${linkBase} inline-flex px-3 py-2 ${localeLinkStyle}`}
               aria-label={t("switchLocale")}
             >
-              {localeLabel}
+              {t("switchLocale")}
             </Link>
           </li>
         </ul>

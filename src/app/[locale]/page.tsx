@@ -1,6 +1,6 @@
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 import { PageLabel } from "@/components/PageLabel";
@@ -18,6 +18,7 @@ export default async function Home({
     : routing.defaultLocale;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "home" });
+  const tc = await getTranslations({ locale });
 
   const stats = [
     { value: "15+", label: t("stat.years") },
@@ -48,6 +49,13 @@ export default async function Home({
             {t("book30")}
             <ArrowUpRight size={16} aria-hidden="true" />
           </Link>
+          <a
+            href="mailto:jp@jp305.dev"
+            className="inline-flex items-center gap-2 self-center px-2 py-2.5 font-mono text-xs uppercase tracking-widest text-mute hover:text-ink"
+          >
+            <Mail size={14} aria-hidden="true" />
+            {tc("emailMe")}
+          </a>
         </div>
 
         {/* Stats */}
@@ -111,15 +119,21 @@ export default async function Home({
           <h2 className="text-2xl sm:text-3xl">{t("ctaTitle")}</h2>
           <p className="mt-2 text-ink-soft max-w-[48ch]">{t("ctaSub")}</p>
         </div>
-        <Link
-          href="https://calendly.com/jp305/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-primary shrink-0"
-        >
-          {t("book30")}
-          <ArrowUpRight size={16} aria-hidden="true" />
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+          <Link
+            href="https://calendly.com/jp305/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            {t("book30")}
+            <ArrowUpRight size={16} aria-hidden="true" />
+          </Link>
+          <a href="mailto:jp@jp305.dev" className="btn btn-ghost">
+            <Mail size={16} aria-hidden="true" />
+            {tc("emailMe")}
+          </a>
+        </div>
       </section>
     </div>
   );
