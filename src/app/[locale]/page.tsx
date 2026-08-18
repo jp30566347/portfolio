@@ -20,11 +20,13 @@ export default async function Home({
   const t = await getTranslations({ locale, namespace: "home" });
   const tc = await getTranslations({ locale });
 
-  const stats = [
-    { value: "15+", label: t("stat.years") },
-    { value: "100+", label: t("stat.projects") },
-    { value: "½", label: t("stat.bill"), note: t("stat.billNote") },
-    { value: "2", label: t("stat.apps") },
+  const workedWith = [
+    "Ticketmaster",
+    "Sapien",
+    "CRIUCPQ",
+    "FastAF",
+    "doormath.ca",
+    "Asurion",
   ];
 
   return (
@@ -58,32 +60,15 @@ export default async function Home({
           </a>
         </div>
 
-        {/* Stats */}
-        <ul className="mt-16 sm:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 list-none p-0">
-          {stats.map((s) => (
-            <li key={s.label} className="relative sheet px-4 py-4 sm:px-5">
-              {s.note && (
-                <span
-                  className="margin-note absolute -top-7 left-1 rotate-[-2deg] whitespace-nowrap hidden lg:block"
-                  aria-hidden="true"
-                >
-                  {s.note} ↓
-                </span>
-              )}
-              <span className="block font-display text-3xl sm:text-4xl font-semibold tracking-tight tabular-nums">
-                {s.value}
-              </span>
-              <span className="label mt-1 block normal-case tracking-wide">
-                {s.label}
-              </span>
-              {s.note && (
-                <span className="margin-note mt-2 block lg:hidden">
-                  {s.note}
-                </span>
-              )}
-            </li>
-          ))}
-        </ul>
+        {/* Worked with */}
+        <div className="mt-16 sm:mt-20 border-y-2 border-ink py-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8">
+          <span className="label shrink-0">{t("workedWith")}</span>
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 list-none p-0 font-display font-semibold text-lg sm:text-xl text-ink">
+            {workedWith.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       {/* Intro + Currently */}

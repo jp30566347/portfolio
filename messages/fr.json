@@ -8,13 +8,6 @@
     "heroSub": "Quinze ans d'applications mobiles, de plateformes web et d'infrastructure infonuagique, pour des équipes de deux personnes jusqu'au Fortune 500. J'aime les petites équipes, les objectifs clairs et l'infrastructure ennuyante.",
     "seeWork": "Voir les projets",
     "book30": "Réserver 30 minutes",
-    "stat": {
-      "years": "années à livrer",
-      "projects": "projets livrés",
-      "bill": "effort de maintenance, une migration",
-      "billNote": "environ la moitié. Mon estimation — demandez-moi comment.",
-      "apps": "applications en ligne sur iOS et Android"
-    },
     "intro1": "Je suis JP, ingénieur logiciel et leader technique près de Québec. Depuis plus de 15 ans, je construis des <mark>applications mobiles</mark>, des <mark>plateformes web</mark> et la <mark>plomberie infonuagique</mark> en dessous — pour des startups, un centre de recherche hospitalier (CRIUCPQ), une plateforme immobilière que j'ai cofondée, et Ticketmaster.",
     "intro2": "Je suis le plus utile là où produit, design et ingénierie se rencontrent : on décide ensemble ce qui vaut la peine d'être construit, je le <mark>construis</mark>, puis je m'assure que ça <mark>tienne</mark>. Au quotidien, c'est Next.js, React, React Native, TypeScript et Postgres ; Go, Rails, Java et AWS quand le projet le demande.",
     "intro3": "Je travaille avec de petites et moyennes équipes en techno, en immobilier et en finance — comme <mark>premier ingénieur</mark>, <mark>CTO à temps partiel</mark>, ou comme la personne qui migre enfin le système que tout le monde a peur de toucher.",
@@ -28,7 +21,8 @@
       "openV": "mandats de consultation et rôles à temps partiel"
     },
     "ctaTitle": "Un projet en tête ?",
-    "ctaSub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan."
+    "ctaSub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan.",
+    "workedWith": "J'ai travaillé chez"
   },
   "portfolio": {
     "title": "Projets",

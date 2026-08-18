@@ -8,13 +8,6 @@
     "heroSub": "Fifteen years of mobile apps, web platforms and the cloud underneath them, for teams from two people to Fortune 500. I like small teams, clear goals and boring infrastructure.",
     "seeWork": "See the work",
     "book30": "Book 30 minutes",
-    "stat": {
-      "years": "years shipping",
-      "projects": "projects delivered",
-      "bill": "maintenance effort, one migration",
-      "billNote": "roughly halved. My own estimate — ask me how.",
-      "apps": "apps live on iOS & Android"
-    },
     "intro1": "I'm JP, a software engineer and technical lead near Québec City. For 15+ years I've built <mark>mobile apps</mark>, <mark>web platforms</mark> and the <mark>cloud plumbing</mark> underneath them — for startups, a research hospital (CRIUCPQ), a real-estate platform I co-founded, and Ticketmaster.",
     "intro2": "I'm most useful where product, design and engineering meet: I'll sit with you to figure out what's worth building, then <mark>build it</mark>, then make sure it <mark>stays up</mark>. Day to day that's Next.js, React, React Native, TypeScript and Postgres; Go, Rails, Java and AWS when the job calls for them.",
     "intro3": "I work with small and mid-size teams in tech, real estate and finance — as your <mark>first engineer</mark>, a <mark>fractional CTO</mark>, or the person who finally migrates the thing everyone's afraid to touch.",
@@ -28,7 +21,8 @@
       "openV": "consulting & fractional roles"
     },
     "ctaTitle": "Have a project in mind?",
-    "ctaSub": "Thirty minutes, no slides. Bring the problem; I'll bring questions and, usually, a first plan."
+    "ctaSub": "Thirty minutes, no slides. Bring the problem; I'll bring questions and, usually, a first plan.",
+    "workedWith": "Worked inside"
   },
   "portfolio": {
     "title": "Work",
