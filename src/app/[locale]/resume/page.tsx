@@ -8,6 +8,7 @@ import {
   Globe,
   Printer,
 } from "lucide-react";
+import Link from "next/link";
 import type { ComponentType, SVGProps } from "react";
 import { Github, Linkedin } from "@/components/BrandIcons";
 import { routing } from "@/i18n/routing";
@@ -23,19 +24,6 @@ const jobs = [
   "balihoo",
   "ticketmaster3",
   "laval",
-] as const;
-
-const skills = [
-  "skillTypescript",
-  "skillJavascript",
-  "skillReact",
-  "skillNextjs",
-  "skillReactNative",
-  "skillPostgres",
-  "skillAWS",
-  "skillGitHub",
-  "skillSystemDesign",
-  "skillCodeArchitecture",
 ] as const;
 
 const sectionTitle =
@@ -120,6 +108,9 @@ export default async function Resume({
           <p className="font-mono text-hl text-sm sm:text-base print:text-sm uppercase tracking-widest">
             {t("jobTitle")}
           </p>
+          <p className="font-mono text-paper/70 text-xs print:text-[10px] mt-1">
+            {t("availability")}
+          </p>
         </div>
 
         <div className="flex flex-col sm:flex-row-reverse print:flex-row">
@@ -169,10 +160,29 @@ export default async function Resume({
 
             <section>
               <h3 className={sectionTitle}>{t("skills")}</h3>
-              <ul className="flex flex-wrap gap-1.5 print:gap-1 list-none p-0">
-                {skills.map((k) => (
-                  <li key={k} className={chip}>
-                    {t(k)}
+              <dl className="flex flex-col gap-3 print:gap-1.5 text-sm print:text-xs">
+                {(["Ship", "Lead", "AI"] as const).map((g) => (
+                  <div key={g}>
+                    <dt className="font-mono text-[11px] print:text-[10px] uppercase tracking-wider text-mute mb-0.5">
+                      {t(`skills${g}`)}
+                    </dt>
+                    <dd className="m-0 text-ink-soft leading-snug">
+                      {t(`skills${g}List`)}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+
+            <section className="print:hidden">
+              <h3 className={sectionTitle}>{t("engagements")}</h3>
+              <ul className="flex flex-col gap-2 text-sm text-ink-soft list-none p-0">
+                {(["eng1", "eng2", "eng3"] as const).map((k) => (
+                  <li key={k} className="flex gap-2">
+                    <span className="text-pen shrink-0" aria-hidden="true">
+                      —
+                    </span>
+                    <span>{t(k)}</span>
                   </li>
                 ))}
               </ul>
@@ -197,6 +207,49 @@ export default async function Resume({
             </section>
 
             <section>
+              <h3 className={sectionTitle}>{t("howIWork")}</h3>
+              <dl className="grid grid-cols-1 sm:grid-cols-3 print:grid-cols-3 gap-4 print:gap-3 text-sm print:text-xs">
+                {(["how1", "how2", "how3"] as const).map((k) => (
+                  <div key={k}>
+                    <dt className="font-display font-semibold text-ink text-base print:text-sm">
+                      {t(`${k}K`)}
+                    </dt>
+                    <dd className="m-0 mt-1 text-ink-soft leading-snug">
+                      {t(`${k}V`)}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+
+            <section className="print:break-inside-avoid">
+              <h3 className={sectionTitle}>{t("outcomes")}</h3>
+              <ul className="flex flex-col gap-3 print:gap-1.5 text-[15px] print:text-xs list-none p-0">
+                {(
+                  [
+                    "outcome1",
+                    "outcome2",
+                    "outcome3",
+                    "outcome4",
+                    "outcome5",
+                  ] as const
+                ).map((k) => (
+                  <li key={k} className="flex gap-2">
+                    <span className="text-pen shrink-0" aria-hidden="true">
+                      —
+                    </span>
+                    <span>
+                      <strong className="text-ink font-semibold">
+                        {t(`${k}T`)}
+                      </strong>{" "}
+                      <span className="text-ink-soft">{t(`${k}D`)}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
               <h3 className={sectionTitle}>{t("workExperience")}</h3>
               <div className="flex flex-col gap-7 print:gap-3">
                 {jobs.map((jobKey, index) => {
@@ -209,9 +262,7 @@ export default async function Resume({
                   return (
                     <article
                       key={jobKey}
-                      className={`print:break-inside-avoid grid grid-cols-[auto_1fr] gap-x-4 print:gap-x-3 ${
-                        index === 4 ? "print:break-before-page print:pt-6" : ""
-                      }`}
+                      className="print:break-inside-avoid grid grid-cols-[auto_1fr] gap-x-4 print:gap-x-3"
                     >
                       <div
                         className="flex flex-col items-center"
@@ -287,6 +338,25 @@ export default async function Resume({
                   </ul>
                 </div>
               </article>
+            </section>
+
+            <section className="print:break-inside-avoid">
+              <h3 className={sectionTitle}>{t("sideProjects")}</h3>
+              <p className="text-[15px] print:text-xs">
+                <strong className="text-ink font-semibold">
+                  {t("side1T")}
+                </strong>{" "}
+                <span className="text-ink-soft">{t("side1D")}</span>{" "}
+                <Link
+                  href="https://apps.apple.com/us/app/crownbtc/id6760546870"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 print:hidden"
+                >
+                  {t("side1Link")}
+                  <ExternalLink className="w-3 h-3" aria-hidden="true" />
+                </Link>
+              </p>
             </section>
           </div>
         </div>

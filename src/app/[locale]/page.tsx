@@ -23,7 +23,7 @@ export default async function Home({
   const stats = [
     { value: "15+", label: t("stat.years") },
     { value: "100+", label: t("stat.projects") },
-    { value: "−60%", label: t("stat.bill"), note: t("stat.billNote") },
+    { value: "½", label: t("stat.bill"), note: t("stat.billNote") },
     { value: "2", label: t("stat.apps") },
   ];
 
