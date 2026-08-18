@@ -4,6 +4,7 @@ import Script from "next/script";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { body, display, mono } from "../fonts";
 
 export async function generateMetadata({
   params,
@@ -19,13 +20,13 @@ export async function generateMetadata({
 
   return {
     title: {
-      template: "JP Melanson - %s",
-      default: "JP Melanson - " + t("title"),
+      template: "JP Melanson — %s",
+      default: "JP Melanson — " + t("metaTitle"),
     },
     description: t("description"),
     icons: "/favicon.ico",
     openGraph: {
-      title: "JP Melanson - " + t("title"),
+      title: "JP Melanson — " + t("metaTitle"),
       description: t("description"),
       url: "https://www.jpmelanson.info",
       siteName: "JP Melanson",
@@ -53,13 +54,11 @@ export default async function Layout({ children, params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body>
-        {/* React 19 hoists stylesheet links into <head>, so no manual <head>
-            element is needed — and a bare expression sibling of <head>/<body>
-            inside <html> is fragile under React 19's HTML normalization. */}
-        <link rel="preconnect" href="https://use.typekit.net" />
-        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <html
+      lang={locale}
+      className={`${display.variable} ${body.variable} ${mono.variable}`}
+    >
+      <body className="font-sans">
         {process.env.NODE_ENV === "production" && (
           <Script
             defer

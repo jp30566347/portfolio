@@ -1,10 +1,51 @@
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Mail, Phone, MapPin, ExternalLink, Globe } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  ExternalLink,
+  Globe,
+  Printer,
+} from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 import { Github, Linkedin } from "@/components/BrandIcons";
 import { routing } from "@/i18n/routing";
+import { PageLabel } from "@/components/PageLabel";
 
-export default async function Home({
+const jobs = [
+  "sapien",
+  "doormath",
+  "fastaf",
+  "ticketmaster1",
+  "asurion",
+  "ticketmaster2",
+  "balihoo",
+  "ticketmaster3",
+  "laval",
+] as const;
+
+const skills = [
+  "skillTypescript",
+  "skillJavascript",
+  "skillReact",
+  "skillNextjs",
+  "skillReactNative",
+  "skillPostgres",
+  "skillAWS",
+  "skillGitHub",
+  "skillSystemDesign",
+  "skillCodeArchitecture",
+] as const;
+
+const sectionTitle =
+  "label !text-ink font-semibold mb-4 print:mb-2 pb-1.5 print:pb-1 border-b-2 border-ink";
+const chip =
+  "px-2.5 py-1 print:px-1.5 print:py-0.5 text-xs print:text-[10px] font-mono bg-sheet border border-ink text-ink rounded-xs";
+const contactHref =
+  "text-sm print:text-xs text-pen hover:text-pen-deep flex items-center gap-1 print:gap-0.5 break-all";
+
+export default async function Resume({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -16,338 +57,238 @@ export default async function Home({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "resume" });
 
-  const jobs = [
-    "sapien",
-    "doormath",
-    "fastaf",
-    "ticketmaster1",
-    "asurion",
-    "ticketmaster2",
-    "balihoo",
-    "ticketmaster3",
-    "laval",
-  ] as const;
+  const contacts: {
+    Icon: ComponentType<SVGProps<SVGSVGElement>>;
+    label: string;
+    value: string;
+    href?: string;
+    external?: boolean;
+  }[] = [
+    { Icon: MapPin, label: t("address"), value: t("addressValue") },
+    {
+      Icon: Phone,
+      label: t("phone"),
+      value: t("phoneValue"),
+      href: "tel:+14189035365",
+    },
+    {
+      Icon: Mail,
+      label: t("email"),
+      value: t("emailValue"),
+      href: "mailto:jp@jp305.dev",
+    },
+    {
+      Icon: Linkedin,
+      label: t("linkedin"),
+      value: t("linkedinValue"),
+      href: "https://www.linkedin.com/in/jp305",
+      external: true,
+    },
+    {
+      Icon: Github,
+      label: t("github"),
+      value: t("githubValue"),
+      href: "https://www.github.com/jp30566347",
+      external: true,
+    },
+    {
+      Icon: Globe,
+      label: t("website"),
+      value: t("websiteValue"),
+      href: "https://jp305.dev/portfolio",
+      external: true,
+    },
+  ];
 
   return (
-    <div className="resume-page flex flex-col print:mt-0 print:border-b-0 sm:mt-3 sm:border sm:border-primary-300 sm:rounded-2xl overflow-hidden shadow-soft-lg">
-      {/* Header */}
-      <div className="w-full px-6 sm:px-8 py-8 print:px-4 print:py-4 bg-primary-800 text-white flex flex-col gap-2 print:gap-1">
-        <h1 className="text-white print:text-3xl">{t("name")}</h1>
-        <h2 className="text-accent-light font-normal print:text-xl">
-          {t("jobTitle")}
-        </h2>
+    <div className="flex flex-col gap-6">
+      <div className="print:hidden flex flex-wrap items-end justify-between gap-4 pt-6 sm:pt-12">
+        <div>
+          <PageLabel page={3} title={t("title")} />
+          <p className="mt-3 text-ink-soft max-w-[52ch]">{t("intro")}</p>
+        </div>
+        <span className="label flex items-center gap-2">
+          <Printer size={14} aria-hidden="true" />
+          {t("printHint")}
+        </span>
       </div>
 
-      <div className="flex flex-col sm:flex-row-reverse print:flex-row">
-        {/* Sidebar */}
-        <div className="px-6 sm:px-6 py-6 sm:py-8 print:px-3 print:py-3 flex flex-col sm:w-80 print:w-52 gap-8 print:gap-4 bg-primary-50 border-t sm:border-t-0 sm:border-l border-primary-200">
-          {/* Contact */}
-          <div>
-            <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">
-              {t("contact")}
-            </h3>
-            <div
-              className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"
-              aria-hidden="true"
-            ></div>
-            <div className="flex flex-col gap-4 print:gap-2">
-              <div className="flex items-start gap-3 print:gap-2">
-                <MapPin
-                  className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">
-                    {t("address")}
-                  </h4>
-                  <address className="text-sm print:text-xs text-primary-600 not-italic">
-                    {t("addressValue")}
-                  </address>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 print:gap-2">
-                <Phone
-                  className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">
-                    {t("phone")}
-                  </h4>
-                  <a
-                    href="tel:+14189035365"
-                    className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors"
-                  >
-                    {t("phoneValue")}
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 print:gap-2">
-                <Mail
-                  className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">
-                    {t("email")}
-                  </h4>
-                  <a
-                    href="mailto:jp@jp305.dev"
-                    className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors break-all"
-                  >
-                    {t("emailValue")}
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 print:gap-2">
-                <Linkedin
-                  className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">
-                    {t("linkedin")}
-                  </h4>
-                  <a
-                    href="https://www.linkedin.com/in/jp305"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5"
-                  >
-                    {t("linkedinValue")}
-                    <ExternalLink
-                      className="w-3 h-3 print:w-2 print:h-2"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 print:gap-2">
-                <Github
-                  className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">
-                    {t("github")}
-                  </h4>
-                  <a
-                    href="https://www.github.com/jp30566347"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5"
-                  >
-                    {t("githubValue")}
-                    <ExternalLink
-                      className="w-3 h-3 print:w-2 print:h-2"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 print:gap-2">
-                <Globe
-                  className="w-5 h-5 print:w-3 print:h-3 text-accent mt-0.5 print:mt-0 shrink-0"
-                  aria-hidden="true"
-                />
-                <div>
-                  <h4 className="text-sm print:text-xs font-semibold text-primary-700 mb-1 print:mb-0.5">
-                    {t("website")}
-                  </h4>
-                  <a
-                    href="https://www.jpmelanson.info/portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm print:text-xs text-accent hover:text-accent-dark transition-colors flex items-center gap-1 print:gap-0.5"
-                  >
-                    {t("websiteValue")}
-                    <ExternalLink
-                      className="w-3 h-3 print:w-2 print:h-2"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Skills */}
-          <div>
-            <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">
-              {t("skills")}
-            </h3>
-            <div
-              className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"
-              aria-hidden="true"
-            ></div>
-            <ul className="flex flex-wrap gap-2 print:gap-1 list-none">
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillJavascript")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillTypescript")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillReact")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillNextjs")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillReactNative")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillPostgres")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillAWS")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillGitHub")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillSystemDesign")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("skillCodeArchitecture")}
-              </li>
-            </ul>
-          </div>
-
-          {/* Languages */}
-          <div>
-            <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">
-              {t("languages")}
-            </h3>
-            <div
-              className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"
-              aria-hidden="true"
-            ></div>
-            <ul className="flex flex-wrap gap-2 print:gap-1 list-none">
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("languageFrench")}
-              </li>
-              <li className="px-3 py-1.5 print:px-2 print:py-1 text-xs print:text-[10px] font-medium bg-white border border-primary-200 text-primary-700 rounded-lg">
-                {t("languageEnglish")}
-              </li>
-            </ul>
-          </div>
+      <div className="resume-page flex flex-col print:mt-0 print:border-0 print:rounded-none sheet overflow-hidden">
+        {/* Header */}
+        <div className="w-full px-6 sm:px-8 py-8 print:px-4 print:py-4 bg-ink text-paper flex flex-col gap-1 print:gap-0.5">
+          <h1 className="text-paper print:text-3xl">{t("name")}</h1>
+          <p className="font-mono text-hl text-sm sm:text-base print:text-sm uppercase tracking-widest">
+            {t("jobTitle")}
+          </p>
         </div>
 
-        {/* Main Content */}
-        <div className="flex flex-col flex-1 gap-8 sm:gap-10 print:gap-4 px-6 sm:px-8 py-6 sm:py-8 print:px-4 print:py-3 print:pl-6">
-          {/* Overview */}
-          <section>
-            <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">
-              {t("overview")}
-            </h3>
-            <div
-              className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-4 print:mb-2"
-              aria-hidden="true"
-            ></div>
-            <p className="text-primary-700 print:text-sm leading-relaxed print:leading-snug">
-              {t("overviewText")}
-            </p>
-          </section>
-
-          {/* Work Experience */}
-          <section>
-            <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">
-              {t("workExperience")}
-            </h3>
-            <div
-              className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-6 print:mb-3"
-              aria-hidden="true"
-            ></div>
-            <div className="space-y-8 print:space-y-4">
-              {jobs.map((jobKey, index) => {
-                const period = t(`jobs.${jobKey}.period`);
-                const title = t(`jobs.${jobKey}.title`);
-                const company = t(`jobs.${jobKey}.company`);
-                const location = t(`jobs.${jobKey}.location`);
-                // Descriptions are optional and numbered; stop at the first gap.
-                const descriptions: string[] = [];
-                for (let i = 1; i <= 4; i++) {
-                  const key = `jobs.${jobKey}.description${i}`;
-                  if (!t.has(key)) break;
-                  descriptions.push(t(key));
-                }
-
-                return (
-                  <div
-                    key={jobKey}
-                    className={`print:break-inside-avoid ${index === 4 ? "print:break-before-page print:pt-6" : ""}`}
+        <div className="flex flex-col sm:flex-row-reverse print:flex-row">
+          {/* Sidebar */}
+          <div className="px-6 py-6 sm:py-8 print:px-3 print:py-3 flex flex-col sm:w-72 print:w-52 gap-8 print:gap-4 bg-paper border-t-2 sm:border-t-0 sm:border-l-2 border-ink">
+            <section>
+              <h3 className={sectionTitle}>{t("contact")}</h3>
+              <ul className="flex flex-col gap-4 print:gap-2 list-none p-0">
+                {contacts.map((c) => (
+                  <li
+                    key={c.label}
+                    className="flex items-start gap-3 print:gap-2"
                   >
-                    <div className="flex gap-6 print:gap-3">
+                    <c.Icon
+                      className="w-4 h-4 print:w-3 print:h-3 text-pen mt-0.5 print:mt-0 shrink-0"
+                      aria-hidden="true"
+                    />
+                    <div className="min-w-0">
+                      <span className="block font-mono text-[11px] print:text-[10px] uppercase tracking-wider text-mute mb-0.5">
+                        {c.label}
+                      </span>
+                      {c.href ? (
+                        <a
+                          href={c.href}
+                          target={c.external ? "_blank" : undefined}
+                          rel={c.external ? "noopener noreferrer" : undefined}
+                          className={contactHref}
+                        >
+                          {c.value}
+                          {c.external && (
+                            <ExternalLink
+                              className="w-3 h-3 print:w-2 print:h-2 shrink-0"
+                              aria-hidden="true"
+                            />
+                          )}
+                        </a>
+                      ) : (
+                        <address className="text-sm print:text-xs text-ink-soft not-italic">
+                          {c.value}
+                        </address>
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h3 className={sectionTitle}>{t("skills")}</h3>
+              <ul className="flex flex-wrap gap-1.5 print:gap-1 list-none p-0">
+                {skills.map((k) => (
+                  <li key={k} className={chip}>
+                    {t(k)}
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h3 className={sectionTitle}>{t("languages")}</h3>
+              <ul className="flex flex-wrap gap-1.5 print:gap-1 list-none p-0">
+                <li className={chip}>{t("languageFrench")}</li>
+                <li className={chip}>{t("languageEnglish")}</li>
+              </ul>
+            </section>
+          </div>
+
+          {/* Main */}
+          <div className="flex flex-col flex-1 gap-8 sm:gap-10 print:gap-4 px-6 sm:px-8 py-6 sm:py-8 print:px-4 print:py-3 print:pl-6 bg-sheet">
+            <section>
+              <h3 className={sectionTitle}>{t("overview")}</h3>
+              <p className="text-ink-soft print:text-sm leading-relaxed print:leading-snug">
+                {t("overviewText")}
+              </p>
+            </section>
+
+            <section>
+              <h3 className={sectionTitle}>{t("workExperience")}</h3>
+              <div className="flex flex-col gap-7 print:gap-3">
+                {jobs.map((jobKey, index) => {
+                  const descriptions: string[] = [];
+                  for (let i = 1; i <= 4; i++) {
+                    const key = `jobs.${jobKey}.description${i}`;
+                    if (!t.has(key)) break;
+                    descriptions.push(t(key));
+                  }
+                  return (
+                    <article
+                      key={jobKey}
+                      className={`print:break-inside-avoid grid grid-cols-[auto_1fr] gap-x-4 print:gap-x-3 ${
+                        index === 4 ? "print:break-before-page print:pt-6" : ""
+                      }`}
+                    >
                       <div
                         className="flex flex-col items-center"
                         aria-hidden="true"
                       >
-                        <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
+                        <div className="w-2.5 h-2.5 print:w-2 print:h-2 rounded-full bg-pen border-2 print:border border-sheet outline outline-2 outline-ink mt-1.5 print:mt-1"></div>
                         {index < jobs.length - 1 && (
-                          <div className="w-0.5 print:w-px h-full bg-primary-200 min-h-[60px] print:min-h-[40px] mt-2 print:mt-1"></div>
+                          <div className="w-0.5 print:w-px flex-1 bg-grid-strong mt-1.5"></div>
                         )}
                       </div>
-                      <div className="flex-1 pb-2 print:pb-1 min-w-0">
-                        <div className="mb-2 print:mb-1">
-                          <h4 className="text-primary-900 mb-1 print:mb-0.5 print:text-base">
-                            {title}
-                          </h4>
-                          <h5 className="text-accent font-semibold print:text-sm">
-                            {company}{" "}
-                            <span className="text-primary-600 font-normal">
-                              ({location})
-                            </span>
-                          </h5>
-                          <h6 className="text-primary-600 text-sm print:text-xs mt-1 print:mt-0.5">
-                            {period}
-                          </h6>
-                        </div>
-                        <ul className="list-disc list-inside space-y-2 print:space-y-1 text-primary-700 print:text-xs ml-2 print:ml-1">
+                      <div className="pb-1 min-w-0">
+                        <h4 className="text-ink print:text-base">
+                          {t(`jobs.${jobKey}.title`)}
+                        </h4>
+                        <p className="text-pen font-semibold print:text-sm">
+                          {t(`jobs.${jobKey}.company`)}{" "}
+                          <span className="text-mute font-normal">
+                            · {t(`jobs.${jobKey}.location`)}
+                          </span>
+                        </p>
+                        <p className="font-mono text-xs print:text-[10px] text-mute mt-0.5 mb-2 print:mb-1 tabular-nums">
+                          {t(`jobs.${jobKey}.period`)}
+                        </p>
+                        <ul className="flex flex-col gap-1.5 print:gap-0.5 text-ink-soft text-[15px] print:text-xs list-none p-0">
                           {descriptions.map((desc, i) => (
-                            <li key={i}>{desc}</li>
+                            <li key={i} className="flex gap-2">
+                              <span
+                                className="text-pen shrink-0"
+                                aria-hidden="true"
+                              >
+                                —
+                              </span>
+                              <span>{desc}</span>
+                            </li>
                           ))}
                         </ul>
                       </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* Education */}
-          <section>
-            <h3 className="mb-3 print:mb-1.5 text-primary-900 print:text-lg">
-              {t("education")}
-            </h3>
-            <div
-              className="h-1 w-12 print:h-0.5 print:w-8 bg-accent rounded-full mb-6 print:mb-3"
-              aria-hidden="true"
-            ></div>
-            <div className="flex gap-6 print:gap-3">
-              <div className="flex flex-col items-center" aria-hidden="true">
-                <div className="w-3 h-3 print:w-2 print:h-2 rounded-full bg-accent border-2 print:border border-white shadow-md mt-1 print:mt-0.5"></div>
+                    </article>
+                  );
+                })}
               </div>
-              <div className="flex-1">
-                <div className="mb-2 print:mb-1">
-                  <h5 className="text-primary-600 text-sm print:text-xs mb-2 print:mb-1">
-                    2004-09 - 2008-09
-                  </h5>
-                  <h4 className="text-primary-900 mb-1 print:mb-0.5 print:text-base">
+            </section>
+
+            <section>
+              <h3 className={sectionTitle}>{t("education")}</h3>
+              <article className="grid grid-cols-[auto_1fr] gap-x-4 print:gap-x-3">
+                <div className="flex flex-col items-center" aria-hidden="true">
+                  <div className="w-2.5 h-2.5 print:w-2 print:h-2 rounded-full bg-pen border-2 print:border border-sheet outline outline-2 outline-ink mt-1.5 print:mt-1"></div>
+                </div>
+                <div>
+                  <h4 className="text-ink print:text-base">
                     {t("educationDegree")}
                   </h4>
-                  <h5 className="text-accent font-semibold print:text-sm">
+                  <p className="text-pen font-semibold print:text-sm">
                     {t("educationSchool")}
-                  </h5>
+                  </p>
+                  <p className="font-mono text-xs print:text-[10px] text-mute mt-0.5 mb-2 print:mb-1 tabular-nums">
+                    2004-09 – 2008-09
+                  </p>
+                  <ul className="flex flex-col gap-1 print:gap-0.5 text-ink-soft text-sm print:text-xs list-none p-0">
+                    <li className="flex gap-2">
+                      <span className="text-pen shrink-0" aria-hidden="true">
+                        —
+                      </span>
+                      <span>{t("educationLab")}</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-pen shrink-0" aria-hidden="true">
+                        —
+                      </span>
+                      <span>{t("educationAward")}</span>
+                    </li>
+                  </ul>
                 </div>
-                <ul className="list-disc list-inside space-y-1 print:space-y-0.5 text-primary-700 print:text-xs ml-2 print:ml-1 text-sm">
-                  <li>{t("educationLab")}</li>
-                  <li>{t("educationAward")}</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+              </article>
+            </section>
+          </div>
         </div>
       </div>
     </div>

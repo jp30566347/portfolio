@@ -4,15 +4,19 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname as useLocalizedPathname } from "@/i18n/routing";
 import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Menu, X } from "lucide-react";
+import { ArrowUpRight, Mail, Menu, X } from "lucide-react";
 import avatar from "@/assets/jp.png";
 
-const menuItems = ["home", "resume", "portfolio"] as const;
+const menuItems = ["home", "portfolio", "resume"] as const;
 
-const linkBase = "text-base rounded-lg transition-all duration-200 font-medium";
-const linkInactive = "text-gray-300 hover:text-white hover:bg-primary-700";
+const linkBase =
+  "font-mono text-xs uppercase tracking-widest transition-colors duration-150 rounded-xs";
+const linkInactive = "text-mute hover:text-ink";
+// Highlighter under the current page.
+const linkActive =
+  "text-ink shadow-[inset_0_-0.5em_0_var(--hl)] hover:text-ink";
 const localeLinkStyle =
-  "text-gray-300 hover:text-white hover:bg-primary-700 border border-gray-600 hover:border-gray-500";
+  "text-mute hover:text-ink border-2 border-grid-strong hover:border-ink";
 
 export function NavBar() {
   const t = useTranslations();
@@ -25,12 +29,10 @@ export function NavBar() {
   const localeLabel = locale === "en" ? "FR" : "EN";
 
   const hrefFor = (mi: (typeof menuItems)[number]) =>
-    `/${mi.replace(menuItems[0], "")}`;
+    mi === "home" ? "/" : `/${mi}`;
 
   // localizedPathname comes from @/i18n/routing, so the locale prefix is
-  // already stripped: /en -> "/", /fr/resume -> "/resume". Comparing against
-  // the raw next/navigation pathname is what previously left "home" never
-  // matching, since that returns "/en" with no trailing slash.
+  // already stripped: /en -> "/", /fr/resume -> "/resume".
   const isActive = (mi: (typeof menuItems)[number]) => {
     const href = hrefFor(mi);
     return href === "/"
@@ -39,26 +41,33 @@ export function NavBar() {
   };
 
   return (
-    <nav className="print:hidden bg-primary-800/95 text-white shadow-soft sticky top-0 z-50 backdrop-blur-xs backdrop-saturate-150 flex w-full items-center justify-center">
-      <div className="flex flex-row flex-nowrap items-center justify-between gap-4 w-full max-w-full h-[72px] px-6">
-        <Link href="/" className="hover:opacity-80 transition-opacity">
+    <nav className="print:hidden bg-paper/95 backdrop-blur-xs sticky top-0 z-50 border-b-2 border-ink">
+      <div className="mx-auto max-w-6xl flex items-center justify-between gap-4 h-[68px] px-4 sm:px-6 lg:px-8">
+        <Link
+          href="/"
+          className="flex items-center gap-3 text-ink hover:text-ink"
+        >
           <Image
             src={avatar}
-            width={52}
-            height={52}
+            width={40}
+            height={40}
             priority
-            className="rounded-full w-[52px] h-[52px] border-2 border-accent-light shadow-md"
-            alt="JP"
+            className="rounded-full w-10 h-10 border-2 border-ink"
+            alt=""
           />
+          <span className="font-mono font-semibold text-sm tracking-wide whitespace-nowrap">
+            JP MELANSON
+          </span>
         </Link>
 
-        <ul className="hidden sm:flex items-center gap-2">
+        <ul className="hidden sm:flex items-center gap-4 md:gap-6 whitespace-nowrap">
           {menuItems.map((mi) => (
             <li key={mi}>
               <Link
                 href={hrefFor(mi)}
-                className={`${linkBase} px-4 py-2 ${
-                  isActive(mi) ? "bg-accent text-white shadow-md" : linkInactive
+                aria-current={isActive(mi) ? "page" : undefined}
+                className={`${linkBase} px-0.5 py-1 ${
+                  isActive(mi) ? linkActive : linkInactive
                 }`}
               >
                 {t(`${mi}.title`)}
@@ -67,28 +76,40 @@ export function NavBar() {
           ))}
           <li>
             <Link
-              href="https://calendly.com/jp305"
-              target="_blank"
-              className="flex gap-2 items-center px-4 py-2 bg-accent hover:bg-accent-dark text-white rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg"
+              href={localizedPathname}
+              locale={oppositeLocale}
+              className={`${linkBase} px-2 py-1 ${localeLinkStyle}`}
+              aria-label={t("switchLocale")}
             >
-              <span>{t("bookMe")}</span>
-              <ExternalLink size={14} />
+              {localeLabel}
             </Link>
           </li>
           <li>
-            <Link
-              href={localizedPathname}
-              locale={oppositeLocale}
-              className={`${linkBase} px-4 py-2 ${localeLinkStyle}`}
+            <a
+              href="mailto:jp@jp305.dev"
+              className={`${linkBase} inline-flex items-center gap-1.5 px-2 py-1 ${localeLinkStyle}`}
+              aria-label={t("emailMe")}
             >
-              {localeLabel}
+              <Mail size={13} aria-hidden="true" />
+              <span className="hidden md:inline">{t("emailMe")}</span>
+            </a>
+          </li>
+          <li>
+            <Link
+              href="https://calendly.com/jp305/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-ink text-paper hover:text-paper font-mono text-xs uppercase tracking-widest px-3.5 py-2 rounded-sm transition-transform duration-150 hover:-translate-y-px"
+            >
+              <span>{t("bookMe")}</span>
+              <ArrowUpRight size={14} aria-hidden="true" />
             </Link>
           </li>
         </ul>
 
         <button
           type="button"
-          className="sm:hidden flex items-center justify-center w-6 h-full rounded-lg outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light"
+          className="sm:hidden flex items-center justify-center w-10 h-10 -mr-2 rounded-sm text-ink"
           aria-label={isMenuOpen ? t("closeMenu") : t("openMenu")}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
@@ -101,40 +122,53 @@ export function NavBar() {
       {isMenuOpen && (
         <ul
           id="mobile-menu"
-          className="sm:hidden absolute top-full inset-x-0 h-[calc(100dvh-72px)] overflow-y-auto flex flex-col gap-4 px-6 py-6 bg-primary-800 shadow-soft"
+          className="sm:hidden absolute top-full inset-x-0 h-[calc(100dvh-68px)] overflow-y-auto flex flex-col gap-2 px-4 py-6 bg-paper border-t-2 border-ink"
         >
           {menuItems.map((mi) => (
             <li key={mi}>
               <Link
                 href={hrefFor(mi)}
                 onClick={() => setIsMenuOpen(false)}
-                className={`${linkBase} block px-4 py-3 ${
-                  isActive(mi) ? "bg-accent text-white" : linkInactive
+                aria-current={isActive(mi) ? "page" : undefined}
+                className={`font-display text-2xl font-semibold inline-block px-2 py-3 ${
+                  isActive(mi)
+                    ? "text-ink shadow-[inset_0_-0.45em_0_var(--hl)]"
+                    : "text-ink-soft hover:text-ink"
                 }`}
               >
                 {t(`${mi}.title`)}
               </Link>
             </li>
           ))}
-          <li>
+          <li className="mt-4 flex gap-3">
             <Link
               href="https://calendly.com/jp305/30min"
               target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className="bg-accent hover:bg-accent-dark text-white text-base px-4 py-3 rounded-lg flex items-center justify-center gap-2 font-medium transition-all duration-200 shadow-md"
+              className="btn btn-primary flex-1"
             >
               <span>{t("bookMe")}</span>
-              <ExternalLink size={14} />
+              <ArrowUpRight size={16} aria-hidden="true" />
             </Link>
+            <a
+              href="mailto:jp@jp305.dev"
+              onClick={() => setIsMenuOpen(false)}
+              className="btn btn-ghost flex-1"
+            >
+              <Mail size={16} aria-hidden="true" />
+              <span>{t("emailMe")}</span>
+            </a>
           </li>
-          <li>
+          <li className="mt-2">
             <Link
               href={localizedPathname}
               locale={oppositeLocale}
               onClick={() => setIsMenuOpen(false)}
-              className={`${linkBase} block px-4 py-3 text-center ${localeLinkStyle}`}
+              className={`${linkBase} inline-flex px-3 py-2 ${localeLinkStyle}`}
+              aria-label={t("switchLocale")}
             >
-              {localeLabel}
+              {t("switchLocale")}
             </Link>
           </li>
         </ul>
