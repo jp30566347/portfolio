@@ -64,6 +64,14 @@
       "description2": "Reconstruit l'<mark>algorithme de recommandations</mark> principal pour suivre les lignes directrices médicales à jour",
       "description3": "Mis en place les <mark>opérations en boutique</mark> : publications automatisées, conformité réglementaire, analytique d'usage"
     },
+    "agentic": {
+      "title": "Processus de développement agentique",
+      "lead": "Je livre du code de production avec des agents de codage IA depuis 2024 — et je mets le processus en place pour que votre équipe puisse en faire autant, sans le désordre.",
+      "description1": "Rendre la base de code <mark>prête pour les agents</mark> : conventions, garde-fous, tests et CI qui laissent les agents aller vite sans rien casser",
+      "description2": "Concevoir le <mark>flux de travail</mark> — ce que les agents rédigent, ce que les humains révisent, comment le travail est spécifié, vérifié et fusionné",
+      "description3": "Former vos ingénieurs au <mark>développement assisté par IA</mark> ; chez Sapien, la pratique a réduit de moitié le temps de construction d'un projet",
+      "description4": "Construire des <mark>systèmes d'agents en production</mark> : agents outillés avec évaluations, observabilité et contrôle des coûts, sur votre pile"
+    },
     "mobileDev": {
       "title": "Applications mobiles",
       "lead": "De Figma à l'App Store — une seule base de code React Native pour iOS et Android, plus la partie dont personne ne vous parle.",

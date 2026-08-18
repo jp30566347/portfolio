@@ -64,6 +64,14 @@
       "description2": "Rebuilt the core <mark>recommendations algorithm</mark> to match updated medical guidelines",
       "description3": "Set up <mark>app-store operations</mark>: automated releases, regulatory compliance, behaviour analytics"
     },
+    "agentic": {
+      "title": "Agentic coding process",
+      "lead": "I've shipped production code with AI coding agents since 2024 — and I set the process up so your team can too, without the mess.",
+      "description1": "Make the codebase <mark>agent-ready</mark>: conventions, guardrails, tests and CI that let agents move fast without breaking things",
+      "description2": "Design the <mark>workflow</mark> — what agents draft, what humans review, how work gets specced, verified and merged",
+      "description3": "Coach your engineers on <mark>effective AI-assisted development</mark>; at Sapien the practice cut one project's build time by 50%",
+      "description4": "Build <mark>production agent systems</mark>: tool-using agents with evals, observability and cost controls, on your stack"
+    },
     "mobileDev": {
       "title": "Mobile apps",
       "lead": "From Figma to the App Store — one React Native codebase for iOS and Android, plus the part nobody warns you about.",

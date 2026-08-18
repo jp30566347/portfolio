@@ -43,13 +43,15 @@ const projects: Project[] = [
 ];
 
 type Service = {
-  key: "mobileDev" | "webDev" | "apiDev" | "infrastructure";
+  key: "agentic" | "mobileDev" | "webDev" | "apiDev" | "infrastructure";
   bullets: number;
-  logos: { src: StaticImageData; alt: string; className?: string }[];
+  logos?: { src: StaticImageData; alt: string; className?: string }[];
   sticker?: boolean;
+  wide?: boolean;
 };
 
 const services: Service[] = [
+  { key: "agentic", bullets: 4, wide: true },
   {
     key: "mobileDev",
     bullets: 3,
@@ -188,8 +190,11 @@ export default async function Work({
           {services.map((s) => (
             <article
               key={s.key}
-              className="relative sheet sheet-lift p-6 flex flex-col"
+              className={`relative sheet sheet-lift p-6 flex flex-col ${
+                s.wide ? "md:col-span-2" : ""
+              }`}
             >
+              {s.wide && <span className="tape" aria-hidden="true"></span>}
               {s.sticker && (
                 <span className="sticker" aria-hidden="true">
                   {t("sticker")}
@@ -197,7 +202,13 @@ export default async function Work({
               )}
               <h3 className="mb-2">{t(`${s.key}.title`)}</h3>
               <p className="text-ink-soft mb-5">{t(`${s.key}.lead`)}</p>
-              <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
+              <ul
+                className={`gap-2 mb-6 grow text-sm text-ink-soft list-none p-0 ${
+                  s.wide
+                    ? "grid grid-cols-1 md:grid-cols-2 gap-x-8"
+                    : "flex flex-col"
+                }`}
+              >
                 {bulletsFor(s.key, s.bullets).map((k) => (
                   <li key={k} className="flex gap-2">
                     <span className="text-pen shrink-0" aria-hidden="true">
@@ -207,22 +218,27 @@ export default async function Work({
                   </li>
                 ))}
               </ul>
-              <div className="flex items-center justify-center gap-4 pt-4 border-t-2 border-dashed border-grid-strong">
-                {s.logos.map((l, i) => (
-                  <span key={l.alt} className="flex items-center gap-4">
-                    {i > 0 && (
-                      <span className="font-mono text-mute" aria-hidden="true">
-                        +
-                      </span>
-                    )}
-                    <Image
-                      src={l.src}
-                      alt={l.alt}
-                      className={`object-contain w-auto rounded-sm ${l.className ?? "h-12"}`}
-                    />
-                  </span>
-                ))}
-              </div>
+              {s.logos && (
+                <div className="flex items-center justify-center gap-4 pt-4 border-t-2 border-dashed border-grid-strong">
+                  {s.logos.map((l, i) => (
+                    <span key={l.alt} className="flex items-center gap-4">
+                      {i > 0 && (
+                        <span
+                          className="font-mono text-mute"
+                          aria-hidden="true"
+                        >
+                          +
+                        </span>
+                      )}
+                      <Image
+                        src={l.src}
+                        alt={l.alt}
+                        className={`object-contain w-auto rounded-sm ${l.className ?? "h-12"}`}
+                      />
+                    </span>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>
