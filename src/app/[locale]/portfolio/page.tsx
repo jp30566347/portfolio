@@ -98,6 +98,49 @@ export default async function Work({
         </p>
       </header>
 
+      {/* Services */}
+      <section className="flex flex-col gap-8">
+        <div className="flex items-baseline gap-4">
+          <h2>{t("services")}</h2>
+          <span className="label">{t("servicesNote")}</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((s) => (
+            <article
+              key={s.key}
+              className="relative sheet sheet-lift p-6 flex flex-col"
+            >
+              {s.sticker && (
+                <span className="sticker" aria-hidden="true">
+                  {t("sticker")}
+                </span>
+              )}
+              <h3 className="mb-2">{t(`${s.key}.title`)}</h3>
+              <p className="text-ink-soft mb-5">{t(`${s.key}.lead`)}</p>
+              <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
+                {bulletsFor(s.key, s.bullets).map((k) => (
+                  <li key={k} className="flex gap-2">
+                    <span className="text-pen shrink-0" aria-hidden="true">
+                      —
+                    </span>
+                    <span>{t.rich(k, { mark })}</span>
+                  </li>
+                ))}
+              </ul>
+              <ul className="flex flex-wrap gap-1.5 pt-4 border-t-2 border-dashed border-grid-strong list-none p-0">
+                {s.tags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="font-mono text-[11px] uppercase tracking-wider text-mute border border-grid-strong rounded-xs px-1.5 py-0.5"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
       {/* Featured */}
       <section className="flex flex-col gap-8">
         <div className="flex items-baseline gap-4">
@@ -167,50 +210,6 @@ export default async function Work({
                   )}
                 </div>
               )}
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="flex flex-col gap-8">
-        <div className="flex items-baseline gap-4">
-          <h2>{t("services")}</h2>
-          <span className="label">{t("servicesNote")}</span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <article
-              key={s.key}
-              className="relative sheet sheet-lift p-6 flex flex-col"
-            >
-              {s.sticker && (
-                <span className="sticker" aria-hidden="true">
-                  {t("sticker")}
-                </span>
-              )}
-              <h3 className="mb-2">{t(`${s.key}.title`)}</h3>
-              <p className="text-ink-soft mb-5">{t(`${s.key}.lead`)}</p>
-              <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
-                {bulletsFor(s.key, s.bullets).map((k) => (
-                  <li key={k} className="flex gap-2">
-                    <span className="text-pen shrink-0" aria-hidden="true">
-                      —
-                    </span>
-                    <span>{t.rich(k, { mark })}</span>
-                  </li>
-                ))}
-              </ul>
-              <ul className="flex flex-wrap gap-1.5 pt-4 border-t-2 border-dashed border-grid-strong list-none p-0">
-                {s.tags.map((tag) => (
-                  <li
-                    key={tag}
-                    className="font-mono text-[11px] uppercase tracking-wider text-mute border border-grid-strong rounded-xs px-1.5 py-0.5"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
             </article>
           ))}
         </div>
