@@ -1,14 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import playstore from "@/assets/playstore.png";
 import appstore from "@/assets/appstore.png";
-import reactNative from "@/assets/react-native.jpg";
-import nextjsLogo from "@/assets/nextjs.svg";
-import reactLogo from "@/assets/react.svg";
-import postgresLogo from "@/assets/pg.png";
-import supabaseLogo from "@/assets/supabase.svg";
-import awsArch from "@/assets/aws-arch.png";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -45,34 +39,38 @@ const projects: Project[] = [
 type Service = {
   key: "agentic" | "product" | "aiProduct" | "platform" | "cto";
   bullets: number;
-  logos?: { src: StaticImageData; alt: string; className?: string }[];
+  /** Footer line: the stack, or the engagement format. Not translated. */
+  tags: string[];
   sticker?: boolean;
-  wide?: boolean;
 };
 
 const services: Service[] = [
-  { key: "agentic", bullets: 4, wide: true },
+  {
+    key: "agentic",
+    bullets: 4,
+    tags: ["Claude Code", "Codex", "MCP", "GitHub Actions"],
+  },
   {
     key: "product",
     bullets: 4,
     sticker: true,
-    logos: [
-      { src: nextjsLogo, alt: "Next.js" },
-      { src: reactLogo, alt: "React" },
-      { src: reactNative, alt: "React Native", className: "h-12" },
-    ],
+    tags: ["Next.js", "React Native", "TypeScript", "Vercel"],
   },
-  { key: "aiProduct", bullets: 4 },
+  {
+    key: "aiProduct",
+    bullets: 4,
+    tags: ["Claude API", "OpenAI", "pgvector", "evals"],
+  },
   {
     key: "platform",
     bullets: 4,
-    logos: [
-      { src: postgresLogo, alt: "PostgreSQL" },
-      { src: supabaseLogo, alt: "Supabase" },
-      { src: awsArch, alt: "AWS", className: "h-12" },
-    ],
+    tags: ["Postgres", "Supabase", "AWS", "IaC"],
   },
-  { key: "cto", bullets: 4 },
+  {
+    key: "cto",
+    bullets: 4,
+    tags: ["1 day / week", "one quarter", "one-off audit"],
+  },
 ];
 
 export default async function Work({
@@ -180,15 +178,12 @@ export default async function Work({
           <h2>{t("services")}</h2>
           <span className="label">{t("servicesNote")}</span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
             <article
               key={s.key}
-              className={`relative sheet sheet-lift p-6 flex flex-col ${
-                s.wide ? "md:col-span-2" : ""
-              }`}
+              className="relative sheet sheet-lift p-6 flex flex-col"
             >
-              {s.wide && <span className="tape" aria-hidden="true"></span>}
               {s.sticker && (
                 <span className="sticker" aria-hidden="true">
                   {t("sticker")}
@@ -196,13 +191,7 @@ export default async function Work({
               )}
               <h3 className="mb-2">{t(`${s.key}.title`)}</h3>
               <p className="text-ink-soft mb-5">{t(`${s.key}.lead`)}</p>
-              <ul
-                className={`gap-2 mb-6 grow text-sm text-ink-soft list-none p-0 ${
-                  s.wide
-                    ? "grid grid-cols-1 md:grid-cols-2 gap-x-8"
-                    : "flex flex-col"
-                }`}
-              >
+              <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
                 {bulletsFor(s.key, s.bullets).map((k) => (
                   <li key={k} className="flex gap-2">
                     <span className="text-pen shrink-0" aria-hidden="true">
@@ -212,27 +201,16 @@ export default async function Work({
                   </li>
                 ))}
               </ul>
-              {s.logos && (
-                <div className="flex items-center justify-center gap-4 pt-4 border-t-2 border-dashed border-grid-strong">
-                  {s.logos.map((l, i) => (
-                    <span key={l.alt} className="flex items-center gap-4">
-                      {i > 0 && (
-                        <span
-                          className="font-mono text-mute"
-                          aria-hidden="true"
-                        >
-                          +
-                        </span>
-                      )}
-                      <Image
-                        src={l.src}
-                        alt={l.alt}
-                        className={`object-contain w-auto rounded-sm ${l.className ?? "h-12"}`}
-                      />
-                    </span>
-                  ))}
-                </div>
-              )}
+              <ul className="flex flex-wrap gap-1.5 pt-4 border-t-2 border-dashed border-grid-strong list-none p-0">
+                {s.tags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="font-mono text-[11px] uppercase tracking-wider text-mute border border-grid-strong rounded-xs px-1.5 py-0.5"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
