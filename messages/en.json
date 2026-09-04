@@ -99,7 +99,28 @@
       "description4": "<mark>Due diligence and audits</mark> of an existing codebase, team or vendor, in plain language"
     },
     "playStoreAlt": "Get it on Google Play",
-    "appStoreAlt": "Download on the App Store"
+    "appStoreAlt": "Download on the App Store",
+    "openSource": "Open source",
+    "openSourceNote": "side projects, in public",
+    "openSourceFooter": "Both live in <repo>one repository</repo>, share a common crate, and install with a single command.",
+    "macroTui": {
+      "title": "macro-tui",
+      "client": "personal · terminal app",
+      "cta": "See macro-tui",
+      "lead": "Twenty-six macro instruments on one screen: indices, Treasury yields, commodities, currencies and crypto, with the headlines moving them.",
+      "description1": "Live prices and a month of daily closes per row, from <mark>public keyless feeds</mark>, so there is nothing to sign up for and nothing to configure",
+      "description2": "Recomputes every move from the prices rather than trusting the vendor's own field, which <mark>reports the wrong sign</mark> for short-dated Treasuries",
+      "description3": "One <mark>static binary</mark> under 2 MB, rendering to stderr so it stays pipeable, with charts scaled to the data instead of anchored at zero"
+    },
+    "nhlTui": {
+      "title": "nhl-tui",
+      "client": "personal · terminal app",
+      "cta": "See nhl-tui",
+      "lead": "Live NHL scores, the wild card race, the schedule and the scoring leaders, with the full boxscore a keypress away.",
+      "description1": "Goals, assists, penalties and the three stars <mark>period by period</mark>, straight from the league's own public API",
+      "description2": "Navigation that <mark>lands on days with games</mark>, rather than following the API's week pointer past them",
+      "description3": "Ships to five platforms from one tag, with a <mark>checksum beside every archive</mark> and a Homebrew formula kept in step"
+    }
   },
   "resume": {
     "title": "Résumé",
