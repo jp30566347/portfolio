@@ -99,7 +99,28 @@
       "description4": "<mark>Vérification diligente et audits</mark> d'une base de code, d'une équipe ou d'un fournisseur, en langage clair"
     },
     "playStoreAlt": "Disponible sur Google Play",
-    "appStoreAlt": "Télécharger dans l'App Store"
+    "appStoreAlt": "Télécharger dans l'App Store",
+    "openSource": "Open source",
+    "openSourceNote": "projets personnels, en public",
+    "openSourceFooter": "Les deux vivent dans <repo>un seul dépôt</repo>, partagent une bibliothèque commune et s'installent avec une seule commande.",
+    "macroTui": {
+      "title": "macro-tui",
+      "client": "personnel · application terminal",
+      "cta": "Voir macro-tui",
+      "lead": "Vingt-six instruments macro sur un même écran : indices, taux obligataires, matières premières, devises et cryptos, avec les manchettes qui les font bouger.",
+      "description1": "Prix en direct et un mois de clôtures quotidiennes par ligne, depuis des <mark>sources publiques sans clé</mark> : rien à créer comme compte, rien à configurer",
+      "description2": "Recalcule chaque variation à partir des prix plutôt que de se fier au champ du fournisseur, qui <mark>affiche le mauvais signe</mark> pour les obligations courtes",
+      "description3": "Un seul <mark>binaire statique</mark> de moins de 2 Mo, rendu sur stderr pour rester utilisable dans un tube, avec des graphiques cadrés sur les données plutôt que sur zéro"
+    },
+    "nhlTui": {
+      "title": "nhl-tui",
+      "client": "personnel · application terminal",
+      "cta": "Voir nhl-tui",
+      "lead": "Les pointages de la LNH en direct, la course aux séries, le calendrier et les meneurs, avec le sommaire complet à une touche.",
+      "description1": "Buts, passes, punitions et les trois étoiles <mark>période par période</mark>, directement depuis l'API publique de la ligue",
+      "description2": "Une navigation qui <mark>tombe sur les jours avec des matchs</mark>, au lieu de suivre le pointeur hebdomadaire de l'API au-delà de ceux-ci",
+      "description3": "Publié sur cinq plateformes à partir d'une seule étiquette, avec une <mark>somme de contrôle pour chaque archive</mark> et une formule Homebrew tenue à jour"
+    }
   },
   "resume": {
     "title": "CV",

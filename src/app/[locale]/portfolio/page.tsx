@@ -73,6 +73,32 @@ const services: Service[] = [
   },
 ];
 
+/** Personal open source. Not client work, so it gets its own section. */
+type OpenSource = {
+  key: "macroTui" | "nhlTui";
+  bullets: number;
+  site: string;
+  /** The stack, not translated. */
+  tags: string[];
+};
+
+const openSource: OpenSource[] = [
+  {
+    key: "macroTui",
+    bullets: 3,
+    site: "https://jp30566347.github.io/tui/macro-tui/",
+    tags: ["Rust", "ratatui", "tokio"],
+  },
+  {
+    key: "nhlTui",
+    bullets: 3,
+    site: "https://jp30566347.github.io/tui/nhl-tui/",
+    tags: ["Rust", "ratatui", "tokio"],
+  },
+];
+
+const REPO = "https://github.com/jp30566347/tui";
+
 export default async function Work({
   params,
 }: {
@@ -212,6 +238,68 @@ export default async function Work({
             </article>
           ))}
         </div>
+      </section>
+      {/* Open source */}
+      <section className="flex flex-col gap-8">
+        <div className="flex items-baseline gap-4">
+          <h2>{t("openSource")}</h2>
+          <span className="label">{t("openSourceNote")}</span>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {openSource.map((o) => (
+            <article
+              key={o.key}
+              className="relative sheet sheet-lift p-6 flex flex-col"
+            >
+              <p className="label mb-3">{t(`${o.key}.client`)}</p>
+              <h3 className="mb-2">{t(`${o.key}.title`)}</h3>
+              <p className="text-ink-soft mb-5">{t(`${o.key}.lead`)}</p>
+              <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
+                {bulletsFor(o.key, o.bullets).map((k) => (
+                  <li key={k} className="flex gap-2">
+                    <span className="text-pen shrink-0" aria-hidden="true">
+                      —
+                    </span>
+                    <span>{t.rich(k, { mark })}</span>
+                  </li>
+                ))}
+              </ul>
+              <ul className="flex flex-wrap gap-1.5 pb-5 list-none p-0">
+                {o.tags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="font-mono text-[11px] uppercase tracking-wider text-mute border border-grid-strong rounded-xs px-1.5 py-0.5"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                href={o.site}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-ghost w-full"
+              >
+                <span>{t(`${o.key}.cta`)}</span>
+                <ArrowUpRight size={16} aria-hidden="true" />
+              </Link>
+            </article>
+          ))}
+        </div>
+        <p className="text-sm text-ink-soft">
+          {t.rich("openSourceFooter", {
+            repo: (chunks) => (
+              <Link
+                href={REPO}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4"
+              >
+                {chunks}
+              </Link>
+            ),
+          })}
+        </p>
       </section>
     </div>
   );
