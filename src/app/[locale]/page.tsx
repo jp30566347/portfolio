@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
-import { PageLabel } from "@/components/PageLabel";
 
 const mark = (chunks: React.ReactNode) => <mark>{chunks}</mark>;
 
@@ -33,7 +32,7 @@ export default async function Home({
     <div className="flex flex-col gap-16 sm:gap-24">
       {/* Hero */}
       <section className="pt-6 sm:pt-12">
-        <PageLabel page={1} title={t("label")} />
+        <p className="label">{t("label")}</p>
         <h1 className="mt-4 max-w-[22ch]">{t.rich("heroTitle", { mark })}</h1>
         <p className="mt-6 text-lg sm:text-xl text-ink-soft max-w-[52ch] leading-relaxed">
           {t("heroSub")}
