@@ -37,7 +37,7 @@ const projects: Project[] = [
 ];
 
 type Service = {
-  key: "agentic" | "product" | "aiProduct" | "platform" | "cto";
+  key: "agentic" | "product" | "aiProduct" | "platform" | "cto" | "security";
   bullets: number;
   /** Footer line: the stack, or the engagement format. Not translated. */
   tags: string[];
@@ -70,6 +70,11 @@ const services: Service[] = [
     key: "cto",
     bullets: 4,
     tags: ["1 day / week", "one quarter", "one-off audit"],
+  },
+  {
+    key: "security",
+    bullets: 4,
+    tags: ["OWASP", "AWS IAM", "SOC 2", "Law 25"],
   },
 ];
 

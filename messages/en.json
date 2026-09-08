@@ -26,7 +26,7 @@
   },
   "portfolio": {
     "title": "Work",
-    "description": "Selected client work and the services behind it: agentic engineering, product delivery, AI in production, platform and technical leadership.",
+    "description": "Selected client work and the services behind it: agentic engineering, product delivery, AI in production, platform, cybersecurity and technical leadership.",
     "pageTitle": "Things I've shipped, and things I can ship for you.",
     "featured": "Client work",
     "featuredNote": "in production today",
@@ -97,6 +97,14 @@
       "description2": "<mark>Migrations everyone's afraid of</mark>: platform, framework, cloud — planned, de-risked and shipped",
       "description3": "<mark>Hiring and mentoring</mark> engineers, and setting the practices a small team needs to stay fast",
       "description4": "<mark>Due diligence and audits</mark> of an existing codebase, team or vendor, in plain language"
+    },
+    "security": {
+      "title": "Cybersecurity consulting",
+      "lead": "Security sized for a small team's budget and calendar — find what's exposed, fix what matters, and leave you with a posture you can explain to customers.",
+      "description1": "<mark>Security audits</mark> of your code, cloud and CI/CD — secrets, IAM, dependencies, exposed surfaces — with a prioritised fix list, not a 200-page report",
+      "description2": "<mark>Harden what's running</mark>: authentication, access control, encryption, backups, logging and alerting, so an incident stays contained instead of becoming a crisis",
+      "description3": "<mark>Secure the AI layer</mark>: prompt injection, tool permissions, data leakage and agent guardrails, before your assistant becomes an attack surface",
+      "description4": "<mark>Compliance readiness</mark> — SOC 2, ISO 27001, Law 25 — the practical controls, policies and evidence, in plain language"
     },
     "playStoreAlt": "Get it on Google Play",
     "appStoreAlt": "Download on the App Store",
