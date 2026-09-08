@@ -26,7 +26,7 @@
   },
   "portfolio": {
     "title": "Projets",
-    "description": "Une sélection de mandats clients et les services derrière : ingénierie agentique, livraison de produit, IA en production, plateforme et leadership technique.",
+    "description": "Une sélection de mandats clients et les services derrière : ingénierie agentique, livraison de produit, IA en production, plateforme, cybersécurité et leadership technique.",
     "pageTitle": "Ce que j'ai livré, et ce que je peux livrer pour vous.",
     "featured": "Mandats clients",
     "featuredNote": "en production aujourd'hui",
@@ -97,6 +97,14 @@
       "description2": "<mark>Les migrations qui font peur</mark> : plateforme, cadriciel, infonuagique — planifiées, dérisquées et livrées",
       "description3": "<mark>Recrutement et mentorat</mark> d'ingénieurs, et mise en place des pratiques qu'une petite équipe doit garder pour rester rapide",
       "description4": "<mark>Vérification diligente et audits</mark> d'une base de code, d'une équipe ou d'un fournisseur, en langage clair"
+    },
+    "security": {
+      "title": "Consultation en cybersécurité",
+      "lead": "De la sécurité à la mesure du budget et du calendrier d'une petite équipe — trouver ce qui est exposé, corriger ce qui compte, et vous laisser une posture que vous pouvez expliquer à vos clients.",
+      "description1": "<mark>Audits de sécurité</mark> du code, de l'infonuagique et du CI/CD — secrets, IAM, dépendances, surfaces exposées — avec une liste de correctifs priorisée, pas un rapport de 200 pages",
+      "description2": "<mark>Durcir ce qui tourne</mark> : authentification, contrôle d'accès, chiffrement, sauvegardes, journalisation et alertes, pour qu'un incident reste contenu au lieu de devenir une crise",
+      "description3": "<mark>Sécuriser la couche IA</mark> : injection de prompts, permissions des outils, fuites de données et garde-fous d'agents, avant que votre assistant devienne une surface d'attaque",
+      "description4": "<mark>Préparation à la conformité</mark> — SOC 2, ISO 27001, Loi 25 — les contrôles, politiques et preuves pratiques, en langage clair"
     },
     "playStoreAlt": "Disponible sur Google Play",
     "appStoreAlt": "Télécharger dans l'App Store",
