@@ -91,13 +91,13 @@ const openSource: OpenSource[] = [
   {
     key: "macroTui",
     bullets: 3,
-    site: "https://jp30566347.github.io/tui/macro-tui/",
+    site: "https://tui.jp305.dev/macro-tui/",
     tags: ["Rust", "ratatui", "tokio"],
   },
   {
     key: "nhlTui",
     bullets: 3,
-    site: "https://jp30566347.github.io/tui/nhl-tui/",
+    site: "https://tui.jp305.dev/nhl-tui/",
     tags: ["Rust", "ratatui", "tokio"],
   },
 ];
