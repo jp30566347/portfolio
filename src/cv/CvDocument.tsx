@@ -242,9 +242,16 @@ export function cvDocument(cv: CvData) {
             </Section>
 
             <Section title={cv.side.title}>
-              <Text>
-                <Text style={s.strong}>{cv.side.lead}</Text> {cv.side.detail}
-              </Text>
+              <View style={{ gap: 5 }}>
+                {cv.side.items.map((p) => (
+                  <Text key={p.lead}>
+                    <Link src={p.href} style={[s.link, s.strong]}>
+                      {p.lead}
+                    </Link>{" "}
+                    {p.detail}
+                  </Text>
+                ))}
+              </View>
             </Section>
           </View>
 

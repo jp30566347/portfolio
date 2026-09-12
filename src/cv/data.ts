@@ -99,8 +99,23 @@ export function buildCv(t: T, locale: string) {
     },
     side: {
       title: t("sideProjects"),
-      lead: t("side1T"),
-      detail: t("side1D"),
+      items: [
+        {
+          lead: t("side1T"),
+          detail: t("side1D"),
+          href: "https://apps.apple.com/us/app/crownbtc/id6760546870",
+        },
+        {
+          lead: t("side2T"),
+          detail: t("side2D"),
+          href: "https://tui.jp305.dev/macro-tui/",
+        },
+        {
+          lead: t("side3T"),
+          detail: t("side3D"),
+          href: "https://tui.jp305.dev/nhl-tui/",
+        },
+      ],
     },
   };
 }
