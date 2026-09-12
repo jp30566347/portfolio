@@ -28,7 +28,7 @@ export async function generateMetadata({
     openGraph: {
       title: "JP Melanson — " + t("metaTitle"),
       description: t("description"),
-      url: "https://www.jpmelanson.info",
+      url: "https://www.jp305.dev",
       siteName: "JP Melanson",
       locale,
       type: "website",

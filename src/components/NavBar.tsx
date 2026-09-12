@@ -6,8 +6,9 @@ import { useState } from "react";
 import Image from "next/image";
 import { ArrowUpRight, Mail, Menu, X } from "lucide-react";
 import avatar from "@/assets/jp.png";
+import { BOOKING_URL, EMAIL_HREF, cvHref } from "@/lib/links";
 
-const menuItems = ["home", "portfolio", "resume"] as const;
+const menuItems = ["home", "portfolio"] as const;
 
 const linkBase =
   "font-mono text-xs uppercase tracking-widest transition-colors duration-150 rounded-xs";
@@ -75,6 +76,15 @@ export function NavBar() {
             </li>
           ))}
           <li>
+            <a
+              href={cvHref(locale)}
+              download
+              className={`${linkBase} px-0.5 py-1 ${linkInactive}`}
+            >
+              {t("resume.title")}
+            </a>
+          </li>
+          <li>
             <Link
               href={localizedPathname}
               locale={oppositeLocale}
@@ -86,7 +96,7 @@ export function NavBar() {
           </li>
           <li>
             <a
-              href="mailto:jp@jp305.dev"
+              href={EMAIL_HREF}
               className={`${linkBase} inline-flex items-center gap-1.5 px-2 py-1 ${localeLinkStyle}`}
               aria-label={t("emailMe")}
             >
@@ -96,7 +106,7 @@ export function NavBar() {
           </li>
           <li>
             <Link
-              href="https://calendly.com/jp305/30min"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-ink text-paper hover:text-paper font-mono text-xs uppercase tracking-widest px-3.5 py-2 rounded-sm transition-transform duration-150 hover:-translate-y-px"
@@ -140,9 +150,19 @@ export function NavBar() {
               </Link>
             </li>
           ))}
+          <li>
+            <a
+              href={cvHref(locale)}
+              download
+              onClick={() => setIsMenuOpen(false)}
+              className="font-display text-2xl font-semibold inline-block px-2 py-3 text-ink-soft hover:text-ink"
+            >
+              {t("resume.title")}
+            </a>
+          </li>
           <li className="mt-4 flex gap-3">
             <Link
-              href="https://calendly.com/jp305/30min"
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
@@ -152,7 +172,7 @@ export function NavBar() {
               <ArrowUpRight size={16} aria-hidden="true" />
             </Link>
             <a
-              href="mailto:jp@jp305.dev"
+              href={EMAIL_HREF}
               onClick={() => setIsMenuOpen(false)}
               className="btn btn-ghost flex-1"
             >

@@ -284,7 +284,4 @@ mark {
     animation: none;
     background-position: 0 0;
   }
-  .resume-page {
-    overflow: visible !important;
-  }
 }

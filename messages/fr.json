@@ -3,108 +3,117 @@
     "title": "Accueil",
     "label": "CTO à temps partiel · Ingénieur logiciel senior",
     "metaTitle": "CTO à temps partiel et ingénieur logiciel senior, Québec",
-    "description": "JP Melanson construit des applications mobiles, des plateformes web et l'infrastructure infonuagique en dessous. 15 ans et plus, de la startup au Fortune 500, depuis Lévis, QC.",
+    "description": "JP Melanson construit des logiciels web, mobiles et infonuagiques qui se rendent en production et y restent. Quinze ans, des startups de deux personnes à Ticketmaster, depuis Lévis, QC.",
     "heroTitle": "Bonjour, je suis JP. Je construis des logiciels qui se rendent en production — <mark>et qui y restent.</mark>",
-    "heroSub": "Quinze ans d'applications mobiles, de plateformes web et d'infrastructure infonuagique, pour des équipes de deux personnes jusqu'au Fortune 500. J'aime les petites équipes, les objectifs clairs et l'infrastructure ennuyante.",
+    "heroSub": "Quinze ans de web, de mobile et d'infonuagique, des startups de deux personnes à Ticketmaster. Petites équipes, objectifs clairs, infrastructure ennuyante.",
     "seeWork": "Voir les projets",
     "book30": "Réserver 30 minutes",
-    "intro1": "Je suis JP, ingénieur logiciel et leader technique près de Québec. Depuis plus de 15 ans, je construis des <mark>applications mobiles</mark>, des <mark>plateformes web</mark> et la <mark>plomberie infonuagique</mark> en dessous — pour des startups, un centre de recherche hospitalier (CRIUCPQ), une plateforme immobilière que j'ai cofondée, et Ticketmaster.",
-    "intro2": "Je suis le plus utile là où produit, design et ingénierie se rencontrent : on décide ensemble ce qui vaut la peine d'être construit, je le <mark>construis</mark>, puis je m'assure que ça <mark>tienne</mark>. Au quotidien, c'est Next.js, React, React Native, TypeScript et Postgres ; Go, Rails, Java et AWS quand le projet le demande.",
-    "intro3": "Je travaille avec de petites et moyennes équipes en techno, en immobilier et en finance — comme <mark>premier ingénieur</mark>, <mark>CTO à temps partiel</mark>, ou comme la personne qui migre enfin le système que tout le monde a peur de toucher.",
-    "currently": {
-      "title": "En ce moment",
-      "buildingK": "je construis",
-      "buildingV": "Sapien — protocole Proof of Quality",
-      "learningK": "j'apprends",
-      "learningV": "développement assisté par IA et systèmes d'agents en production",
-      "openK": "ouvert à",
-      "openV": "mandats de consultation et rôles à temps partiel"
+    "downloadCv": "Télécharger le CV (PDF)",
+    "workedWith": "J'ai travaillé chez",
+    "whatIDo": "Ce que je fais",
+    "whatIDoNote": "ce pour quoi on m'engage",
+    "sticker": "vrais chiffres",
+    "services": {
+      "product": {
+        "title": "Livraison de produit, web et mobile",
+        "lead": "Le produit au complet, de Figma à la production, par <mark>un seul ingénieur</mark> outillé d'agents.",
+        "description1": "Des applications web Next.js qui chargent vite et se référencent bien",
+        "description2": "Des applications React Native pour iOS et Android à partir d'une seule base de code, soumission aux boutiques comprise",
+        "description3": "Sauvetage et accélération d'applications existantes : chargements 2 à 5× plus rapides, hébergement 40 à 60 % moins cher"
+      },
+      "ai": {
+        "title": "L'IA, en production",
+        "lead": "Des fonctionnalités LLM et des agents qui <mark>survivent aux vrais utilisateurs</mark>, et une équipe outillée pour livrer avec des agents de codage.",
+        "description1": "Agents outillés et fonctionnalités LLM sur vos données et votre pile",
+        "description2": "Évaluations, observabilité et une facture prévisible",
+        "description3": "Base de code et flux de travail prêts pour les agents ; chez Sapien, ça a réduit de 50 % le temps de construction d'un projet"
+      },
+      "platform": {
+        "title": "Infonuagique, plateforme et sécurité",
+        "lead": "La partie ennuyante qui rend la <mark>partie rapide sécuritaire</mark>.",
+        "description1": "API, backends sans serveur, CI/CD et infrastructure en code",
+        "description2": "Audits de sécurité du code, du nuage et de la CI, avec une liste de correctifs priorisée plutôt qu'un rapport",
+        "description3": "Durcissement et préparation à la conformité : SOC 2, ISO 27001, Loi 25"
+      },
+      "cto": {
+        "title": "CTO à temps partiel",
+        "lead": "Un ingénieur senior <mark>dans la pièce</mark> quand les décisions se prennent. Une journée par semaine, ou un trimestre critique.",
+        "description1": "Feuille de route et architecture : construire, acheter ou reporter, et pourquoi",
+        "description2": "La migration qui fait peur à tout le monde, planifiée et livrée",
+        "description3": "Embauche, mentorat et vérification diligente en langage clair"
+      }
     },
-    "ctaTitle": "Un projet en tête ?",
-    "ctaSub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan.",
-    "workedWith": "J'ai travaillé chez"
+    "experience": "Parcours",
+    "experienceNote": "2008 – aujourd'hui",
+    "downloadCvLong": "Télécharger le CV (PDF)",
+    "timeline": {
+      "sapien": {
+        "when": "2024 – auj.",
+        "company": "Sapien",
+        "role": "Ingénieur logiciel senior",
+        "line": "Protocole Proof of Quality, de la conception au lancement du jeton, sur une plateforme passée le million de contributeurs."
+      },
+      "doormath": {
+        "when": "2023 – 2024",
+        "company": "doormath.ca",
+        "role": "Cofondateur technique",
+        "line": "Plateforme immobilière, de zéro au MVP et aux premiers clients payants."
+      },
+      "criucpq": {
+        "when": "2021 – auj.",
+        "company": "CRIUCPQ",
+        "role": "Ingénieur principal, contrat",
+        "line": "Applications de thérapie respiratoire pour un centre de recherche hospitalier, sur les deux boutiques et le web."
+      },
+      "fastaf": {
+        "when": "2020 – 2023",
+        "company": "FastAF",
+        "role": "Ingénieur logiciel",
+        "line": "Commerce et paiements crypto, des milliers de transactions par jour."
+      },
+      "ticketmaster": {
+        "when": "2011 – 2020",
+        "company": "Ticketmaster",
+        "role": "Ingénieur, puis consultant",
+        "line": "Plateforme d'admission de la NFL et bibliothèques de mise en vente qui ont tenu les plus gros soirs."
+      }
+    },
+    "timelineAlso": "Aussi Asurion, Balihoo (Boise, ID) et l'Université Laval. B.Ing. en technologies de l'information, École de technologie supérieure."
+  },
+  "cta": {
+    "title": "Un projet en tête ?",
+    "sub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan. Ouvert aux mandats de CTO à temps partiel et de consultation."
   },
   "portfolio": {
     "title": "Projets",
-    "description": "Une sélection de mandats clients et les services derrière : ingénierie agentique, livraison de produit, IA en production, plateforme, cybersécurité et leadership technique.",
-    "pageTitle": "Ce que j'ai livré, et ce que je peux livrer pour vous.",
+    "description": "Des mandats clients en production aujourd'hui, et les projets personnels que je garde en public.",
+    "pageTitle": "Livré, et toujours en marche.",
     "featured": "Mandats clients",
     "featuredNote": "en production aujourd'hui",
-    "services": "Services",
-    "servicesNote": "ce pour quoi on m'engage habituellement",
-    "sticker": "vrais chiffres",
     "visitWebsite": "Visiter ventilo.ca",
     "ventilo": {
       "title": "ventilo.ca",
       "client": "pour le CRIUCPQ · web",
-      "lead": "Un outil de thérapie respiratoire, mobile seulement, porté sur le web, repensé pour les cliniciens et déployé sur une infrastructure qui tient 99,9 % de disponibilité.",
-      "description1": "Migré l'application mobile vers une <mark>plateforme web complète</mark>, ouverte aux utilisateurs de bureau et plus accessible",
-      "description2": "Repensé <mark>l'expérience utilisateur</mark> à partir de zéro, autour du vrai travail des professionnels de la santé",
-      "description3": "Livré une <mark>infrastructure infonuagique clé en main</mark> : CDN mondial, déploiements automatisés, analytique — chargement sous 2 s"
+      "lead": "Un outil de thérapie respiratoire, mobile seulement, <mark>reconstruit pour le web</mark> et pour les cliniciens, à 99,9 % de disponibilité.",
+      "description1": "Migré l'application mobile vers une plateforme web complète, ouverte aux utilisateurs de bureau",
+      "description2": "Repensé l'expérience autour du vrai travail des professionnels de la santé",
+      "description3": "Infrastructure clé en main : CDN mondial, déploiements automatisés, analytique, chargement sous 2 s"
     },
     "oxygapp": {
       "title": "Oxyg'App",
       "client": "pour le CRIUCPQ · iOS et Android",
-      "lead": "Une application React Native qui rend les réglages complexes d'oxymètres utilisables par les formateurs et les étudiants — du premier croquis aux deux boutiques d'applications.",
-      "description1": "Construit une <mark>application React Native / Expo</mark> de production, du concept au lancement, avec un rendu natif sur iOS et Android",
-      "description2": "Écrit les <mark>algorithmes d'optimisation d'oxymètres</mark> qui rendent les réglages avancés d'appareils médicaux abordables",
-      "description3": "Géré tout le <mark>cycle de vie en boutique</mark> : automatisation du déploiement, conformité, politique de confidentialité, analytique"
+      "lead": "Une application React Native qui rend les réglages complexes d'oxymètres utilisables par les formateurs et les étudiants, <mark>du premier croquis aux deux boutiques</mark>.",
+      "description1": "Construite du concept au lancement, avec un rendu natif sur iOS et Android",
+      "description2": "Écrit les algorithmes d'optimisation d'oxymètres derrière les recommandations",
+      "description3": "Géré le cycle de vie en boutique : publications, conformité, politique de confidentialité, analytique"
     },
     "ventiloApp": {
       "title": "VentilO",
       "client": "pour le CRIUCPQ · iOS et Android",
-      "lead": "Deux applications natives distinctes devenues une seule base de code React Native — mêmes fonctionnalités, mêmes performances, environ la moitié de la maintenance annuelle.",
-      "description1": "Migré des applications natives iOS/Android séparées vers une <mark>plateforme React Native unifiée</mark>, réduisant <mark>l'effort de maintenance d'environ la moitié</mark>",
-      "description2": "Reconstruit <mark>l'algorithme de recommandations</mark> principal pour suivre les lignes directrices médicales à jour",
-      "description3": "Mis en place les <mark>opérations en boutique</mark> : publications automatisées, conformité réglementaire, analytique d'usage"
-    },
-    "agentic": {
-      "title": "Mise en place de l'ingénierie agentique",
-      "lead": "Je livre du code de production avec des agents de codage IA depuis 2024. Je mets votre équipe en état d'en faire autant — plus vite, et sans le désordre.",
-      "description1": "Rendre la base de code <mark>prête pour les agents</mark> : conventions, garde-fous, tests et CI qui laissent les agents aller vite sans rien casser",
-      "description2": "Concevoir le <mark>flux de travail</mark> — ce que les agents rédigent, ce que les humains révisent, comment le travail est spécifié, vérifié et fusionné",
-      "description3": "Former les ingénieurs au <mark>développement assisté par IA</mark> ; chez Sapien, la pratique a réduit de moitié le temps de construction d'un projet",
-      "description4": "Choisir et brancher <mark>l'outillage</mark> — agents de codage, serveurs MCP, robots de revue — et mesurer si ça rapporte vraiment"
-    },
-    "product": {
-      "title": "Livraison de produit, web et mobile",
-      "lead": "Le produit au complet, de Figma à la production — un ingénieur, un flux agentique, et une portée qui aurait pris une équipe.",
-      "description1": "<mark>Applications web</mark> en Next.js/React qui chargent instantanément, se classent bien et convertissent",
-      "description2": "<mark>Applications mobiles</mark> en React Native pour iOS et Android à partir d'une seule base de code — soumission en boutique et bris annuels d'OS inclus",
-      "description3": "<mark>Hébergement optimisé</mark> qui suit le trafic — habituellement 40 à 60 % moins cher que ce qu'il remplace",
-      "description4": "Sauver et <mark>accélérer les applications existantes</mark> — code, cache et infrastructure, souvent 2 à 5× plus rapides"
-    },
-    "aiProduct": {
-      "title": "Fonctionnalités IA en production",
-      "lead": "Des fonctionnalités LLM et des agents qui survivent au contact des vrais utilisateurs — avec évaluations, observabilité et une facture prévisible.",
-      "description1": "Construire des <mark>agents outillés</mark> et des fonctionnalités LLM sur vos données et votre pile (Claude, OpenAI, modèles ouverts)",
-      "description2": "Mettre en place <mark>évaluations et observabilité</mark> : la qualité se mesure, les régressions se détectent, les prompts changent sans risque",
-      "description3": "Garder <mark>coûts et latence</mark> sous contrôle : cache, routage de modèles, traitement par lots, budgets",
-      "description4": "Gérer <mark>sécurité et données</mark> : garde-fous, permissions, renseignements personnels, traces d'audit — avant que ça devienne un billet de soutien"
-    },
-    "platform": {
-      "title": "API, infonuagique et plateforme",
-      "lead": "La partie ennuyante qui rend la partie rapide sécuritaire.",
-      "description1": "<mark>API REST ou GraphQL</mark> sécuritaires, rapides, documentées à partir du code pour que la documentation reste vraie",
-      "description2": "Back-ends <mark>événementiels et sans serveur</mark> qui réagissent en temps réel et ne coûtent rien au repos",
-      "description3": "<mark>CI/CD et infrastructure-as-code</mark> : déploiements en minutes, environnements reproductibles et versionnés",
-      "description4": "<mark>Architecture infonuagique</mark> qui absorbe les pointes, reste disponible et ne surprend pas sur la facture"
-    },
-    "cto": {
-      "title": "CTO à temps partiel et leadership technique",
-      "lead": "Un ingénieur senior dans la pièce quand les décisions se prennent — une journée par semaine ou un trimestre critique.",
-      "description1": "<mark>Feuille de route et architecture</mark> : quoi construire, quoi acheter, quoi reporter, et pourquoi",
-      "description2": "<mark>Les migrations qui font peur</mark> : plateforme, cadriciel, infonuagique — planifiées, dérisquées et livrées",
-      "description3": "<mark>Recrutement et mentorat</mark> d'ingénieurs, et mise en place des pratiques qu'une petite équipe doit garder pour rester rapide",
-      "description4": "<mark>Vérification diligente et audits</mark> d'une base de code, d'une équipe ou d'un fournisseur, en langage clair"
-    },
-    "security": {
-      "title": "Consultation en cybersécurité",
-      "lead": "De la sécurité à la mesure du budget et du calendrier d'une petite équipe — trouver ce qui est exposé, corriger ce qui compte, et vous laisser une posture que vous pouvez expliquer à vos clients.",
-      "description1": "<mark>Audits de sécurité</mark> du code, de l'infonuagique et du CI/CD — secrets, IAM, dépendances, surfaces exposées — avec une liste de correctifs priorisée, pas un rapport de 200 pages",
-      "description2": "<mark>Durcir ce qui tourne</mark> : authentification, contrôle d'accès, chiffrement, sauvegardes, journalisation et alertes, pour qu'un incident reste contenu au lieu de devenir une crise",
-      "description3": "<mark>Sécuriser la couche IA</mark> : injection de prompts, permissions des outils, fuites de données et garde-fous d'agents, avant que votre assistant devienne une surface d'attaque",
-      "description4": "<mark>Préparation à la conformité</mark> — SOC 2, ISO 27001, Loi 25 — les contrôles, politiques et preuves pratiques, en langage clair"
+      "lead": "Deux applications natives devenues une seule base de code React Native : mêmes fonctionnalités, <mark>la moitié de la maintenance annuelle</mark>.",
+      "description1": "Migré des applications iOS et Android séparées vers une seule plateforme",
+      "description2": "Reconstruit l'algorithme de recommandations selon les lignes directrices médicales à jour",
+      "description3": "Publications automatisées, conformité réglementaire, analytique d'usage"
     },
     "playStoreAlt": "Disponible sur Google Play",
     "appStoreAlt": "Télécharger dans l'App Store",
@@ -132,92 +141,76 @@
   },
   "resume": {
     "title": "CV",
-    "description": "CTO à temps partiel et ingénieur logiciel senior, 15 ans et plus. Cofondateur technique, ingénieur de protocole, consultant dans les systèmes d'événements en direct de Ticketmaster. À distance depuis Québec.",
-    "intro": "La version formelle. Elle s'imprime proprement si vous en voulez une copie.",
-    "printHint": "⌘P pour une copie propre",
     "name": "Jean-Philippe Melanson",
     "jobTitle": "CTO à temps partiel · Ingénieur logiciel senior",
     "availability": "Temps partiel · à distance depuis Québec · déplacements quand ça compte",
     "overview": "En bref",
-    "overviewText": "Je suis l'ingénieur à qui on confie le chemin critique. En 15 ans, j'ai été cofondateur technique d'une plateforme immobilière, responsable de facto du backend d'une startup de livraison valorisée à 200 M$, consultant dans les systèmes d'événements en direct de Ticketmaster, et ingénieur senior sur le protocole de données qui a livré son lancement de jeton à une plateforme d'un million d'utilisateurs. Je travaille de façon autonome, je livre à la date que j'ai donnée, et je dis la vérité sur la portée, les risques et les coûts — tôt. Depuis 2024, je livre avec des agents de codage IA et je mets les équipes en état d'en faire autant.",
-    "howIWork": "Ma façon de travailler",
-    "how1K": "Des réponses franches",
-    "how1V": "Estimations, risques et mauvaises nouvelles arrivent tôt et en langage clair.",
-    "how2K": "Les dates tiennent",
-    "how2V": "Si je me suis engagé pour vendredi, ça sort vendredi.",
-    "how3K": "Autonomie par défaut",
-    "how3V": "Donnez-moi l'objectif et les contraintes ; j'apporte le plan, le code et l'exploitation.",
+    "overviewText": "L'ingénieur à qui on confie le chemin critique : cofondateur technique d'une plateforme immobilière, ingénieur de protocole sur un lancement de jeton, consultant dans les systèmes d'événements en direct de Ticketmaster. Je travaille de façon autonome, je livre à la date que j'ai donnée, et je dis la vérité sur la portée, les risques et les coûts, tôt. Depuis 2024, je livre avec des agents de codage IA et je mets les équipes en état d'en faire autant.",
     "outcomes": "Résultats choisis",
     "outcome1T": "doormath.ca — bâti les fondations techniques de l'entreprise comme cofondateur technique.",
     "outcome1D": "Architecture, produit et infrastructure de zéro au MVP ; accueilli les 10 à 20 premiers clients payants.",
     "outcome2T": "Sapien — livré le protocole Proof of Quality de la conception au lancement du jeton (août 2025).",
-    "outcome2D": "Incitatifs, contrôle de qualité, distribution de jetons et récompenses par objectifs, dans une équipe de huit ingénieurs seniors, sur une plateforme passée au-delà d'un million de contributeurs et de 100 millions de tâches.",
+    "outcome2D": "Incitatifs, contrôle de qualité et récompenses, dans une équipe de huit ingénieurs seniors, sur une plateforme passée le million de contributeurs et les 100 millions de tâches.",
     "outcome3T": "Ticketmaster — pris en charge le pire incident de la plateforme d'admission des matchs de la NFL.",
     "outcome3D": "Une corruption de la base de données en production affichait de mauvais statuts d'entrée aux matchs ; trouvé le bogue, réconcilié les données, livré le correctif.",
-    "outcome4T": "CRIUCPQ — dirigé le développement d'une application scientifique pour un centre de recherche hospitalier, de deux applications natives à une seule base React Native, puis au web.",
+    "outcome4T": "CRIUCPQ — dirigé l'application scientifique d'un centre de recherche hospitalier, de deux applications natives à une seule base React Native, puis au web.",
     "outcome4D": "Effort de maintenance annuel réduit d'environ la moitié : un langage, un train de livraison, les deux boutiques plus le web.",
-    "outcome5T": "FastAF — porté le backend et la livraison de bout en bout des fonctionnalités de commerce et de paiement crypto.",
+    "outcome5T": "FastAF — porté le backend et la livraison des fonctionnalités de commerce et de paiement crypto.",
     "outcome5D": "Des milliers de transactions par jour ; automatisation DevOps et QA qui a réduit les billets de soutien d'environ 40 % et triplé la fréquence de déploiement.",
     "workExperience": "Expérience",
-    "current": "aujourd'hui",
-    "remote": "À distance",
     "jobs": {
       "sapien": {
         "title": "Ingénieur logiciel senior",
         "company": "Sapien.io",
         "period": "2024-09 – aujourd'hui",
         "location": "À distance",
-        "description1": "Conçu et livré le protocole et l'application Proof of Quality à partir de zéro — incitatifs et mécanismes de contrôle de qualité pour l'étiquetage de données d'entraînement IA — jusqu'au lancement du jeton en août 2025.",
-        "description2": "Construit la distribution de jetons et les récompenses par objectifs intégrées au protocole, permettant les airdrops et récompensant le travail de qualité.",
-        "description3": "Mis en place le développement piloté par agents IA pour l'équipe : automatisations autour de la qualité du code, des rapports et d'un carnet orienté produit ; encadré les ingénieurs sur la pratique.",
-        "description4": "Construit un moteur de gabarits de courriel qui a réduit de moitié le temps de développement des courriels."
+        "description1": "Conçu et livré le protocole Proof of Quality — incitatifs et contrôle de qualité pour l'étiquetage de données d'entraînement IA — jusqu'au lancement du jeton en août 2025.",
+        "description2": "Construit la distribution de jetons et les récompenses par objectifs sur le protocole, alimentant les airdrops et payant le travail de qualité.",
+        "description3": "Mis en place le développement piloté par agents IA pour l'équipe — automatisations de qualité du code, rapports, carnet orienté produit — et encadré les ingénieurs sur la pratique."
       },
       "doormath": {
         "title": "Cofondateur technique",
         "company": "doormath.ca",
         "period": "2023-04 – 2024-09",
         "location": "À distance",
-        "description1": "Porté l'ensemble des fondations techniques d'une plateforme immobilière — évaluations instantanées et analyses de marché — en Next.js, React, TypeScript et Supabase/Postgres.",
-        "description2": "Défini la vision produit et la feuille de route avec le PDG ; coordonné designers UX et ingénieurs ML pour livrer des fonctionnalités avancées.",
-        "description3": "Livré plus de 15 fonctionnalités clés — évaluations automatisées, abonnements, portail courtier, inscriptions, enchères, analytique — permettant le lancement et les premiers clients payants.",
-        "description4": "Mis en place l'infrastructure de production : authentification, QA automatisée, CI/CD, CDN et optimisation d'images ; 99,9 % de disponibilité et pages sous 2 s. Parti lorsque l'entreprise n'a pas pu boucler sa ronde suivante."
+        "description1": "Porté les fondations techniques d'une plateforme immobilière — évaluations instantanées et analyses de marché — en Next.js, TypeScript et Supabase/Postgres.",
+        "description2": "Défini la vision produit et la feuille de route avec le PDG ; coordonné designers UX et ingénieurs ML.",
+        "description3": "Livré plus de 15 fonctionnalités clés et l'infrastructure de production derrière : 99,9 % de disponibilité, pages sous 2 s, premiers clients payants."
       },
       "criucpq": {
         "title": "Ingénieur logiciel — Contrat",
         "company": "CRIUCPQ (centre de recherche hospitalier)",
         "period": "2021-09 – aujourd'hui",
         "location": "À distance · Québec",
-        "description1": "Engagé pour diriger le développement d'une application scientifique de thérapie respiratoire utilisée par cliniciens, formateurs et étudiants ; responsable du produit de bout en bout depuis.",
-        "description2": "Regroupé deux applications natives iOS/Android en une seule base React Native, réduisant l'effort de maintenance annuel d'environ la moitié ; reconstruit l'algorithme de recommandations selon les lignes directrices médicales à jour.",
-        "description3": "Porté l'outil sur le web (ventilo.ca) sur une infrastructure infonuagique clé en main — CDN, déploiements automatisés, analytique — à 99,9 % de disponibilité ; opérations en boutique et conformité pour les deux applications."
+        "description1": "Développeur principal d'une application scientifique de thérapie respiratoire utilisée par cliniciens, formateurs et étudiants ; responsable de bout en bout.",
+        "description2": "Regroupé deux applications natives iOS/Android en une seule base React Native et reconstruit l'algorithme de recommandations selon les lignes directrices médicales à jour.",
+        "description3": "Porté l'outil sur le web (ventilo.ca) sur une infrastructure infonuagique automatisée ; opérations en boutique et conformité pour les deux applications."
       },
       "fastaf": {
         "title": "Ingénieur logiciel",
         "company": "FastAF Technologies",
         "period": "2020-05 – 2023-01",
         "location": "À distance",
-        "description1": "Porté le développement de bout en bout des fonctionnalités de commerce — panier, paiement, fidélité, rabais, inventaire, recommandations — en Rails et React Native/TypeScript, avec des milliers de transactions par jour.",
-        "description2": "Construit l'infrastructure de paiement crypto : paiements en jetons, connexion de portefeuilles et passerelles fiat.",
-        "description3": "Établi les pratiques DevOps et l'automatisation QA qui ont réduit les billets de soutien de 40 % et triplé la fréquence de déploiement.",
-        "description4": "Agi comme conseiller technique auprès du produit et de la direction."
+        "description1": "Porté les fonctionnalités de commerce — panier, paiement, fidélité, inventaire, recommandations — en Rails et React Native, avec des milliers de transactions par jour.",
+        "description2": "Construit la pile de paiement crypto : paiements en jetons, connexion de portefeuilles, passerelles fiat.",
+        "description3": "Établi les pratiques DevOps et l'automatisation QA qui ont réduit les billets de soutien de 40 % et triplé la fréquence de déploiement ; conseiller technique auprès du produit et de la direction."
       },
       "ticketmaster1": {
         "title": "Ingénieur logiciel — Consultant",
         "company": "Ticketmaster",
         "period": "2018-04 – 2020-05",
         "location": "Québec, QC",
-        "description1": "Construit et exploité les systèmes Entry et Redeem — la plateforme d'admission des matchs de la NFL — en microservices Java et Go sur AWS, avec haute disponibilité et tolérance aux pannes.",
-        "description2": "Pris en charge le pire incident de la plateforme : corruption de données en production affichant de mauvais statuts d'entrée. Trouvé le bogue, réconcilié les données, livré le correctif.",
-        "description3": "Conçu et exécuté les stratégies de reprise après sinistre : RPO sous 1 heure, RTO sous 4 heures.",
-        "description4": "Rédigé les cadres de gouvernance infonuagique — normes d'infrastructure, sécurité, coûts, exploitation — adoptés par les équipes d'ingénierie."
+        "description1": "Construit et exploité la plateforme d'admission des matchs de la NFL (Entry et Redeem) en microservices Java et Go sur AWS, à haute disponibilité et tolérante aux pannes.",
+        "description2": "Pris en charge le pire incident de la plateforme : trouvé un bogue de corruption de données en production, réconcilié les données, livré le correctif.",
+        "description3": "Conçu la reprise après sinistre (RPO sous 1 heure, RTO sous 4 heures) et les normes de gouvernance infonuagique adoptées par les équipes d'ingénierie."
       },
       "asurion": {
         "title": "Ingénieur logiciel — Consultant",
         "company": "Asurion",
         "period": "2017-10 – 2018-03",
         "location": "À distance",
-        "description1": "Construit des interfaces React adaptatives qui ont amélioré l'engagement et simplifié les parcours clients.",
-        "description2": "Introduit des tests unitaires, d'intégration et de bout en bout qui ont réduit les bogues en production de 50 %."
+        "description1": "Construit des interfaces React adaptatives qui ont simplifié les parcours clients.",
+        "description2": "Introduit des tests unitaires, d'intégration et de bout en bout ; bogues en production réduits de 50 %."
       },
       "ticketmaster2": {
         "title": "Ingénieur logiciel — Consultant",
@@ -225,15 +218,15 @@
         "period": "2016-10 – 2017-10",
         "location": "Québec, QC",
         "description1": "Construit des interfaces React pour l'échange de codes d'événements, utilisées pour des millions de transactions de billets.",
-        "description2": "Piloté les décisions d'architecture frontend et backend : patrons d'état React et microservices Java."
+        "description2": "Piloté les décisions d'architecture : patrons d'état React et microservices Java."
       },
       "balihoo": {
         "title": "Ingénieur logiciel",
         "company": "Balihoo",
         "period": "2014-07 – 2016-05",
         "location": "Boise, ID",
-        "description1": "Conçu un système d'automatisation de campagnes sur AWS orchestrant du marketing multicanal pour des milliers d'emplacements, réduisant l'effort manuel de 80 %.",
-        "description2": "Construit le tableau de bord marketing et les pipelines de données derrière — des millions de points de données par jour."
+        "description1": "Conçu un système d'automatisation de campagnes sur AWS orchestrant du marketing multicanal pour des milliers d'emplacements ; effort manuel réduit de 80 %.",
+        "description2": "Construit le tableau de bord marketing et les pipelines derrière, des millions de points de données par jour."
       },
       "ticketmaster3": {
         "title": "Ingénieur logiciel",
@@ -241,29 +234,29 @@
         "period": "2011-06 – 2014-06",
         "location": "Québec, QC",
         "description1": "Équipe plateforme : bibliothèques de bas niveau pour les mises en vente qui ont tenu lors des événements de pointe.",
-        "description2": "Établi la préparation à la production — surveillance, observabilité, journalisation centralisée, publications automatisées — réduisant le temps de réponse aux incidents de 70 %.",
-        "description3": "Construit l'outillage développeur et un environnement local Docker qui ont fait passer l'accueil de semaines à jours."
+        "description2": "Mis en place surveillance, journalisation centralisée et publications automatisées ; réponse aux incidents 70 % plus rapide.",
+        "description3": "Construit un environnement local Docker qui a fait passer l'accueil de semaines à jours."
       },
       "laval": {
         "title": "Ingénieur logiciel",
         "company": "Université Laval",
         "period": "2008-05 – 2011-05",
         "location": "Québec, QC",
-        "description1": "Développement full-stack d'une plateforme d'apprentissage en ligne servant des milliers d'étudiants ; conçu et construit le module de quiz à partir de zéro."
+        "description1": "Développement full-stack d'une plateforme d'apprentissage en ligne servant des milliers d'étudiants ; construit le module de quiz à partir de zéro."
       }
     },
     "education": "Formation",
     "educationDegree": "Baccalauréat en génie (B.Ing.) — Technologies de l'information",
     "educationSchool": "École de technologie supérieure",
+    "educationPeriod": "2004-09 – 2008-09",
     "educationLab": "Assistant de laboratoire : développement d'applications de commerce électronique et transactionnelles",
     "educationAward": "Bourse de recherche CRSNG : recherche par image avec Oracle DB",
     "sideProjects": "Projet personnel",
     "side1T": "CrownBTC",
     "side1D": "Une application iPhone sans fla-fla pour le prix, le portefeuille et les nouvelles bitcoin, avec widgets. Conçue et livrée seul, de l'idée à l'App Store.",
-    "side1Link": "App Store",
     "contact": "Contact",
     "address": "Adresse",
-    "addressValue": "Lévis, QC, Canada, G6Z 3C8",
+    "addressValue": "Lévis, QC, Canada",
     "email": "Courriel",
     "emailValue": "jp@jp305.dev",
     "linkedin": "LinkedIn",
@@ -279,10 +272,6 @@
     "skillsLeadList": "Conception de systèmes · revues d'architecture · feuille de route · mentorat · travail direct avec PDG et produit",
     "skillsAI": "Depuis 2024",
     "skillsAIList": "Développement assisté par IA — agents de codage, MCP, revue automatisée — et durcissement du code généré par IA pour la production",
-    "engagements": "Formats d'engagement",
-    "eng1": "CTO à temps partiel — 1 à 2 jours par semaine",
-    "eng2": "Lead ou IC senior sur un projet — portée fixe ou un trimestre",
-    "eng3": "Ponctuel : revue d'architecture, audit de code, la migration qui fait peur à tout le monde",
     "languages": "Langues",
     "languageFrench": "Français (langue maternelle)",
     "languageEnglish": "Anglais"
