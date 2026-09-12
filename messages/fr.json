@@ -12,27 +12,26 @@
     "workedWith": "J'ai travaillé chez",
     "whatIDo": "Ce que je fais",
     "whatIDoNote": "ce pour quoi on m'engage",
-    "sticker": "vrais chiffres",
     "services": {
       "product": {
         "title": "Livraison de produit, web et mobile",
-        "lead": "Le produit au complet, de Figma à la production, par <mark>un seul ingénieur</mark> outillé d'agents.",
-        "description1": "Des applications web Next.js qui chargent vite et se référencent bien",
-        "description2": "Des applications React Native pour iOS et Android à partir d'une seule base de code, soumission aux boutiques comprise",
-        "description3": "Sauvetage et accélération d'applications existantes : chargements 2 à 5× plus rapides, hébergement 40 à 60 % moins cher"
+        "lead": "Le produit au complet, des maquettes à la production, par <mark>un seul ingénieur</mark> qui travaille avec des agents de codage.",
+        "description1": "Applications web et mobiles, sur les deux boutiques, à partir d'une seule base de code",
+        "description2": "Une portée qui demandait une équipe, livrée en quelques semaines",
+        "description3": "Applications existantes sauvées et accélérées : chargements 2 à 5× plus rapides, hébergement 40 à 60 % moins cher"
       },
       "ai": {
         "title": "L'IA, en production",
-        "lead": "Des fonctionnalités LLM et des agents qui <mark>survivent aux vrais utilisateurs</mark>, et une équipe outillée pour livrer avec des agents de codage.",
-        "description1": "Agents outillés et fonctionnalités LLM sur vos données et votre pile",
-        "description2": "Évaluations, observabilité et une facture prévisible",
-        "description3": "Base de code et flux de travail prêts pour les agents ; chez Sapien, ça a réduit de 50 % le temps de construction d'un projet"
+        "lead": "Des fonctionnalités LLM et des agents qui <mark>survivent aux vrais utilisateurs</mark>, et une équipe qui livre avec des agents de codage.",
+        "description1": "Agents et fonctionnalités LLM sur vos données, avec évaluations et observabilité",
+        "description2": "Une facture prévisible : cache, routage de modèles, budgets",
+        "description3": "Votre base de code prête pour les agents : conventions, garde-fous, revue ; chez Sapien, ça a réduit une construction de 50 %"
       },
       "platform": {
         "title": "Infonuagique, plateforme et sécurité",
         "lead": "La partie ennuyante qui rend la <mark>partie rapide sécuritaire</mark>.",
-        "description1": "API, backends sans serveur, CI/CD et infrastructure en code",
-        "description2": "Audits de sécurité du code, du nuage et de la CI, avec une liste de correctifs priorisée plutôt qu'un rapport",
+        "description1": "Des API et des backends qui suivent le trafic et ne coûtent rien au repos",
+        "description2": "Audits de sécurité du code, du nuage et des pipelines, avec une liste de correctifs priorisée plutôt qu'un rapport",
         "description3": "Durcissement et préparation à la conformité : SOC 2, ISO 27001, Loi 25"
       },
       "cto": {
@@ -40,7 +39,7 @@
         "lead": "Un ingénieur senior <mark>dans la pièce</mark> quand les décisions se prennent. Une journée par semaine, ou un trimestre critique.",
         "description1": "Feuille de route et architecture : construire, acheter ou reporter, et pourquoi",
         "description2": "La migration qui fait peur à tout le monde, planifiée et livrée",
-        "description3": "Embauche, mentorat et vérification diligente en langage clair"
+        "description3": "Embauche, mentorat et une pratique d'ingénierie bâtie autour des agents"
       }
     },
     "experience": "Parcours",

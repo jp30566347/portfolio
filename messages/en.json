@@ -12,27 +12,26 @@
     "workedWith": "Worked inside",
     "whatIDo": "What I do",
     "whatIDoNote": "what I'm usually hired for",
-    "sticker": "real numbers",
     "services": {
       "product": {
         "title": "Product delivery, web & mobile",
-        "lead": "The whole product, Figma to production, from <mark>one engineer</mark> with an agentic workflow.",
-        "description1": "Next.js web apps that load fast and rank well",
-        "description2": "React Native apps for iOS and Android from one codebase, store submission included",
-        "description3": "Rescue and speed-up of existing apps: 2–5× faster loads, 40–60% cheaper hosting"
+        "lead": "The whole product, from wireframes to production, by <mark>one engineer</mark> working with coding agents.",
+        "description1": "Web and mobile apps, on both stores, from one codebase",
+        "description2": "A scope that used to need a team, shipped in weeks",
+        "description3": "Existing apps rescued and sped up: 2–5× faster loads, 40–60% cheaper hosting"
       },
       "ai": {
         "title": "AI, in production",
-        "lead": "LLM features and agents that <mark>survive real users</mark>, and a team set up to ship with coding agents.",
-        "description1": "Tool-using agents and LLM features on your data and your stack",
-        "description2": "Evals, observability and a bill you can predict",
-        "description3": "Agent-ready codebase and workflow; at Sapien it cut one project's build time by 50%"
+        "lead": "LLM features and agents that <mark>survive real users</mark>, and a team that ships with coding agents.",
+        "description1": "Agents and LLM features on your data, with evals and observability",
+        "description2": "A bill you can predict: caching, model routing, budgets",
+        "description3": "Your codebase made agent-ready: conventions, guardrails, review; at Sapien it cut one build by 50%"
       },
       "platform": {
         "title": "Cloud, platform & security",
         "lead": "The boring part that makes the <mark>fast part safe</mark>.",
-        "description1": "APIs, serverless back-ends, CI/CD and infrastructure-as-code",
-        "description2": "Security audits of code, cloud and CI, with a prioritised fix list instead of a report",
+        "description1": "APIs and back-ends that scale with traffic and cost nothing when idle",
+        "description2": "Security audits of code, cloud and pipelines, with a prioritised fix list instead of a report",
         "description3": "Hardening and compliance readiness: SOC 2, ISO 27001, Law 25"
       },
       "cto": {
@@ -40,7 +39,7 @@
         "lead": "A senior engineer <mark>in the room</mark> when decisions get made. A day a week, or a critical quarter.",
         "description1": "Roadmap and architecture: build, buy or postpone, and why",
         "description2": "The migration everyone's afraid of, planned and shipped",
-        "description3": "Hiring, mentoring, and due diligence in plain language"
+        "description3": "Hiring, mentoring, and an engineering practice built around agents"
       }
     },
     "experience": "Track record",

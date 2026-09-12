@@ -19,19 +19,14 @@ const workedWith = [
 
 type Service = {
   key: "product" | "ai" | "platform" | "cto";
-  /** Footer line: the stack, or the engagement format. Not translated. */
+  /** Footer line: what you get, or the agent tooling. Not translated. */
   tags: string[];
-  sticker?: boolean;
 };
 
 const services: Service[] = [
-  {
-    key: "product",
-    sticker: true,
-    tags: ["Next.js", "React Native", "TypeScript", "Vercel"],
-  },
-  { key: "ai", tags: ["Claude", "OpenAI", "MCP", "evals"] },
-  { key: "platform", tags: ["Postgres", "AWS", "IaC", "OWASP", "Law 25"] },
+  { key: "product", tags: ["web", "iOS", "Android"] },
+  { key: "ai", tags: ["Claude Code", "Codex", "MCP", "evals"] },
+  { key: "platform", tags: ["audits", "SOC 2", "ISO 27001", "Law 25"] },
   { key: "cto", tags: ["1 day / week", "one quarter", "one-off audit"] },
 ];
 
@@ -112,11 +107,6 @@ export default async function Home({
               key={s.key}
               className="relative sheet sheet-lift p-6 flex flex-col"
             >
-              {s.sticker && (
-                <span className="sticker" aria-hidden="true">
-                  {t("sticker")}
-                </span>
-              )}
               <h3 className="mb-2">{t(`services.${s.key}.title`)}</h3>
               <p className="text-ink-soft mb-5">
                 {t.rich(`services.${s.key}.lead`, { mark })}
