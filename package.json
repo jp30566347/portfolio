@@ -8,11 +8,13 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
+    "check:messages": "node scripts/check-messages.mjs",
     "analyze": "next experimental-analyze",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.9.0",
     "lucide-react": "^1.31.0",
     "next": "^16.3.1",
     "next-intl": "^4.13.7",

@@ -7,81 +7,36 @@ import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { PageLabel } from "@/components/PageLabel";
+import { ContactCta } from "@/components/ContactCta";
 
 const mark = (chunks: React.ReactNode) => <mark>{chunks}</mark>;
 
 type Project = {
   key: "ventilo" | "oxygapp" | "ventiloApp";
-  bullets: number;
   website?: string;
   playStore?: string;
   appStore?: string;
 };
 
 const projects: Project[] = [
-  { key: "ventilo", bullets: 3, website: "https://www.ventilo.ca" },
+  { key: "ventilo", website: "https://www.ventilo.ca" },
   {
     key: "oxygapp",
-    bullets: 3,
     playStore:
       "https://play.google.com/store/apps/details?id=com.iucpq.oxygapp&hl=en_US",
     appStore: "https://apps.apple.com/us/app/oxygapp/id1668892646",
   },
   {
     key: "ventiloApp",
-    bullets: 3,
     playStore:
       "https://play.google.com/store/apps/details?id=com.iucpq.ventillo&hl=en_US",
     appStore: "https://apps.apple.com/us/app/ventilo/id1478758927",
   },
 ];
 
-type Service = {
-  key: "agentic" | "product" | "aiProduct" | "platform" | "cto" | "security";
-  bullets: number;
-  /** Footer line: the stack, or the engagement format. Not translated. */
-  tags: string[];
-  sticker?: boolean;
-};
-
-const services: Service[] = [
-  {
-    key: "agentic",
-    bullets: 4,
-    tags: ["Claude Code", "Codex", "MCP", "GitHub Actions"],
-  },
-  {
-    key: "product",
-    bullets: 4,
-    sticker: true,
-    tags: ["Next.js", "React Native", "TypeScript", "Vercel"],
-  },
-  {
-    key: "aiProduct",
-    bullets: 4,
-    tags: ["Claude API", "OpenAI", "pgvector", "evals"],
-  },
-  {
-    key: "platform",
-    bullets: 4,
-    tags: ["Postgres", "Supabase", "AWS", "IaC"],
-  },
-  {
-    key: "cto",
-    bullets: 4,
-    tags: ["1 day / week", "one quarter", "one-off audit"],
-  },
-  {
-    key: "security",
-    bullets: 4,
-    tags: ["OWASP", "AWS IAM", "SOC 2", "Law 25"],
-  },
-];
-
 /** Personal open source. Not client work, so it gets its own section. */
 type OpenSource = {
   key: "macroTui" | "nhlTui";
-  bullets: number;
   site: string;
   /** The stack, not translated. */
   tags: string[];
@@ -90,19 +45,19 @@ type OpenSource = {
 const openSource: OpenSource[] = [
   {
     key: "macroTui",
-    bullets: 3,
     site: "https://tui.jp305.dev/macro-tui/",
     tags: ["Rust", "ratatui", "tokio"],
   },
   {
     key: "nhlTui",
-    bullets: 3,
     site: "https://tui.jp305.dev/nhl-tui/",
     tags: ["Rust", "ratatui", "tokio"],
   },
 ];
 
 const REPO = "https://github.com/jp30566347/tui";
+
+const bullets = ["description1", "description2", "description3"] as const;
 
 export default async function Work({
   params,
@@ -116,9 +71,6 @@ export default async function Work({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "portfolio" });
 
-  const bulletsFor = (prefix: string, count: number) =>
-    Array.from({ length: count }, (_, i) => `${prefix}.description${i + 1}`);
-
   return (
     <div className="flex flex-col gap-16 sm:gap-24">
       <header className="pt-6 sm:pt-12">
@@ -129,52 +81,9 @@ export default async function Work({
         </p>
       </header>
 
-      {/* Services */}
+      {/* Client work */}
       <section className="flex flex-col gap-8">
-        <div className="flex items-baseline gap-4">
-          <h2>{t("services")}</h2>
-          <span className="label">{t("servicesNote")}</span>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <article
-              key={s.key}
-              className="relative sheet sheet-lift p-6 flex flex-col"
-            >
-              {s.sticker && (
-                <span className="sticker" aria-hidden="true">
-                  {t("sticker")}
-                </span>
-              )}
-              <h3 className="mb-2">{t(`${s.key}.title`)}</h3>
-              <p className="text-ink-soft mb-5">{t(`${s.key}.lead`)}</p>
-              <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
-                {bulletsFor(s.key, s.bullets).map((k) => (
-                  <li key={k} className="flex gap-2">
-                    <span className="text-pen shrink-0" aria-hidden="true">
-                      —
-                    </span>
-                    <span>{t.rich(k, { mark })}</span>
-                  </li>
-                ))}
-              </ul>
-              <ul className="flex flex-wrap gap-1.5 pt-4 border-t-2 border-dashed border-grid-strong list-none p-0">
-                {s.tags.map((tag) => (
-                  <li
-                    key={tag}
-                    className="font-mono text-[11px] uppercase tracking-wider text-mute border border-grid-strong rounded-xs px-1.5 py-0.5"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-      </section>
-      {/* Featured */}
-      <section className="flex flex-col gap-8">
-        <div className="flex items-baseline gap-4">
+        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <h2>{t("featured")}</h2>
           <span className="label">{t("featuredNote")}</span>
         </div>
@@ -186,14 +95,16 @@ export default async function Work({
             >
               <p className="label mb-3">{t(`${p.key}.client`)}</p>
               <h3 className="mb-2">{t(`${p.key}.title`)}</h3>
-              <p className="text-ink-soft mb-5">{t(`${p.key}.lead`)}</p>
+              <p className="text-ink-soft mb-5">
+                {t.rich(`${p.key}.lead`, { mark })}
+              </p>
               <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
-                {bulletsFor(p.key, p.bullets).map((k) => (
-                  <li key={k} className="flex gap-2">
+                {bullets.map((b) => (
+                  <li key={b} className="flex gap-2">
                     <span className="text-pen shrink-0" aria-hidden="true">
                       —
                     </span>
-                    <span>{t.rich(k, { mark })}</span>
+                    <span>{t(`${p.key}.${b}`)}</span>
                   </li>
                 ))}
               </ul>
@@ -244,9 +155,10 @@ export default async function Work({
           ))}
         </div>
       </section>
+
       {/* Open source */}
       <section className="flex flex-col gap-8">
-        <div className="flex items-baseline gap-4">
+        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <h2>{t("openSource")}</h2>
           <span className="label">{t("openSourceNote")}</span>
         </div>
@@ -260,12 +172,12 @@ export default async function Work({
               <h3 className="mb-2">{t(`${o.key}.title`)}</h3>
               <p className="text-ink-soft mb-5">{t(`${o.key}.lead`)}</p>
               <ul className="flex flex-col gap-2 mb-6 grow text-sm text-ink-soft list-none p-0">
-                {bulletsFor(o.key, o.bullets).map((k) => (
-                  <li key={k} className="flex gap-2">
+                {bullets.map((b) => (
+                  <li key={b} className="flex gap-2">
                     <span className="text-pen shrink-0" aria-hidden="true">
                       —
                     </span>
-                    <span>{t.rich(k, { mark })}</span>
+                    <span>{t.rich(`${o.key}.${b}`, { mark })}</span>
                   </li>
                 ))}
               </ul>
@@ -306,6 +218,8 @@ export default async function Work({
           })}
         </p>
       </section>
+
+      <ContactCta locale={locale} />
     </div>
   );
 }
