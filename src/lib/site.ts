@@ -3,11 +3,17 @@ import { routing } from "@/i18n/routing";
 /** Canonical origin. The apex 308s here, so every absolute URL uses www. */
 export const SITE_URL = "https://www.jp305.dev";
 
-/** Locale-prefixed pages that search engines should index. */
+/** Pages that search engines should index, one per locale. */
 export const INDEXED_PATHS = ["", "/portfolio"] as const;
 
+/**
+ * Absolute URL of a page in one locale. Mirrors `localePrefix: "as-needed"`:
+ * the default locale is unprefixed, so the English home page is the root.
+ */
 export const localizedUrl = (locale: string, path: string = "") =>
-  `${SITE_URL}/${locale}${path}`;
+  locale === routing.defaultLocale
+    ? `${SITE_URL}${path || "/"}`
+    : `${SITE_URL}/${locale}${path}`;
 
 /** hreflang map for one path: every locale plus the English default. */
 export const languageAlternates = (path: string = "") =>
