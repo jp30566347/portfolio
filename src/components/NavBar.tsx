@@ -1,9 +1,15 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { Link, usePathname as useLocalizedPathname } from "@/i18n/routing";
+import {
+  getPathname,
+  Link,
+  LOCALE_COOKIE,
+  usePathname as useLocalizedPathname,
+} from "@/i18n/routing";
 import { useState } from "react";
 import Image from "next/image";
+import NextLink from "next/link";
 import { ArrowUpRight, Mail, Menu, X } from "lucide-react";
 import avatar from "@/assets/jp.png";
 import { BOOKING_URL, EMAIL_HREF, cvHref } from "@/lib/links";
@@ -28,6 +34,19 @@ export function NavBar() {
   // Determine the opposite locale
   const oppositeLocale = locale === "en" ? "fr" : "en";
   const localeLabel = locale === "en" ? "FR" : "EN";
+
+  // next-intl's <Link locale> always prefixes the target locale, so French
+  // pages linked to /en and /en/portfolio: redirects that Google kept crawling
+  // and listing under "Page with redirect". Link to the real URL instead. The
+  // /en hop existed to update the locale cookie before landing on /, so do
+  // that on click; with a stale "fr" cookie, / would bounce back to /fr.
+  const switchHref = getPathname({
+    href: localizedPathname,
+    locale: oppositeLocale,
+  });
+  const switchLocale = () => {
+    document.cookie = `${LOCALE_COOKIE}=${oppositeLocale}; path=/; SameSite=lax`;
+  };
 
   const hrefFor = (mi: (typeof menuItems)[number]) =>
     mi === "home" ? "/" : `/${mi}`;
@@ -85,14 +104,17 @@ export function NavBar() {
             </a>
           </li>
           <li>
-            <Link
-              href={localizedPathname}
-              locale={oppositeLocale}
+            <NextLink
+              href={switchHref}
+              hrefLang={oppositeLocale}
+              // A prefetch would carry the old cookie and cache its redirect.
+              prefetch={false}
+              onClick={switchLocale}
               className={`${linkBase} px-2 py-1 ${localeLinkStyle}`}
               aria-label={t("switchLocale")}
             >
               {localeLabel}
-            </Link>
+            </NextLink>
           </li>
           <li>
             <a
@@ -181,15 +203,19 @@ export function NavBar() {
             </a>
           </li>
           <li className="mt-2">
-            <Link
-              href={localizedPathname}
-              locale={oppositeLocale}
-              onClick={() => setIsMenuOpen(false)}
+            <NextLink
+              href={switchHref}
+              hrefLang={oppositeLocale}
+              prefetch={false}
+              onClick={() => {
+                switchLocale();
+                setIsMenuOpen(false);
+              }}
               className={`${linkBase} inline-flex px-3 py-2 ${localeLinkStyle}`}
               aria-label={t("switchLocale")}
             >
               {t("switchLocale")}
-            </Link>
+            </NextLink>
           </li>
         </ul>
       )}

@@ -1,6 +1,9 @@
 import { defineRouting } from "next-intl/routing";
 import { createNavigation } from "next-intl/navigation";
 
+/** Remembers a visitor's chosen locale; the proxy reads it on unprefixed URLs. */
+export const LOCALE_COOKIE = "NEXT_LOCALE";
+
 export const routing = defineRouting({
   // A list of all locales that are supported
   // English is listed first and set as default
@@ -18,9 +21,11 @@ export const routing = defineRouting({
   // request URL and its x-default disagreed with the <link> tags in the
   // HTML. The page metadata (lib/site.ts) is the single source of hreflang.
   alternateLinks: false,
+
+  localeCookie: { name: LOCALE_COOKIE },
 });
 
 // Lightweight wrappers around Next.js' navigation APIs
 // that will consider the routing configuration
-export const { Link, redirect, usePathname, useRouter } =
+export const { Link, getPathname, redirect, usePathname, useRouter } =
   createNavigation(routing);
