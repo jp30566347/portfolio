@@ -19,7 +19,9 @@ export async function generateMetadata({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "home" });
-  const title = "JP Melanson — " + t("metaTitle");
+  // The home page carries the full name so a search for either form of it
+  // lands here; subpages keep the short brand through the template.
+  const title = `${person.displayName} — ${t("metaTitle")}`;
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -60,51 +62,10 @@ interface Props extends React.PropsWithChildren {
   }>;
 }
 
-/** One entity for the whole site: the person, and the site as their home. */
-function jsonLd(locale: string, description: string, jobTitle: string) {
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": person.id,
-        name: person.name,
-        givenName: person.givenName,
-        familyName: person.familyName,
-        alternateName: person.alternateName,
-        description,
-        jobTitle,
-        url: alternatesFor(locale).canonical,
-        image: `${SITE_URL}${avatar.src}`,
-        email: `mailto:${person.email}`,
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: person.locality,
-          addressRegion: person.region,
-          addressCountry: person.country,
-        },
-        alumniOf: { "@type": "CollegeOrUniversity", name: person.alumniOf },
-        knowsAbout: person.knowsAbout,
-        sameAs: person.sameAs,
-      },
-      {
-        "@type": "WebSite",
-        "@id": `${SITE_URL}/#website`,
-        url: SITE_URL,
-        name: "JP Melanson",
-        inLanguage: routing.locales,
-        about: { "@id": person.id },
-        publisher: { "@id": person.id },
-      },
-    ],
-  };
-}
-
 export default async function Layout({ children, params }: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "home" });
 
   return (
     <html
@@ -112,14 +73,7 @@ export default async function Layout({ children, params }: Props) {
       className={`${display.variable} ${body.variable} ${mono.variable}`}
     >
       <body className="font-sans">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              jsonLd(locale, t("description"), t("label"))
-            ).replace(/</g, "\\u003c"),
-          }}
-        />
+        {/* Structured data (Person, WebSite, the page) is rendered per page. */}
         {process.env.NODE_ENV === "production" && (
           <Script
             defer
