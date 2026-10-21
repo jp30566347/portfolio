@@ -41,6 +41,8 @@ export const person = {
   name: "Jean-Philippe Melanson",
   givenName: "Jean-Philippe",
   familyName: "Melanson",
+  /** For page titles: the formal name, with the short form the site goes by. */
+  displayName: "Jean-Philippe (JP) Melanson",
   alternateName: [
     "JP Melanson",
     "JP Melançon",

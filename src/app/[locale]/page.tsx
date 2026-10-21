@@ -4,7 +4,9 @@ import { ArrowUpRight, Download } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 import { ContactCta } from "@/components/ContactCta";
+import { StructuredData } from "@/components/StructuredData";
 import { BOOKING_URL, cvHref } from "@/lib/links";
+import { person } from "@/lib/site";
 
 const mark = (chunks: React.ReactNode) => <mark>{chunks}</mark>;
 
@@ -54,9 +56,13 @@ export default async function Home({
 
   return (
     <div className="flex flex-col gap-16 sm:gap-24">
+      <StructuredData locale={locale} path="" />
       {/* Hero */}
       <section className="pt-6 sm:pt-12">
-        <p className="label">{t("label")}</p>
+        {/* The full name in visible text: the H1 only says JP. */}
+        <p className="label">
+          {person.name} · {t("label")}
+        </p>
         <h1 className="mt-4 max-w-[22ch]">{t.rich("heroTitle", { mark })}</h1>
         <p className="mt-6 text-lg sm:text-xl text-ink-soft max-w-[52ch] leading-relaxed">
           {t("heroSub")}

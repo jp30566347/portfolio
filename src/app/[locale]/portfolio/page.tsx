@@ -8,6 +8,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { PageLabel } from "@/components/PageLabel";
 import { ContactCta } from "@/components/ContactCta";
+import { StructuredData } from "@/components/StructuredData";
 
 const mark = (chunks: React.ReactNode) => <mark>{chunks}</mark>;
 
@@ -73,6 +74,7 @@ export default async function Work({
 
   return (
     <div className="flex flex-col gap-16 sm:gap-24">
+      <StructuredData locale={locale} path="/portfolio" />
       <header className="pt-6 sm:pt-12">
         <PageLabel page={2} title={t("title")} />
         <h1 className="mt-4 max-w-[20ch]">{t("pageTitle")}</h1>

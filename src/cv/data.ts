@@ -1,4 +1,5 @@
 import type { getTranslations } from "next-intl/server";
+import { localizedUrl } from "@/lib/site";
 
 type T = Awaited<ReturnType<typeof getTranslations<"resume">>>;
 
@@ -56,7 +57,8 @@ export function buildCv(t: T, locale: string) {
         {
           label: t("website"),
           value: t("websiteValue"),
-          href: `https://www.${t("websiteValue")}/${locale}`,
+          // The canonical page for the locale; /en is only a redirect.
+          href: localizedUrl(locale),
         },
       ],
     },
