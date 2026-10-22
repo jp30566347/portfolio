@@ -28,7 +28,25 @@ export async function generateMetadata({
     title: { template: "JP Melanson — %s", default: title },
     description: t("description"),
     alternates: alternatesFor(locale),
-    icons: "/favicon.ico",
+    // Icons live in /public under stable URLs. The app/favicon.ico convention
+    // rendered a second <link rel="icon"> whose hash query changed between
+    // builds; Google crawled every variant as a URL of its own and asks for a
+    // favicon URL that does not change. The 192px PNG is the multiple of 48px
+    // Google wants for the icon it shows beside a result.
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "16x16 32x32" },
+        { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+        { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+        {
+          url: "/android-chrome-192x192.png",
+          type: "image/png",
+          sizes: "192x192",
+        },
+      ],
+      apple: "/apple-touch-icon.png",
+    },
+    manifest: "/site.webmanifest",
     openGraph: {
       title,
       description: t("description"),
