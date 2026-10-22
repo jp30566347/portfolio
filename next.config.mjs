@@ -16,6 +16,18 @@ const nextConfig = {
       { source: "/cv.pdf", destination: "/en/cv.pdf", permanent: false },
     ];
   },
+  async headers() {
+    // Google follows the <link rel="preload" as="font"> tags and lists every
+    // font file under "Crawled - currently not indexed". They are not pages:
+    // noindex keeps them out of the index and the report without blocking
+    // the fetch that rendering needs (which a robots.txt rule would do).
+    return [
+      {
+        source: "/_next/static/:path(.*\\.woff2)",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
