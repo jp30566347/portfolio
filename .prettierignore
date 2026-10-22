@@ -1,1 +1,3 @@
 .next
+# Per-machine Claude Code permissions; ignored by git, not part of CI.
+.claude/settings.local.json
