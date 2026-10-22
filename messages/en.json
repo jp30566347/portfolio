@@ -1,11 +1,11 @@
 {
   "home": {
     "title": "Home",
-    "label": "Fractional CTO · Senior software engineer",
-    "metaTitle": "Fractional CTO & senior software engineer, Québec",
-    "description": "Jean-Philippe (JP) Melanson builds web, mobile and cloud software that ships and stays shipped. Fifteen years, from two-person startups to Ticketmaster, from Lévis, QC.",
+    "label": "AI engineer · Agentic systems, tool use & orchestration",
+    "metaTitle": "AI engineer, agentic systems & production agents, Québec",
+    "description": "Jean-Philippe (JP) Melanson builds production AI agents, with tool use, orchestration and evals, and the software around them. Fifteen years, from two-person startups to Ticketmaster, from Lévis, QC.",
     "heroTitle": "Hi, I'm JP. I build software that ships — <mark>and stays shipped.</mark>",
-    "heroSub": "Fifteen years of web, mobile and cloud, from two-person startups to Ticketmaster. Small teams, clear goals, boring infrastructure.",
+    "heroSub": "I ship production agents: tool use, orchestration, evals, and a bill you can predict. Built on fifteen years of web, mobile and cloud, from two-person startups to Ticketmaster.",
     "seeWork": "See the work",
     "book30": "Book 30 minutes",
     "downloadCv": "Download CV (PDF)",
@@ -13,19 +13,19 @@
     "whatIDo": "What I do",
     "whatIDoNote": "what I'm usually hired for",
     "services": {
+      "ai": {
+        "title": "Production agents",
+        "lead": "Agents that call real tools, hand off cleanly, and <mark>survive real users</mark>.",
+        "description1": "Agents on your data and APIs: tool design, MCP servers, multi-step orchestration",
+        "description2": "Evals, observability and budgets: you know when it works, why it didn't, and what it costs",
+        "description3": "Your codebase made agent-ready: conventions, guardrails, review; at Sapien it cut one build by 50%"
+      },
       "product": {
         "title": "Product delivery, web & mobile",
         "lead": "The whole product, from wireframes to production, by <mark>one engineer</mark> working with coding agents.",
         "description1": "Web and mobile apps, on both stores, from one codebase",
         "description2": "A scope that used to need a team, shipped in weeks",
         "description3": "Existing apps rescued and sped up: 2–5× faster loads, 40–60% cheaper hosting"
-      },
-      "ai": {
-        "title": "AI, in production",
-        "lead": "LLM features and agents that <mark>survive real users</mark>, and a team that ships with coding agents.",
-        "description1": "Agents and LLM features on your data, with evals and observability",
-        "description2": "A bill you can predict: caching, model routing, budgets",
-        "description3": "Your codebase made agent-ready: conventions, guardrails, review; at Sapien it cut one build by 50%"
       },
       "platform": {
         "title": "Cloud, platform & security",
@@ -34,9 +34,9 @@
         "description2": "Security audits of code, cloud and pipelines, with a prioritised fix list instead of a report",
         "description3": "Hardening and compliance readiness: SOC 2, ISO 27001, Law 25"
       },
-      "cto": {
-        "title": "Fractional CTO",
-        "lead": "A senior engineer <mark>in the room</mark> when decisions get made. A day a week, or a critical quarter.",
+      "lead": {
+        "title": "Technical leadership",
+        "lead": "A senior engineer <mark>in the room</mark> when decisions get made, for a critical quarter or a one-off review.",
         "description1": "Roadmap and architecture: build, buy or postpone, and why",
         "description2": "The migration everyone's afraid of, planned and shipped",
         "description3": "Hiring, mentoring, and an engineering practice built around agents"
@@ -81,7 +81,7 @@
   },
   "cta": {
     "title": "Have a project in mind?",
-    "sub": "Thirty minutes, no slides. Bring the problem; I'll bring questions and, usually, a first plan. Open to fractional and consulting engagements."
+    "sub": "Thirty minutes, no slides. Bring the problem; I'll bring questions and, usually, a first plan. Open to consulting engagements."
   },
   "portfolio": {
     "title": "Work",
@@ -141,10 +141,10 @@
   "resume": {
     "title": "CV",
     "name": "Jean-Philippe Melanson",
-    "jobTitle": "Fractional CTO · Senior software engineer",
+    "jobTitle": "AI engineer · Agentic systems, tool use & orchestration",
     "availability": "Part-time · remote from Québec · travel when it matters",
     "overview": "In short",
-    "overviewText": "The engineer companies hand the critical path to: technical co-founder of a real-estate platform, protocol engineer on a token launch, consultant inside Ticketmaster's live-event systems. I work autonomously, ship on the date I gave you, and tell you the truth about scope, risk and cost, early. Since 2024 I ship with AI coding agents and set teams up to do the same.",
+    "overviewText": "I build production agents, with tool use, orchestration and evals, and the systems they run on. Before that, I was the engineer companies handed the critical path to: technical co-founder of a real-estate platform, protocol engineer on a token launch, consultant inside Ticketmaster's live-event systems. I work autonomously, ship on the date I gave you, and tell you the truth about scope, risk and cost, early.",
     "outcomes": "Selected outcomes",
     "outcome1T": "doormath.ca — built the company's technical foundation as technical co-founder.",
     "outcome1D": "Architecture, product and infrastructure from zero to MVP; onboarded the first 10–20 paying customers.",
@@ -273,8 +273,8 @@
     "skillsShipList": "TypeScript · React · Next.js · React Native · Postgres · Supabase · AWS · CI/CD · IaC",
     "skillsLead": "Lead",
     "skillsLeadList": "System design · architecture reviews · roadmap · mentoring · working directly with CEOs and product",
-    "skillsAI": "Since 2024",
-    "skillsAIList": "AI-assisted development — coding agents, MCP, automated review — and hardening AI-generated code for production",
+    "skillsAI": "Agents",
+    "skillsAIList": "Tool use · MCP servers · multi-agent orchestration · evals · observability · cost control · Claude Code & Codex",
     "languages": "Languages",
     "languageFrench": "French (native)",
     "languageEnglish": "English"

@@ -20,16 +20,16 @@ const workedWith = [
 ];
 
 type Service = {
-  key: "product" | "ai" | "platform" | "cto";
+  key: "ai" | "product" | "platform" | "lead";
   /** Footer line: what you get, or the agent tooling. Not translated. */
   tags: string[];
 };
 
 const services: Service[] = [
+  { key: "ai", tags: ["tool use", "MCP", "orchestration", "evals"] },
   { key: "product", tags: ["web", "iOS", "Android"] },
-  { key: "ai", tags: ["Claude Code", "Codex", "MCP", "evals"] },
   { key: "platform", tags: ["audits", "SOC 2", "ISO 27001", "Law 25"] },
-  { key: "cto", tags: ["1 day / week", "one quarter", "one-off audit"] },
+  { key: "lead", tags: ["architecture", "migrations", "mentoring"] },
 ];
 
 const timeline = [

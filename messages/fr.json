@@ -1,11 +1,11 @@
 {
   "home": {
     "title": "Accueil",
-    "label": "CTO à temps partiel · Ingénieur logiciel senior",
-    "metaTitle": "CTO à temps partiel et ingénieur logiciel senior, Québec",
-    "description": "Jean-Philippe (JP) Melanson construit des logiciels web, mobiles et infonuagiques qui se rendent en production et y restent. Quinze ans, des startups de deux personnes à Ticketmaster, depuis Lévis, QC.",
+    "label": "Ingénieur IA · Systèmes agentiques, utilisation d'outils et orchestration",
+    "metaTitle": "Ingénieur IA, systèmes agentiques et agents en production, Québec",
+    "description": "Jean-Philippe (JP) Melanson construit des agents IA en production, avec utilisation d'outils, orchestration et évaluations, et les logiciels qui les entourent. Quinze ans, des startups de deux personnes à Ticketmaster, depuis Lévis, QC.",
     "heroTitle": "Bonjour, je suis JP. Je construis des logiciels qui se rendent en production — <mark>et qui y restent.</mark>",
-    "heroSub": "Quinze ans de web, de mobile et d'infonuagique, des startups de deux personnes à Ticketmaster. Petites équipes, objectifs clairs, infrastructure ennuyante.",
+    "heroSub": "Je livre des agents en production : utilisation d'outils, orchestration, évaluations, et une facture prévisible. Sur quinze ans de web, de mobile et d'infonuagique, des startups de deux personnes à Ticketmaster.",
     "seeWork": "Voir les projets",
     "book30": "Réserver 30 minutes",
     "downloadCv": "Télécharger le CV (PDF)",
@@ -13,19 +13,19 @@
     "whatIDo": "Ce que je fais",
     "whatIDoNote": "ce pour quoi on m'engage",
     "services": {
+      "ai": {
+        "title": "Agents en production",
+        "lead": "Des agents qui appellent de vrais outils, se passent le relais proprement et <mark>survivent aux vrais utilisateurs</mark>.",
+        "description1": "Agents sur vos données et vos API : conception d'outils, serveurs MCP, orchestration en plusieurs étapes",
+        "description2": "Évaluations, observabilité et budgets : vous savez quand ça marche, pourquoi ça n'a pas marché et ce que ça coûte",
+        "description3": "Votre base de code prête pour les agents : conventions, garde-fous, revue ; chez Sapien, ça a réduit une construction de 50 %"
+      },
       "product": {
         "title": "Livraison de produit, web et mobile",
         "lead": "Le produit au complet, des maquettes à la production, par <mark>un seul ingénieur</mark> qui travaille avec des agents de codage.",
         "description1": "Applications web et mobiles, sur les deux boutiques, à partir d'une seule base de code",
         "description2": "Une portée qui demandait une équipe, livrée en quelques semaines",
         "description3": "Applications existantes sauvées et accélérées : chargements 2 à 5× plus rapides, hébergement 40 à 60 % moins cher"
-      },
-      "ai": {
-        "title": "L'IA, en production",
-        "lead": "Des fonctionnalités LLM et des agents qui <mark>survivent aux vrais utilisateurs</mark>, et une équipe qui livre avec des agents de codage.",
-        "description1": "Agents et fonctionnalités LLM sur vos données, avec évaluations et observabilité",
-        "description2": "Une facture prévisible : cache, routage de modèles, budgets",
-        "description3": "Votre base de code prête pour les agents : conventions, garde-fous, revue ; chez Sapien, ça a réduit une construction de 50 %"
       },
       "platform": {
         "title": "Infonuagique, plateforme et sécurité",
@@ -34,9 +34,9 @@
         "description2": "Audits de sécurité du code, du nuage et des pipelines, avec une liste de correctifs priorisée plutôt qu'un rapport",
         "description3": "Durcissement et préparation à la conformité : SOC 2, ISO 27001, Loi 25"
       },
-      "cto": {
-        "title": "CTO à temps partiel",
-        "lead": "Un ingénieur senior <mark>dans la pièce</mark> quand les décisions se prennent. Une journée par semaine, ou un trimestre critique.",
+      "lead": {
+        "title": "Leadership technique",
+        "lead": "Un ingénieur senior <mark>dans la pièce</mark> quand les décisions se prennent, pour un trimestre critique ou une revue ponctuelle.",
         "description1": "Feuille de route et architecture : construire, acheter ou reporter, et pourquoi",
         "description2": "La migration qui fait peur à tout le monde, planifiée et livrée",
         "description3": "Embauche, mentorat et une pratique d'ingénierie bâtie autour des agents"
@@ -81,7 +81,7 @@
   },
   "cta": {
     "title": "Un projet en tête ?",
-    "sub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan. Ouvert aux mandats de CTO à temps partiel et de consultation."
+    "sub": "Trente minutes, pas de diapositives. Vous apportez le problème ; j'apporte les questions et, généralement, un premier plan. Ouvert aux mandats de consultation."
   },
   "portfolio": {
     "title": "Projets",
@@ -141,10 +141,10 @@
   "resume": {
     "title": "CV",
     "name": "Jean-Philippe Melanson",
-    "jobTitle": "CTO à temps partiel · Ingénieur logiciel senior",
+    "jobTitle": "Ingénieur IA · Systèmes agentiques, utilisation d'outils et orchestration",
     "availability": "Temps partiel · à distance depuis Québec · déplacements quand ça compte",
     "overview": "En bref",
-    "overviewText": "L'ingénieur à qui on confie le chemin critique : cofondateur technique d'une plateforme immobilière, ingénieur de protocole sur un lancement de jeton, consultant dans les systèmes d'événements en direct de Ticketmaster. Je travaille de façon autonome, je livre à la date que j'ai donnée, et je dis la vérité sur la portée, les risques et les coûts, tôt. Depuis 2024, je livre avec des agents de codage IA et je mets les équipes en état d'en faire autant.",
+    "overviewText": "Je construis des agents en production, avec utilisation d'outils, orchestration et évaluations, et les systèmes sur lesquels ils tournent. Avant ça, j'étais l'ingénieur à qui on confiait le chemin critique : cofondateur technique d'une plateforme immobilière, ingénieur de protocole sur un lancement de jeton, consultant dans les systèmes d'événements en direct de Ticketmaster. Je travaille de façon autonome, je livre à la date que j'ai donnée, et je dis la vérité sur la portée, les risques et les coûts, tôt.",
     "outcomes": "Résultats choisis",
     "outcome1T": "doormath.ca — bâti les fondations techniques de l'entreprise comme cofondateur technique.",
     "outcome1D": "Architecture, produit et infrastructure de zéro au MVP ; accueilli les 10 à 20 premiers clients payants.",
@@ -273,8 +273,8 @@
     "skillsShipList": "TypeScript · React · Next.js · React Native · Postgres · Supabase · AWS · CI/CD · IaC",
     "skillsLead": "Diriger",
     "skillsLeadList": "Conception de systèmes · revues d'architecture · feuille de route · mentorat · travail direct avec PDG et produit",
-    "skillsAI": "Depuis 2024",
-    "skillsAIList": "Développement assisté par IA — agents de codage, MCP, revue automatisée — et durcissement du code généré par IA pour la production",
+    "skillsAI": "Agents",
+    "skillsAIList": "Utilisation d'outils · serveurs MCP · orchestration multi-agents · évaluations · observabilité · contrôle des coûts · Claude Code et Codex",
     "languages": "Langues",
     "languageFrench": "Français (langue maternelle)",
     "languageEnglish": "Anglais"

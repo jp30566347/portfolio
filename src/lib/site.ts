@@ -61,7 +61,11 @@ export const person = {
   ],
   alumniOf: "École de technologie supérieure",
   knowsAbout: [
-    "Fractional CTO",
+    "AI engineering",
+    "Agentic systems",
+    "LLM tool use",
+    "Agent orchestration",
+    "Model Context Protocol",
     "Software architecture",
     "TypeScript",
     "React",
